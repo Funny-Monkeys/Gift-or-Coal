@@ -1,8 +1,8 @@
-﻿namespace GiftOrCoal.Houses
+﻿namespace GiftOrCoal.KidData
 {
     public enum KidType
     {
         Standard,
-        Mythical
+        Mythical,
     }
 }

@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace GiftOrCoal.Houses
+namespace GiftOrCoal.House
 {
     [RequireComponent(typeof(Rigidbody2D))]
     public sealed class HouseMovement : MonoBehaviour
@@ -19,7 +19,7 @@ namespace GiftOrCoal.Houses
         private void FixedUpdate()
         {
             if (CanMove)
-                _rigidbody.MovePosition(_rigidbody.position + Vector2.left * _speed * Time.fixedDeltaTime);
+                _rigidbody.MovePosition(_rigidbody.position + Vector2.left * (_speed * Time.fixedDeltaTime));
         }
 
         public void Stop()
