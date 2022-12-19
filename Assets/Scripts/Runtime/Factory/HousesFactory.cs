@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using GiftOrCoal.Houses;
 using UnityEngine;
 
 namespace GiftOrCoal.Factories
@@ -8,11 +9,11 @@ namespace GiftOrCoal.Factories
     {
         [SerializeField] private Transform _spawnPosition;
         [SerializeField, Min(0.1f)] private float _spawnDelay = 1.5f;
-        [SerializeField] private HouseMovement _prefab;
+        [SerializeField] private House _prefab;
 
-        private readonly List<HouseMovement> _spawnedHouses = new();
+        private readonly List<House> _spawnedHouses = new();
 
-        public IEnumerable<HouseMovement> SpawnedHoused => _spawnedHouses;
+        public IReadOnlyList<House> SpawnedHoused => _spawnedHouses;
         
         private void Start()
         {

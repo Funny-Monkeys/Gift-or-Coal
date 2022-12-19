@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace GiftOrCoal.Factories
+namespace GiftOrCoal.Houses
 {
     [RequireComponent(typeof(Rigidbody2D))]
     public sealed class HouseMovement : MonoBehaviour
