@@ -9,7 +9,7 @@ namespace GiftOrCoal.Score
         private int _count;
 
         public event Action<int> OnChanged;
-        
+
         public void Add(int count)
         {
             if (count <= 0)
@@ -37,10 +37,5 @@ namespace GiftOrCoal.Score
             _countView.Visualize(_count);
             OnChanged?.Invoke(_count);
         }
-    }
-
-    public sealed class BestScore : MonoBehaviour
-    {
-        
     }
 }
