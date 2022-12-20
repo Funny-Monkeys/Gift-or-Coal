@@ -21,7 +21,7 @@ namespace GiftOrCoal.Houses
             
             if (hit.collider != null && hit.collider.TryGetComponent(out HouseMovement houseMovement))
             {
-                if(_lastSearchedHouse.transform == houseMovement.transform)
+                if(_lastSearchedHouse != null && _lastSearchedHouse.transform == houseMovement.transform)
                     return;
                 
                 _housesFactory.StopSpawn();
