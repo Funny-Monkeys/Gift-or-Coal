@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace GiftOrCoal.Actions
+namespace GiftOrCoal.Deeds
 {
     [CreateAssetMenu(menuName = "Create/DeedData", fileName = "DeedData")]
     public class DeedData : ScriptableObject

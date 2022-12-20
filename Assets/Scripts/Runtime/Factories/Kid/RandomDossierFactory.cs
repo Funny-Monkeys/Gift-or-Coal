@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using GiftOrCoal.Actions;
 using GiftOrCoal.Dossier;
 using UnityEngine;
 using Random = UnityEngine.Random;
@@ -13,11 +12,11 @@ namespace GiftOrCoal.Factories.Kid
         [SerializeField] private List<string> _hobbies;
         [SerializeField] private List<string> _endsOfGreetings;
 
-        private readonly List<string> _usedHobbies = new();
+        private List<string> _notUsedHobbies = new();
 
         public string Create(DossierCreationData creationData)
         {
-            _usedHobbies.Clear();
+            _notUsedHobbies = _hobbies;
             var stringBuilder = new StringBuilder();
             
             var randomName = creationData.Name;
@@ -48,15 +47,8 @@ namespace GiftOrCoal.Factories.Kid
 
         private string BuildHobby()
         {
-            var generatedHobby = _hobbies[Random.Range(0, _hobbies.Count)];
-
-            while (_usedHobbies.Contains(generatedHobby))
-            {
-                Debug.Log("Added");
-                generatedHobby = _hobbies[Random.Range(0, _hobbies.Count)];
-            }
-
-            _usedHobbies.Add(generatedHobby);
+            var generatedHobby = _notUsedHobbies[Random.Range(0, _notUsedHobbies.Count)];
+            _notUsedHobbies.Remove(generatedHobby);
             return generatedHobby;
         }
     }

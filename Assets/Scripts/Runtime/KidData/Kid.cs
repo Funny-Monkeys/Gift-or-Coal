@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using GiftOrCoal.Actions;
+using GiftOrCoal.Deeds;
 
 namespace GiftOrCoal.KidData
 {

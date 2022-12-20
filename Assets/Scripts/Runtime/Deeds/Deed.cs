@@ -1,4 +1,4 @@
-﻿namespace GiftOrCoal.Actions
+﻿namespace GiftOrCoal.Deeds
 {
     public class Deed
     {
