@@ -10,12 +10,6 @@ namespace GiftOrCoal
         private int _mistakesCount;
         private int _totalAnswersCount;
 
-        private void Start()
-        {
-            AddAnswers(2);
-            AddMistakes(1);
-        }
-
         public void AddAnswers(int count)
         {
             if (count <= 0)
