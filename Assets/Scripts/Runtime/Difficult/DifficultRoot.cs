@@ -1,5 +1,5 @@
 ﻿using System.Linq;
-using GiftOrCoal.SaveSystem;
+using GiftOrCoal.Save;
 using UnityEngine;
 
 namespace GiftOrCoal.Difficult

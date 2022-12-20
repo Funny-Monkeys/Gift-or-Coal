@@ -12,7 +12,7 @@ namespace GiftOrCoal.LoadSystem
         private SceneData _nextScene;
 
         public SceneLoaderWithScreen(SceneData loaderScene) =>
-            _loaderScene = loaderScene ?? throw new ArgumentNullException(nameof(loaderScene));
+            _loaderScene = loaderScene ? loaderScene : throw new ArgumentNullException(nameof(loaderScene));
 
         public void Load(SceneData sceneData)
         {

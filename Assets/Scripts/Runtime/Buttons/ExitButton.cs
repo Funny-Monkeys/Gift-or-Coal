@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace GiftOrCoal.UI
+namespace GiftOrCoal.Buttons
 {
     public sealed class ExitButton : Button
     {

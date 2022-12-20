@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace GiftOrCoal.SaveSystem
+namespace GiftOrCoal.Save
 {
     public sealed class StorageWithNameSaveObject<TStorageUser, TStoreValue>
     {
@@ -13,9 +13,7 @@ namespace GiftOrCoal.SaveSystem
             _path = typeof(TStoreValue).Name + typeof(TStorageUser).Name;
         }
 
-        public StorageWithNameSaveObject() : this(new BinaryStorage())
-        {
-        }
+        public StorageWithNameSaveObject() : this(new BinaryStorage()) { }
 
         public bool HasSave() => _storage.Exists(_path);
 

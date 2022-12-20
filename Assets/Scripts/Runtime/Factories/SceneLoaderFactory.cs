@@ -18,8 +18,7 @@ namespace GiftOrCoal.LoadSystem
             _sceneLoadMode = sceneLoadMode;
             _loaderScene = loaderScene;
         }
-
-
+        
         public ISceneLoader Create()
         {
             return _sceneLoadMode switch

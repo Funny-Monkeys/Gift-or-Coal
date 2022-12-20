@@ -1,5 +1,8 @@
-﻿public enum SceneLoadMode
+﻿namespace GiftOrCoal.LoadSystem
 {
-    Simple,
-    WithLoadScreen
+    public enum SceneLoadMode
+    {
+        Simple,
+        WithLoadScreen
+    }
 }

@@ -3,7 +3,6 @@
     public interface IGameLoop
     {
         void Pause();
-        
         void Continue();
     }
 }

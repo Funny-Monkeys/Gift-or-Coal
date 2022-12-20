@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace GiftOrCoal.UI
+namespace GiftOrCoal.Buttons
 {
     [RequireComponent(typeof(UnityEngine.UI.Button))]
     public abstract class Button : MonoBehaviour

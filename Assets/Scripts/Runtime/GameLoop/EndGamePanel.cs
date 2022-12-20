@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace GiftOrCoal
+namespace GiftOrCoal.Timer
 {
     public sealed class EndGamePanel : MonoBehaviour
     {
