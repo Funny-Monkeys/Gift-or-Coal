@@ -1,5 +1,6 @@
 using System.Linq;
 using GiftOrCoal.Factories;
+using GiftOrCoal.House;
 using UnityEngine;
 
 namespace GiftOrCoal.Houses
@@ -19,7 +20,7 @@ namespace GiftOrCoal.Houses
             }
         }
 
-        private void Stop(House house)
+        private void Stop(House.House house)
         {
             var houseMovement = house.Movement;
             
