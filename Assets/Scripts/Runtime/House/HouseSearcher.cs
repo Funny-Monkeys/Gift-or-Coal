@@ -1,4 +1,5 @@
 using System.Linq;
+using GiftOrCoal.Background;
 using GiftOrCoal.Dossier;
 using GiftOrCoal.Factories;
 using GiftOrCoal.Factories.Kid;
@@ -12,6 +13,7 @@ namespace GiftOrCoal.House
         [SerializeField] private HousesFactory _housesFactory;
         [SerializeField] private KidsFactory _kidsFactory;
         [SerializeField] private DossierView _dossierView;
+        [SerializeField] private BackgroundView _backgroundView;
 
         private bool _isHouseSearched;
 
@@ -24,8 +26,9 @@ namespace GiftOrCoal.House
 
             if (!_isHouseSearched)
             {
-                _housesFactory.SpawnedHoused.ToList().ForEach(Stop);
-                _dossierView.Display(_kidsFactory.Create(KidType.Standard));
+                _backgroundView?.Display();
+                _housesFactory?.SpawnedHoused.ToList().ForEach(Stop);
+                _dossierView?.Display(_kidsFactory.Create(KidType.Standard));
             }
 
             _isHouseSearched = true;
