@@ -19,9 +19,9 @@ namespace GiftOrCoal.Houses
         {
             var hit = Physics2D.Raycast(transform.position, Vector2.down);
             
-            if(hit.collider != null && hit.collider.TryGetComponent(out HouseMovement houseMovement))
+            if (hit.collider != null && hit.collider.TryGetComponent(out HouseMovement houseMovement))
             {
-                if(_lastSearchedHouse == houseMovement)
+                if(_lastSearchedHouse.transform == houseMovement.transform)
                     return;
                 
                 _housesFactory.StopSpawn();

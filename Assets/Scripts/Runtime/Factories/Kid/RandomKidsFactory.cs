@@ -49,8 +49,8 @@ namespace GiftOrCoal.Factories.Kid
         private Deed BuildDeed(IList<DeedData> deedDataList)
         {
             var randomIndex = Random.Range(0, deedDataList.Count);
-            Debug.Log(randomIndex);
             var generatedDeed = deedDataList[randomIndex];
+            
             deedDataList.Remove(generatedDeed);
             return new Deed(generatedDeed.Text, generatedDeed.IsGood);
         }
