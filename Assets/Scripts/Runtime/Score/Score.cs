@@ -1,5 +1,4 @@
 ﻿using System;
-using GiftOrCoal.View;
 using UnityEngine;
 
 namespace GiftOrCoal.Score
@@ -21,11 +20,8 @@ namespace GiftOrCoal.Score
             OnChanged?.Invoke(_count);
         }
 
-        public bool CanRemove(int count)
-        {
-            return _count - count >= 0;
-        }
-        
+        public bool CanRemove(int count) => _count - count >= 0;
+
         public void Remove(int count)
         {
             if (count <= 0)

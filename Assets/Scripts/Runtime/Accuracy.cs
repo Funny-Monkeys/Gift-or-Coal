@@ -1,5 +1,4 @@
 ﻿using System;
-using GiftOrCoal.View;
 using UnityEngine;
 
 namespace GiftOrCoal

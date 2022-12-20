@@ -15,13 +15,11 @@ namespace GiftOrCoal.Factories.Kid
         [SerializeField] private List<string> _names;
         [SerializeField] private List<Sprite> _sprites;
         
-        private readonly List<DeedData> _usedDeeds = new();
         private List<DeedData> _badDeeds;
         private List<DeedData> _goodDeeds;
 
         public KidData.Kid Create()
         {
-            _usedDeeds.Clear();
             var kidName = _names[Random.Range(0, _names.Count)];
             var generatedDeeds = GenerateDeeds();
 
@@ -52,11 +50,7 @@ namespace GiftOrCoal.Factories.Kid
         private Deed BuildDeed(List<DeedData> deedDataList)
         {
             var generatedDeed = deedDataList[Random.Range(0, deedDataList.Count())];
-            
-            while (_usedDeeds.Contains(generatedDeed))
-                generatedDeed = deedDataList[Random.Range(0, deedDataList.Count)];
-            
-            _usedDeeds.Add(generatedDeed);
+            deedDataList.Remove(generatedDeed);
             return new Deed(generatedDeed.Text, generatedDeed.IsGood);
         }
     }
