@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b4e0f59d0e34428bb61132c5b2fd89d3, type: 3}
+  m_Script: {fileID: 11500000, guid: 6a5cf72ebe754a81a91c9a26b1c64586, type: 3}
   m_Name: Well Behaved
   m_EditorClassIdentifier: 
   <Text>k__BackingField: Well behaved

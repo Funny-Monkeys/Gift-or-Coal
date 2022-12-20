@@ -2338,9 +2338,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _housesFactory: {fileID: 1658142606}
-  _kidsFactory: {fileID: 2025802250}
   _dossierView: {fileID: 834405105}
-  _backgroundView: {fileID: 0}
+  _kidsFactory: {fileID: 2025802250}
 --- !u!212 &1388796519
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2674,7 +2673,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1409650231}
-  - component: {fileID: 1409650230}
+  - component: {fileID: 1409650232}
   m_Layer: 0
   m_Name: Random Kids Factory
   m_TagString: Untagged
@@ -2682,27 +2681,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1409650230
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1409650229}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed2fda41519f42a483d731aeac6ef89b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _dossierFactory: {fileID: 1982549144}
-  _deedsData:
-  - {fileID: 11400000, guid: bfa9624f3de10bf4daa9b34bd2ab8651, type: 2}
-  - {fileID: 11400000, guid: a10e3940a9a38024ab8b3b74154450e6, type: 2}
-  - {fileID: 11400000, guid: c6bdc0585b71a2b4d9fb811f8a733d48, type: 2}
-  _names:
-  - Vadim
-  _sprites:
-  - {fileID: 21300000, guid: 17fa84703485d314b8d6b5216987d4b1, type: 3}
 --- !u!4 &1409650231
 Transform:
   m_ObjectHideFlags: 0
@@ -2718,6 +2696,31 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1409650232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1409650229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8039fe76af90441db5706402a7d2d39b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _dossierFactory: {fileID: 1982549144}
+  _deedsData:
+  - {fileID: 11400000, guid: bfa9624f3de10bf4daa9b34bd2ab8651, type: 2}
+  - {fileID: 11400000, guid: a10e3940a9a38024ab8b3b74154450e6, type: 2}
+  - {fileID: 11400000, guid: c6bdc0585b71a2b4d9fb811f8a733d48, type: 2}
+  _names:
+  - Fikrat
+  - Farid
+  - Idiot
+  _sprites:
+  - {fileID: 21300000, guid: 897c3a3f5c4038345a7143573bbb4a40, type: 3}
+  - {fileID: 21300000, guid: f68f6cf24545d2f41b27323ca2b06a52, type: 3}
+  - {fileID: 21300000, guid: 32854586e42553846b24646ce18cf625, type: 3}
 --- !u!1 &1420311672
 GameObject:
   m_ObjectHideFlags: 0
@@ -3279,8 +3282,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 661f1eb657903924ba7e65ffd75db357, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _spawnDelay: 4
   _spawnPosition: {fileID: 668476057}
+  _spawnDelay: 4
   _prefab: {fileID: -6183548866937236395, guid: a3394913fdeaac343b0a4d428a219baa, type: 3}
 --- !u!4 &1658142607
 Transform:
@@ -4013,7 +4016,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22c236ddde0d4cc3b595bc2773b3dba5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _randomKidsFactory: {fileID: 1409650230}
+  _randomKidsFactory: {fileID: 1409650232}
 --- !u!4 &2025802251
 Transform:
   m_ObjectHideFlags: 0
