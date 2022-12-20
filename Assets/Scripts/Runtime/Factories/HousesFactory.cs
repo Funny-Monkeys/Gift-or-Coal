@@ -25,15 +25,16 @@ namespace GiftOrCoal.Factories
             while (_canSpawn)
             {
                 yield return new WaitForSeconds(_spawnDelay);
-                var house = Instantiate(_prefab, _spawnPosition.position, _prefab.transform.rotation, transform);
-                _spawnedHouses.Add(house);
+
+                if (_canSpawn)
+                {
+                    var house = Instantiate(_prefab, _spawnPosition.position, _prefab.transform.rotation, transform);
+                    _spawnedHouses.Add(house);
+                }
             }
         }
 
-        public void StopSpawn()
-        {
-            _canSpawn = false;
-        }
+        public void StopSpawn() => _canSpawn = false;
 
         public void ContinueSpawn()
         {
