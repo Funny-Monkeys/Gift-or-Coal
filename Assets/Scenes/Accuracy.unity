@@ -206,7 +206,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 376317095}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1658142612}
+        m_TargetAssemblyTypeName: GiftOrCoal.LoadSystem.SceneLoader, Assembly-CSharp
+        m_MethodName: Load
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: a494c3d3d30a0b44b800dd54373b2ff0, type: 2}
+          m_ObjectArgumentAssemblyTypeName: GiftOrCoal.LoadSystem.SceneData, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &376317095
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1481,7 +1493,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1050573723}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1658142612}
+        m_TargetAssemblyTypeName: GiftOrCoal.LoadSystem.SceneLoader, Assembly-CSharp
+        m_MethodName: Load
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: ef23909db55d63c4bbe5f2ec9420df46, type: 2}
+          m_ObjectArgumentAssemblyTypeName: GiftOrCoal.LoadSystem.SceneData, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1050573723
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2325,6 +2349,7 @@ GameObject:
   - component: {fileID: 1658142610}
   - component: {fileID: 1658142609}
   - component: {fileID: 1658142611}
+  - component: {fileID: 1658142612}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: Untagged
@@ -2374,7 +2399,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9476e6dd879557149a5457671e30121c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _sessionTime: 300
+  _sessionTime: 3
   _endGamePanel: {fileID: 1534326810}
 --- !u!114 &1658142609
 MonoBehaviour:
@@ -2416,6 +2441,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _countView: {fileID: 644661524}
+--- !u!114 &1658142612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1658142605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9678836a47b4f0419863f582913b21a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mode: 0
+  _loadingScreen: {fileID: 0}
 --- !u!1 &1788445982
 GameObject:
   m_ObjectHideFlags: 0
