@@ -13,16 +13,21 @@ namespace GiftOrCoal.Houses
         [SerializeField] private HousesFactory _housesFactory;
         [SerializeField] private DossierView _dossierView;
         [SerializeField] private KidsFactory _kidsFactory;
-
+        private HouseMovement _lastSearchedHouse;
+        
         private void Update()
         {
             var hit = Physics2D.Raycast(transform.position, Vector2.down);
             
-            if(hit.collider != null && hit.collider.TryGetComponent(out HouseMovement _))
+            if(hit.collider != null && hit.collider.TryGetComponent(out HouseMovement houseMovement))
             {
-                _housesFactory.SpawnedHoused.ToList().ForEach(Stop);
+                if(_lastSearchedHouse == houseMovement)
+                    return;
+                
                 _housesFactory.StopSpawn();
+                _housesFactory.SpawnedHoused.ToList().ForEach(Stop);
                 _dossierView?.Display(_kidsFactory.Create(KidType.Standard));
+                _lastSearchedHouse = houseMovement;
             }
         }
 

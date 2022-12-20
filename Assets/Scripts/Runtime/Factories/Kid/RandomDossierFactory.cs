@@ -34,7 +34,7 @@ namespace GiftOrCoal.Factories.Kid
         
         private string BuildHobbies()
         {
-            var hobbiesCount = Random.Range(1, 4);
+            var hobbiesCount = Random.Range(1, _hobbies.Count);
 
             return hobbiesCount switch
             {

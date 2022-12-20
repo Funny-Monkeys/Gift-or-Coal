@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
 using GiftOrCoal.Deeds;
 using GiftOrCoal.Dossier;
 using UnityEngine;
@@ -14,20 +13,18 @@ namespace GiftOrCoal.Factories.Kid
         [Space]
         [SerializeField] private List<string> _names;
         [SerializeField] private List<Sprite> _sprites;
-        
-        private readonly List<DeedData> _usedDeeds = new();
+
         private List<DeedData> _badDeeds;
         private List<DeedData> _goodDeeds;
 
         public KidData.Kid Create()
         {
-            _usedDeeds.Clear();
             var kidName = _names[Random.Range(0, _names.Count)];
             var generatedDeeds = GenerateDeeds();
 
             var dossierCreationData = new DossierCreationData(generatedDeeds, kidName);
             var kidData = new KidData.KidData(kidName, _dossierFactory.Create(dossierCreationData), _sprites[Random.Range(0, _sprites.Count)]);
-            
+
             var result = new KidData.Kid(kidData, generatedDeeds);
             return result;
         }
@@ -48,15 +45,11 @@ namespace GiftOrCoal.Factories.Kid
 
             return result;
         }
-        
-        private Deed BuildDeed(List<DeedData> deedDataList)
+
+        private Deed BuildDeed(IList<DeedData> deedDataList)
         {
-            var generatedDeed = deedDataList[Random.Range(0, deedDataList.Count())];
-            
-            while (_usedDeeds.Contains(generatedDeed))
-                generatedDeed = deedDataList[Random.Range(0, deedDataList.Count)];
-            
-            _usedDeeds.Add(generatedDeed);
+            var generatedDeed = deedDataList[Random.Range(0, deedDataList.Count)];
+            deedDataList.Remove(generatedDeed);
             return new Deed(generatedDeed.Text, generatedDeed.IsGood);
         }
     }
