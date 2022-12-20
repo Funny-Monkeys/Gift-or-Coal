@@ -1,6 +1,9 @@
 using System.Linq;
+using GiftOrCoal.Dossier;
 using GiftOrCoal.Factories;
+using GiftOrCoal.Factories.Kid;
 using GiftOrCoal.House;
+using GiftOrCoal.KidData;
 using UnityEngine;
 
 namespace GiftOrCoal.Houses
@@ -8,6 +11,8 @@ namespace GiftOrCoal.Houses
     public sealed class HouseSearcher : MonoBehaviour
     {
         [SerializeField] private HousesFactory _housesFactory;
+        [SerializeField] private DossierView _dossierView;
+        [SerializeField] private KidsFactory _kidsFactory;
 
         private void Update()
         {
@@ -16,6 +21,8 @@ namespace GiftOrCoal.Houses
             if(hit.collider != null && hit.collider.TryGetComponent(out HouseMovement _))
             {
                 _housesFactory.SpawnedHoused.ToList().ForEach(Stop);
+                _housesFactory.StopSpawn();
+                _dossierView?.Display(_kidsFactory.Create(KidType.Standard));
             }
         }
 

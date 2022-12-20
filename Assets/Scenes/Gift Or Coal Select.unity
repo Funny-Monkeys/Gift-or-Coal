@@ -1245,7 +1245,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: affeade9874cf2347abb155e8d0db4d8, type: 3}
   - {fileID: 21300000, guid: f9161c6c9e06dc445ada3ee16d991f90, type: 3}
   - {fileID: 21300000, guid: f09eae8c0ea04254b90c5386a034a225, type: 3}
-  _currentBackground: {fileID: 0}
 --- !u!1 &816915596
 GameObject:
   m_ObjectHideFlags: 0
@@ -1429,6 +1428,9 @@ MonoBehaviour:
   _nameText: {fileID: 585304332}
   _dossierText: {fileID: 1988945400}
   _kidPhoto: {fileID: 1525628998}
+  _coalButton: {fileID: 1398310646}
+  _giftButton: {fileID: 237132204}
+  _score: {fileID: 1658142610}
 --- !u!1 &845815472
 GameObject:
   m_ObjectHideFlags: 0
@@ -2338,7 +2340,7 @@ MonoBehaviour:
   _housesFactory: {fileID: 1658142606}
   _kidsFactory: {fileID: 2025802250}
   _dossierView: {fileID: 834405105}
-  _isHouseSearched: 0
+  _backgroundView: {fileID: 0}
 --- !u!212 &1388796519
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2701,8 +2703,6 @@ MonoBehaviour:
   - Vadim
   _sprites:
   - {fileID: 21300000, guid: 17fa84703485d314b8d6b5216987d4b1, type: 3}
-  _badDeeds: []
-  _goodDeeds: []
 --- !u!4 &1409650231
 Transform:
   m_ObjectHideFlags: 0
