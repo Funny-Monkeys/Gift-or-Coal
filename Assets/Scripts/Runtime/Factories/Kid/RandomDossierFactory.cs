@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using GiftOrCoal.Dossier;
+using Unity.VisualScripting;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -16,7 +17,7 @@ namespace GiftOrCoal.Factories.Kid
 
         public string Create(DossierCreationData creationData)
         {
-            _notUsedHobbies = _hobbies;
+            _notUsedHobbies = new List<string>(_hobbies);
             var stringBuilder = new StringBuilder();
             
             var randomName = creationData.Name;
