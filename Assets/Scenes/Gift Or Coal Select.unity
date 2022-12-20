@@ -2705,7 +2705,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _spawnPosition: {fileID: 668476057}
   _spawnDelay: 4
-  _prefab: {fileID: -6183548866937236395, guid: a3394913fdeaac343b0a4d428a219baa, type: 3}
+  _averageHouses:
+  - {fileID: -6183548866937236395, guid: 249702c9ac4627342982ece35851e0ce, type: 3}
+  - {fileID: -6183548866937236395, guid: a3394913fdeaac343b0a4d428a219baa, type: 3}
+  _specialHouses:
+  - {fileID: -6183548866937236395, guid: 6614444d37e7c00498fc7ea9e7ef6de1, type: 3}
   _kidsFactory: {fileID: 1409650232}
 --- !u!4 &1658142607
 Transform:

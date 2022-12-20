@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using GiftOrCoal.Factories.Kid;
 using UnityEngine;
 
 namespace GiftOrCoal.Factories
@@ -14,6 +15,7 @@ namespace GiftOrCoal.Factories
         [Space]
         [SerializeField] private List<House.House> _averageHouses;
         [SerializeField] private List<House.House> _specialHouses;
+        [SerializeField] private RandomKidsFactory _kidsFactory;
 
         private readonly List<House.House> _spawnedHouses = new();
         private bool _canSpawn = true;
@@ -45,8 +47,11 @@ namespace GiftOrCoal.Factories
                     _notUsedSpecialHouses.Remove(randomHouse);
                     _averageHousesCounter = 0;
                 }
-                else randomHouse = _averageHouses[Random.Range(0, _averageHouses.Count)];
-                    
+                else
+                {
+                    randomHouse = _averageHouses[Random.Range(0, _averageHouses.Count)];
+                }
+                 randomHouse.Init(_kidsFactory);   
                 var spawnedHouse = Instantiate(randomHouse, _spawnPosition.position, randomHouse.transform.rotation, transform);
                 _spawnedHouses.Add(spawnedHouse);
             }
