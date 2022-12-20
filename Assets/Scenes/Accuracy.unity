@@ -2399,7 +2399,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9476e6dd879557149a5457671e30121c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _sessionTime: 3
+  _sessionTime: 300
   _endGamePanel: {fileID: 1534326810}
 --- !u!114 &1658142609
 MonoBehaviour:
