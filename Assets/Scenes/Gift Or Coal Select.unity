@@ -2713,13 +2713,22 @@ MonoBehaviour:
   - {fileID: 11400000, guid: bfa9624f3de10bf4daa9b34bd2ab8651, type: 2}
   - {fileID: 11400000, guid: a10e3940a9a38024ab8b3b74154450e6, type: 2}
   - {fileID: 11400000, guid: c6bdc0585b71a2b4d9fb811f8a733d48, type: 2}
+  - {fileID: 11400000, guid: c6bdc0585b71a2b4d9fb811f8a733d48, type: 2}
+  - {fileID: 11400000, guid: c6bdc0585b71a2b4d9fb811f8a733d48, type: 2}
+  - {fileID: 11400000, guid: c6bdc0585b71a2b4d9fb811f8a733d48, type: 2}
   _names:
   - Fikrat
   - Farid
   - Idiot
+  - Idiot
+  - Idiot
+  - Idiot
   _sprites:
   - {fileID: 21300000, guid: 897c3a3f5c4038345a7143573bbb4a40, type: 3}
   - {fileID: 21300000, guid: f68f6cf24545d2f41b27323ca2b06a52, type: 3}
+  - {fileID: 21300000, guid: 32854586e42553846b24646ce18cf625, type: 3}
+  - {fileID: 21300000, guid: 32854586e42553846b24646ce18cf625, type: 3}
+  - {fileID: 21300000, guid: 32854586e42553846b24646ce18cf625, type: 3}
   - {fileID: 21300000, guid: 32854586e42553846b24646ce18cf625, type: 3}
 --- !u!1 &1420311672
 GameObject:
@@ -3684,6 +3693,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _hobbies:
   - trolling
+  - shit coding
+  - shit coding
   - shit coding
   _endsOfGreetings:
   - I love Christmas
