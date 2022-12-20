@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using GiftOrCoal.Factories.Kid;
 using UnityEngine;
 
 namespace GiftOrCoal.Factories
@@ -9,10 +10,11 @@ namespace GiftOrCoal.Factories
         [SerializeField] private Transform _spawnPosition;
         [SerializeField, Min(0.1f)] private float _spawnDelay = 1.5f;
         [SerializeField] private House.House _prefab;
-
+        [SerializeField] private RandomKidsFactory _kidsFactory;
+        
         private readonly List<House.House> _spawnedHouses = new();
         private bool _canSpawn = true;
-        
+
         public IReadOnlyList<House.House> SpawnedHoused => _spawnedHouses;
         
         private void Start()
@@ -30,6 +32,7 @@ namespace GiftOrCoal.Factories
                 {
                     var house = Instantiate(_prefab, _spawnPosition.position, _prefab.transform.rotation, transform);
                     _spawnedHouses.Add(house);
+                    house.Init(_kidsFactory);
                 }
             }
         }

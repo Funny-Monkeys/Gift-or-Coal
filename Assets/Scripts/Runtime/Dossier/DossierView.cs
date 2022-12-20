@@ -1,5 +1,4 @@
-﻿using System.Linq;
-using GiftOrCoal.KidData;
+﻿using GiftOrCoal.KidData;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -12,37 +11,24 @@ namespace GiftOrCoal.Dossier
         [SerializeField] private TextMeshProUGUI _dossierText;
         [SerializeField] private Image _kidPhoto;
 
-        [Space] [SerializeField] private Button _coalButton;
-        [SerializeField] private Button _giftButton;
-        [SerializeField] private Score.Score _score;
-
-        private Kid _currentKid;
+        public Kid CurrentKid { get; private set; }
 
         public void Display(Kid kid)
         {
-            _currentKid = kid;
-            
+            CurrentKid = kid;
             _nameText.text = kid.Data.Name;
             _dossierText.text = kid.Data.Dossier;
             _kidPhoto.sprite = kid.Data.Photo;
         }
 
-        private void CoalButtonCallback()
+        public void Enable()
         {
-            if (_currentKid.Deeds.Any(deed => !deed.IsGood)) _score.Add(100);
-            else if (_score.CanRemove(100)) _score.Remove(100);
+            gameObject.SetActive(true);
         }
-
-        private void GiftButtonCallback()
+        
+        public void Disable()
         {
-            if (_currentKid.Deeds.All(deed => deed.IsGood)) _score.Add(100);
-            else if (_score.CanRemove(100)) _score.Remove(100);
-        }
-
-        private void Awake()
-        {
-            _coalButton.onClick.AddListener(CoalButtonCallback);
-            _giftButton.onClick.AddListener(GiftButtonCallback);
+            gameObject.SetActive(false);
         }
     }
 }
