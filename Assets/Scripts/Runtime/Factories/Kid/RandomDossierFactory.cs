@@ -16,7 +16,7 @@ namespace GiftOrCoal.Factories.Kid
 
         public string Create(DossierCreationData creationData)
         {
-            _notUsedHobbies = _hobbies;
+            _notUsedHobbies = new List<string>(_hobbies);
             var stringBuilder = new StringBuilder();
             
             var randomName = creationData.Name;
