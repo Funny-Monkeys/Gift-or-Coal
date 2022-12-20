@@ -12,31 +12,22 @@ namespace GiftOrCoal.Factories
         [SerializeField] private House.House _prefab;
 
         private readonly List<House.House> _spawnedHouses = new();
-        private bool _canSpawn = true;
 
         public IReadOnlyList<House.House> SpawnedHoused => _spawnedHouses;
         
-        private void Start() => StartCoroutine(Spawn());
+        private void Start()
+        {
+            StartCoroutine(Spawn());
+        }
 
         private IEnumerator Spawn()
         {
-            while (_canSpawn)
+            while (true)
             {
                 yield return new WaitForSeconds(_spawnDelay);
                 var house = Instantiate(_prefab, _spawnPosition.position, _prefab.transform.rotation, transform);
                 _spawnedHouses.Add(house);
             }
-        }
-
-        public void StopSpawn()
-        {
-            _canSpawn = false;
-        }
-        
-        public void ContinueSpawn()
-        {
-            _canSpawn = true;
-            StartCoroutine(Spawn());
         }
     }
 }

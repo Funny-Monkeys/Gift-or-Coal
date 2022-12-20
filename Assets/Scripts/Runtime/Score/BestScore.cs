@@ -1,4 +1,4 @@
-﻿using GiftOrCoal.Save;
+using GiftOrCoal.Save;
 using GiftOrCoal.View;
 using UnityEngine;
 
@@ -14,22 +14,23 @@ namespace GiftOrCoal.Score
         
         private void OnEnable()
         {
+            _score.OnChanged += OnChanged;
             _count = _storage.HasSave() ? _storage.Load() : 0;
             _countView.Visualize(_count);
         }
 
-        private void Update()
+        private void OnDisable()
         {
-            if (_score.HasChanged)
+            _score.OnChanged -= OnChanged;
+        }
+
+        private void OnChanged(int scoreCount)
+        {
+            if (_count < scoreCount)
             {
-                var scoreCount = _score.Count;
-                
-                if (_count < scoreCount)
-                {
-                    _count = scoreCount;
-                    _countView.Visualize(_count);
-                    _storage.Save(_count);
-                }
+                _count = scoreCount;
+                _countView.Visualize(_count);
+                _storage.Save(_count);
             }
         }
     }

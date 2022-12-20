@@ -1033,8 +1033,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 661f1eb657903924ba7e65ffd75db357, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _spawnDelay: 4
   _spawnPosition: {fileID: 1380962046}
+  _spawnDelay: 4
   _prefab: {fileID: -6183548866937236395, guid: a3394913fdeaac343b0a4d428a219baa, type: 3}
 --- !u!114 &870609282
 MonoBehaviour:
@@ -1990,9 +1990,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _housesFactory: {fileID: 870609281}
-  _kidsFactory: {fileID: 0}
-  _dossierView: {fileID: 0}
-  _backgroundView: {fileID: 206857321}
 --- !u!212 &1372318074
 SpriteRenderer:
   m_ObjectHideFlags: 0

@@ -7,25 +7,23 @@ namespace GiftOrCoal.Score
     public sealed class Score : MonoBehaviour
     {
         [SerializeField] private CountView _countView;
-        public int Count { get; private set; }
+        private int _count;
 
-        public bool HasChanged { get; private set; }
+        public event Action<int> OnChanged;
 
         public void Add(int count)
         {
             if (count <= 0)
                 throw new ArgumentOutOfRangeException(nameof(count));
             
-            Count += count;
-            _countView.Visualize(Count);
-            HasChanged = true;
+            _count += count;
+            _countView.Visualize(_count);
+            OnChanged?.Invoke(_count);
         }
-
-        private void LateUpdate() => HasChanged = false;
 
         public bool CanRemove(int count)
         {
-            return Count - count >= 0;
+            return _count - count >= 0;
         }
         
         public void Remove(int count)
@@ -36,9 +34,9 @@ namespace GiftOrCoal.Score
             if (CanRemove(count) == false)
                 throw new InvalidOperationException("Can't remove this count!");
             
-            Count -= count;
-            _countView.Visualize(Count);
-            HasChanged = true;
+            _count -= count;
+            _countView.Visualize(_count);
+            OnChanged?.Invoke(_count);
         }
     }
 }

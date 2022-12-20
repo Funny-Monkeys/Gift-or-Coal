@@ -16,7 +16,6 @@ namespace GiftOrCoal.Houses
             if(hit.collider != null && hit.collider.TryGetComponent(out HouseMovement _))
             {
                 _housesFactory.SpawnedHoused.ToList().ForEach(Stop);
-                _housesFactory.StopSpawn();
             }
         }
 
