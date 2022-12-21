@@ -10,7 +10,7 @@ namespace GiftOrCoal
         private int _mistakesCount;
         private int _successAnswersCount;
 
-        public void AddSuccess()
+        public void AddSuccessAnswer()
         {
             _successAnswersCount += 1;
             VisualizeInPercents();

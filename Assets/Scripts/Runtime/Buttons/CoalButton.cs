@@ -19,7 +19,7 @@ namespace GiftOrCoal.Dossier
             if (currentKid.Deeds.Any(deed => !deed.IsGood))
             {
                 _score.Add(100);
-                _accuracy.AddSuccess();
+                _accuracy.AddSuccessAnswer();
             }
 
             else if (_score.CanRemove(100))
