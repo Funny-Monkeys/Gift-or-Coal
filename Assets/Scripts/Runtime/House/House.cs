@@ -1,5 +1,4 @@
-﻿using System;
-using GiftOrCoal.Factories.Kid;
+﻿using GiftOrCoal.Factories.Kid;
 using GiftOrCoal.KidData;
 using UnityEngine;
 
@@ -7,15 +6,14 @@ namespace GiftOrCoal.House
 {
     public sealed class House : MonoBehaviour
     {
+        [SerializeField] private KidsFactory _kidsFactory;
+        [SerializeField] private KidType _kidType;
+        
         [field: SerializeField] public HouseMovement Movement { get; private set; }
-        
-        [field: SerializeField] public KidType KidType { get; private set; }
 
-        public RandomKidsFactory RandomKidsFactory { get; private set; }
-        
-        public void Init(RandomKidsFactory randomKidsFactory)
+        public IKid CreateKid()
         {
-            RandomKidsFactory = randomKidsFactory ?? throw new ArgumentNullException(nameof(randomKidsFactory));
+            return _kidsFactory.Create(_kidType);
         }
     }
 }

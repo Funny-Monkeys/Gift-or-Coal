@@ -11,9 +11,9 @@ namespace GiftOrCoal.Dossier
         [SerializeField] private TextMeshProUGUI _dossierText;
         [SerializeField] private Image _kidPhoto;
 
-        public Kid CurrentKid { get; private set; }
+        public IKid CurrentKid { get; private set; }
 
-        public void Display(Kid kid)
+        public void Display(IKid kid)
         {
             CurrentKid = kid;
             _nameText.text = kid.Data.Name;

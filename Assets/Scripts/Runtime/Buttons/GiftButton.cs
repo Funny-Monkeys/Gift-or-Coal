@@ -5,33 +5,29 @@ using UnityEngine;
 
 namespace GiftOrCoal.Dossier
 {
-    public sealed class CoalButton : Buttons.Button
+    public sealed class GiftButton : Buttons.Button
     {
         [SerializeField] private DossierView _dossierView;
-        
-        private HousesFactory _housesFactory;
-        private Score.Score _score;
-
-        public void Init(Score.Score score, HousesFactory housesFactory)
-        {
-            _score = score ?? throw new ArgumentNullException(nameof(score));
-            _housesFactory = housesFactory ?? throw new ArgumentNullException(nameof(housesFactory));
-        }
+        [SerializeField] private Score.Score _score;
+        [SerializeField] private HousesFactory _housesFactory;
+        [SerializeField] private Accuracy _accuracy;
 
         protected override void OnClick()
         {
             var currentKid = _dossierView.CurrentKid;
 
-            if (currentKid.Deeds.Any(deed => !deed.IsGood))
+            if (currentKid.Deeds.All(deed => deed.IsGood))
             {
                 _score.Add(100);
+                _accuracy.AddSuccess();
             }
 
             else if (_score.CanRemove(100))
             {
                 _score.Remove(100);
+                _accuracy.AddMistake();
             }
-            
+
             _dossierView.Disable();
             _housesFactory.SpawnedHoused.ToList().ForEach(house => house.Movement.ContinueMovement());
             _housesFactory.ContinueSpawn();

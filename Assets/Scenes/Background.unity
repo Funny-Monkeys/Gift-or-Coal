@@ -1035,7 +1035,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _spawnPosition: {fileID: 1380962046}
   _spawnDelay: 4
-  _prefab: {fileID: -6183548866937236395, guid: a3394913fdeaac343b0a4d428a219baa, type: 3}
+  _averageHouses: []
+  _specialHouses: []
 --- !u!114 &870609282
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1990,6 +1991,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _housesFactory: {fileID: 870609281}
+  _dossier: {fileID: 0}
 --- !u!212 &1372318074
 SpriteRenderer:
   m_ObjectHideFlags: 0
