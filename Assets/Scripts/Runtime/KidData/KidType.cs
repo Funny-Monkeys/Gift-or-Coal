@@ -3,6 +3,12 @@
     public enum KidType
     {
         Standard,
-        Mythical,
+        Batman,
+        Rick,
+        Pinokio,
+        Grinch,
+        HarryPotter,
+        Naruto,
+        Jake
     }
 }

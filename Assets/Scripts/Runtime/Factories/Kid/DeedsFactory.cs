@@ -48,7 +48,6 @@ namespace GiftOrCoal.Factories.Kid
         private Deed CreateDeedFromElementIn(List<DeedData> deedDataList)
         {
             var randomIndex = Random.Range(0, deedDataList.Count);
-            Debug.Log("List count: " + deedDataList.Count);
             var generatedDeed = deedDataList[randomIndex];
             
             deedDataList.Remove(generatedDeed);

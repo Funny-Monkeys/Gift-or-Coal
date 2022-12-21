@@ -8,16 +8,20 @@ namespace GiftOrCoal.House
     public sealed class House : MonoBehaviour
     {
         [SerializeField] private KidsFactory _kidsFactory;
-        [SerializeField] private KidType _kidType;
+        [SerializeField] private HouseType _houseType;
         
         [Space]
         [SerializeField] private List<GameObject> _attributes;
         
         [field: SerializeField] public HouseMovement Movement { get; private set; }
 
+        private KidType _kidType;
+
         public IKid CreateKid()
         {
-            return _kidsFactory.Create(_kidType);
+            Debug.Log(_kidType);
+            Debug.Log(_houseType);
+            return _kidsFactory.Create(_houseType == HouseType.Standard ? KidType.Standard : _kidType);
         }
 
         public void TurnOnAttributes()
@@ -25,6 +29,11 @@ namespace GiftOrCoal.House
             _attributes.ForEach(attribute => attribute.SetActive(false));
             foreach (var attribute in _attributes)
                 attribute.SetActive(Random.Range(1, 3) == 1);
+        }
+
+        public void Init(KidType randomKidType)
+        {
+            _kidType = randomKidType;
         }
     }
 }

@@ -1,7 +1,11 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using GiftOrCoal.Factories.Kid;
+using GiftOrCoal.KidData;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 namespace GiftOrCoal.Factories
 {
@@ -12,19 +16,20 @@ namespace GiftOrCoal.Factories
 
         [Space]
         [SerializeField] private List<House.House> _averageHouses;
-        [SerializeField] private List<House.House> _specialHouses;
+        [SerializeField] private House.House _specialHouse;
 
         private readonly List<House.House> _spawnedHouses = new();
         private bool _canSpawn = true;
         
         private int _averageHousesCounter;
-        private List<House.House> _notUsedSpecialHouses;
+        private List<KidType> _notUsedKidTypes;
 
         public IReadOnlyList<House.House> SpawnedHoused => _spawnedHouses;
         
         private void Awake()
         {
-            _notUsedSpecialHouses = new List<House.House>(_specialHouses);
+            _notUsedKidTypes = Enum.GetValues(typeof(KidType)).Cast<KidType>().ToList();
+            _notUsedKidTypes.Remove(KidType.Standard);
             StartCoroutine(Spawn());
         }
 
@@ -39,11 +44,14 @@ namespace GiftOrCoal.Factories
                 
                 _averageHousesCounter++;
                 House.House randomHousePrefab;
+                var kidType = KidType.Standard;
                     
                 if (_averageHousesCounter == 10)
                 {
-                    randomHousePrefab = _notUsedSpecialHouses[Random.Range(0, _notUsedSpecialHouses.Count)];
-                    _notUsedSpecialHouses.Remove(randomHousePrefab);
+                    randomHousePrefab = _specialHouse;
+                    kidType = KidType.Pinokio /*_notUsedKidTypes[Random.Range(0, _notUsedKidTypes.Count)]*/;
+
+                    _notUsedKidTypes.Remove(kidType);
                     _averageHousesCounter = 0;
                 }
                 else
@@ -52,6 +60,8 @@ namespace GiftOrCoal.Factories
                 }
                 
                 var house = Instantiate(randomHousePrefab, _spawnPosition.position, randomHousePrefab.transform.rotation, transform);
+                house.Init(kidType);
+                
                 house.TurnOnAttributes();
                 _spawnedHouses.Add(house);
             }

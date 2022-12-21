@@ -1,5 +1,8 @@
-﻿namespace GiftOrCoal.Deeds
+﻿using System;
+
+namespace GiftOrCoal.Deeds
 {
+    [Serializable]
     public sealed class Deed
     {
         public readonly string Text;
