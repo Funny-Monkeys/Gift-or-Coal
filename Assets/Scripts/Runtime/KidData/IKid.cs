@@ -7,6 +7,6 @@ namespace GiftOrCoal.KidData
     {
         KidData Data { get; }
         
-        List<Deed> Deeds { get; }
+        IEnumerable<Deed> Deeds { get; }
     }
 }

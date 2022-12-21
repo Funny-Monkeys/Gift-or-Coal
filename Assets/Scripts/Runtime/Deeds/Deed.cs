@@ -1,6 +1,6 @@
 ﻿namespace GiftOrCoal.Deeds
 {
-    public class Deed
+    public sealed class Deed
     {
         public readonly string Text;
         public readonly bool IsGood;

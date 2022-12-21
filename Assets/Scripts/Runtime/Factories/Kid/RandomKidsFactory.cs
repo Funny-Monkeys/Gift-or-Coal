@@ -1,6 +1,4 @@
 ﻿using System.Collections.Generic;
-using GiftOrCoal.Deeds;
-using GiftOrCoal.Dossier;
 using GiftOrCoal.KidData;
 using UnityEngine;
 
@@ -9,51 +7,20 @@ namespace GiftOrCoal.Factories.Kid
     public class RandomKidsFactory : MonoBehaviour
     {
         [SerializeField] private RandomDossierFactory _dossierFactory;
-        [SerializeField] private List<DeedData> _deedsData;
-
+        [SerializeField] private DeedsFactory _deedsFactory;
+        
         [Space]
         [SerializeField] private List<string> _names;
         [SerializeField] private List<Sprite> _sprites;
 
-        private List<DeedData> _badDeeds;
-        private List<DeedData> _goodDeeds;
-
-        private void Awake()
-        {
-            _badDeeds = _deedsData.FindAll(deed => !deed.IsGood);
-            _goodDeeds = _deedsData.FindAll(deed => deed.IsGood);
-        }
-
         public IKid Create()
         {
             var kidName = _names[Random.Range(0, _names.Count)];
-            var generatedDeeds = GenerateDeeds();
-
-            var dossierCreationData = new DossierCreationData(generatedDeeds, kidName);
-            var kidData = new KidData.KidData(kidName, _dossierFactory.Create(dossierCreationData), _sprites[Random.Range(0, _sprites.Count)]);
-
-            var result = new KidData.Kid(kidData, generatedDeeds);
-            return result;
-        }
-        
-        private List<Deed> GenerateDeeds()
-        {
-            var result = new List<Deed>();
-            var deedsCount = Random.Range(1, 6);
-
-            for (var i = 0; i < deedsCount; i++)
-                result.Add(BuildDeed(Random.Range(1, 4) == 1 ? _badDeeds : _goodDeeds));
-
-            return result;
-        }
-
-        private Deed BuildDeed(IList<DeedData> deedDataList)
-        {
-            var randomIndex = Random.Range(0, deedDataList.Count);
-            var generatedDeed = deedDataList[randomIndex];
-            
-            deedDataList.Remove(generatedDeed);
-            return new Deed(generatedDeed.Text, generatedDeed.IsGood);
+            var generatedDeeds = _deedsFactory.CreateDeeds();
+            var dossierText = _dossierFactory.Create(kidName);
+            var kidData = new KidData.KidData(kidName, dossierText, _sprites[Random.Range(0, _sprites.Count)]);
+            var kid = new KidData.Kid(kidData, generatedDeeds);
+            return kid;
         }
     }
 }
