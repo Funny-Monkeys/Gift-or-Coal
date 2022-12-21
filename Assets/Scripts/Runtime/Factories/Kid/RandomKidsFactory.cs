@@ -18,6 +18,7 @@ namespace GiftOrCoal.Factories.Kid
             var kidName = _names[Random.Range(0, _names.Count)];
             var generatedDeeds = _deedsFactory.CreateDeeds();
             var dossierText = _dossierFactory.Create(kidName);
+            
             var kidData = new KidData.KidData(kidName, dossierText, _sprites[Random.Range(0, _sprites.Count)]);
             var kid = new KidData.Kid(kidData, generatedDeeds);
             return kid;

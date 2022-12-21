@@ -1428,9 +1428,6 @@ MonoBehaviour:
   _nameText: {fileID: 585304332}
   _dossierText: {fileID: 1988945400}
   _kidPhoto: {fileID: 1525628998}
-  _coalButton: {fileID: 1398310646}
-  _giftButton: {fileID: 237132204}
-  _score: {fileID: 1658142610}
 --- !u!1 &845815472
 GameObject:
   m_ObjectHideFlags: 0
@@ -2338,8 +2335,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _housesFactory: {fileID: 1658142606}
-  _dossierView: {fileID: 834405105}
   _kidsFactory: {fileID: 2025802250}
+  _score: {fileID: 0}
+  _dossier: {fileID: 0}
 --- !u!212 &1388796519
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3293,11 +3291,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _spawnPosition: {fileID: 668476057}
   _spawnDelay: 4
-  _averageHouses:
-  - {fileID: -6183548866937236395, guid: a3394913fdeaac343b0a4d428a219baa, type: 3}
-  - {fileID: -6183548866937236395, guid: 249702c9ac4627342982ece35851e0ce, type: 3}
-  _specialHouses:
-  - {fileID: -6183548866937236395, guid: 6614444d37e7c00498fc7ea9e7ef6de1, type: 3}
+  _averageHouses: []
+  _specialHouses: []
+  _kidsFactory: {fileID: 0}
 --- !u!4 &1658142607
 Transform:
   m_ObjectHideFlags: 0

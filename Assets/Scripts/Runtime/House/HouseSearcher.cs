@@ -9,24 +9,25 @@ namespace GiftOrCoal.Houses
     public sealed class HouseSearcher : MonoBehaviour
     {
         [SerializeField] private HousesFactory _housesFactory;
-        [SerializeField] private Dossier.Dossier _dossier;
+        [SerializeField] private DossierView _dossierView;
         private House.House _lastSearchedHouse;
 
         private void Update()
         {
             var hit = Physics2D.Raycast(transform.position, Vector2.down);
             
-            if (hit.collider != null && hit.collider.TryGetComponent(out House.House houseMovement))
+            if (hit.collider != null && hit.collider.TryGetComponent(out House.House house))
             {
-                if(_lastSearchedHouse != null && _lastSearchedHouse.transform == houseMovement.transform)
+                if(_lastSearchedHouse != null && _lastSearchedHouse.transform == house.transform)
                     return;
                 
-                _lastSearchedHouse = houseMovement;
+                _lastSearchedHouse = house;
                 _housesFactory.StopSpawn();
                 _housesFactory.SpawnedHoused.ToList().ForEach(Stop);
-                _dossier.View.Enable();
+                _dossierView.Enable();
+                
                 var kid = _lastSearchedHouse.CreateKid();
-                _dossier.View.Display(kid);
+                _dossierView.Display(kid);
             }
         }
 

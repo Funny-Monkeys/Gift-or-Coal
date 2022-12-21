@@ -52,6 +52,7 @@ namespace GiftOrCoal.Factories
                 }
                 
                 var house = Instantiate(randomHousePrefab, _spawnPosition.position, randomHousePrefab.transform.rotation, transform);
+                house.TurnOnAttributes();
                 _spawnedHouses.Add(house);
             }
         }

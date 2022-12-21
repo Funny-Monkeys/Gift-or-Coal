@@ -11,7 +11,7 @@ namespace GiftOrCoal.View
 
         public void Visualize(float count)
         {
-            var countText = count.ToString(CultureInfo.InvariantCulture);
+            var countText = count.ToString();
             _text.text = _additionSymbols.Length == 0 ? countText : countText + _additionSymbols;
         }
     }
