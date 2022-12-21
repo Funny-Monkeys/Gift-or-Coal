@@ -5,7 +5,7 @@ namespace GiftOrCoal.KidData
 {
     public sealed class Kid : IKid
     {
-        public Kid(KidData data, List<Deed> deeds)
+        public Kid(KidData data, IEnumerable<Deed> deeds)
         {
             Data = data;
             Deeds = deeds;
@@ -13,7 +13,7 @@ namespace GiftOrCoal.KidData
 
         public KidData Data { get; }
         
-        public List<Deed> Deeds { get; }
+        public IEnumerable<Deed> Deeds { get; }
         
     }
 }

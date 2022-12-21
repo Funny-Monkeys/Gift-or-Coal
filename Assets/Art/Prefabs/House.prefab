@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 9080640580512254492}
   - component: {fileID: 6857219449230940159}
   - component: {fileID: 3050019183416115209}
+  - component: {fileID: -8913384126346726058}
   m_Layer: 0
   m_Name: House
   m_TagString: Untagged
@@ -192,6 +193,54 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _dossierFactory: {fileID: 3050019183416115209}
+  _deedsFactory: {fileID: -8913384126346726058}
+  _names:
+  - Fikrat
+  - Farid
+  - Idiot
+  - Sam
+  - Idiot
+  - Idiot
+  _sprites:
+  - {fileID: 21300000, guid: 2d4a12f00fe29bd4cb8100dffa578eb9, type: 3}
+  - {fileID: 21300000, guid: fdd02b2efd701de42b7d818888966707, type: 3}
+  - {fileID: 21300000, guid: 0326ea40b113dc2408529a14524838ab, type: 3}
+  - {fileID: 21300000, guid: b0d4902683e3ebc4e968be7bbad74da9, type: 3}
+  - {fileID: 21300000, guid: 2faa986093ae5b74d99f046b1a8f76bc, type: 3}
+  - {fileID: 21300000, guid: c399d9cf71b591d458e2b07f38886ed6, type: 3}
+  - {fileID: 21300000, guid: 9cda4677ba726dd429d506c4480837ce, type: 3}
+  - {fileID: 21300000, guid: 341ce6591b8344a4eaf9b38a5268634f, type: 3}
+--- !u!114 &3050019183416115209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7379420351053012620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77bbfd4a098c49ae862deb5e8c188392, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _hobbies:
+  - trolling
+  - shit coding
+  - shit coding
+  - shit coding
+  _endsOfGreetings:
+  - I love Christmas
+--- !u!114 &-8913384126346726058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7379420351053012620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcd3f22dcb274e108da5098369f7901f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   _deedsData:
   - {fileID: 11400000, guid: f00c99f2b7bf2334e92d67ecab4049d5, type: 2}
   - {fileID: 11400000, guid: d84d53e65e0fe0e43946311c7ff16da4, type: 2}
@@ -259,37 +308,3 @@ MonoBehaviour:
   - {fileID: 11400000, guid: cd74c805151e95a489bf136df863417e, type: 2}
   - {fileID: 11400000, guid: 4db0fa3466a98a845b797b477ad7e149, type: 2}
   - {fileID: 11400000, guid: 5d099715d0a6be847965389a435d1616, type: 2}
-  _names:
-  - Fikrat
-  - Farid
-  - Idiot
-  - Sam
-  - Idiot
-  - Idiot
-  _sprites:
-  - {fileID: 21300000, guid: 2d4a12f00fe29bd4cb8100dffa578eb9, type: 3}
-  - {fileID: 21300000, guid: fdd02b2efd701de42b7d818888966707, type: 3}
-  - {fileID: 21300000, guid: 0326ea40b113dc2408529a14524838ab, type: 3}
-  - {fileID: 21300000, guid: b0d4902683e3ebc4e968be7bbad74da9, type: 3}
-  - {fileID: 21300000, guid: 2faa986093ae5b74d99f046b1a8f76bc, type: 3}
-  - {fileID: 21300000, guid: c399d9cf71b591d458e2b07f38886ed6, type: 3}
-  - {fileID: 21300000, guid: 9cda4677ba726dd429d506c4480837ce, type: 3}
---- !u!114 &3050019183416115209
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7379420351053012620}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77bbfd4a098c49ae862deb5e8c188392, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _hobbies:
-  - trolling
-  - shit coding
-  - shit coding
-  - shit coding
-  _endsOfGreetings:
-  - I love Christmas

@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using GiftOrCoal.Dossier;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -14,21 +13,14 @@ namespace GiftOrCoal.Factories.Kid
 
         private List<string> _notUsedHobbies = new();
 
-        public string Create(DossierCreationData creationData)
+        public string Create(string kidName)
         {
             _notUsedHobbies = new List<string>(_hobbies);
             var stringBuilder = new StringBuilder();
-            
-            var randomName = creationData.Name;
-            stringBuilder.Append($"Hello, Santa Claus, my name is {randomName}. ");
-
+            stringBuilder.Append($"Hello, Santa Claus, my name is {kidName}. ");
             var hobbies = BuildHobbies();
             stringBuilder.Append($"I love {hobbies}. ");
-            stringBuilder.Append($"{_endsOfGreetings[Random.Range(0, _endsOfGreetings.Count)]}. This year I have done these things:\n");
-            
-            for (var i = 0; i < creationData.Deeds.Count; i++)
-                stringBuilder.Append($"{i + 1}) {creationData.Deeds[i].Text}\n");
-
+          //  stringBuilder.Append($"{_endsOfGreetings[Random.Range(0, _endsOfGreetings.Count)]}. This year I have done these things:\n");
             return stringBuilder.ToString();
         }
         

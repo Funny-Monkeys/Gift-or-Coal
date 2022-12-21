@@ -10,6 +10,8 @@ namespace GiftOrCoal.Dossier
         [SerializeField] private TextMeshProUGUI _nameText;
         [SerializeField] private TextMeshProUGUI _dossierText;
         [SerializeField] private Image _kidPhoto;
+        [SerializeField] private TMP_Text _deedTextPrefab;
+        [SerializeField] private Transform _content;
 
         public IKid CurrentKid { get; private set; }
 
@@ -18,17 +20,18 @@ namespace GiftOrCoal.Dossier
             CurrentKid = kid;
             _nameText.text = kid.Data.Name;
             _dossierText.text = kid.Data.Dossier;
+            
+            foreach (var deed in kid.Deeds)
+            {
+                var deedText = Instantiate(_deedTextPrefab, _content);
+                deedText.text = deed.Text;
+            }
+            
             _kidPhoto.sprite = kid.Data.Photo;
         }
 
-        public void Enable()
-        {
-            gameObject.SetActive(true);
-        }
-        
-        public void Disable()
-        {
-            gameObject.SetActive(false);
-        }
+        public void Enable() => gameObject.SetActive(true);
+
+        public void Disable() => gameObject.SetActive(false);
     }
 }

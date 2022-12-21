@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: -3576089709513128825}
   - component: {fileID: 3640079372976800814}
   - component: {fileID: -4375914413400280607}
+  - component: {fileID: 153632304794897795}
   m_Layer: 0
   m_Name: Second House
   m_TagString: Untagged
@@ -179,40 +180,68 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _dossierFactory: {fileID: -4375914413400280607}
+  _deedsFactory: {fileID: 153632304794897795}
+  _names:
+  - Fikrat
+  - Farid
+  - Idiot
+  - Sam
+  - Idiot
+  - Idiot
+  _sprites:
+  - {fileID: 21300000, guid: 2d4a12f00fe29bd4cb8100dffa578eb9, type: 3}
+  - {fileID: 21300000, guid: fdd02b2efd701de42b7d818888966707, type: 3}
+  - {fileID: 21300000, guid: 0326ea40b113dc2408529a14524838ab, type: 3}
+  - {fileID: 21300000, guid: b0d4902683e3ebc4e968be7bbad74da9, type: 3}
+  - {fileID: 21300000, guid: 2faa986093ae5b74d99f046b1a8f76bc, type: 3}
+  - {fileID: 21300000, guid: c399d9cf71b591d458e2b07f38886ed6, type: 3}
+  - {fileID: 21300000, guid: 9cda4677ba726dd429d506c4480837ce, type: 3}
+  - {fileID: 21300000, guid: 341ce6591b8344a4eaf9b38a5268634f, type: 3}
+--- !u!114 &3640079372976800814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7379420351053012620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22c236ddde0d4cc3b595bc2773b3dba5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _randomKidsFactory: {fileID: -3576089709513128825}
+--- !u!114 &-4375914413400280607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7379420351053012620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77bbfd4a098c49ae862deb5e8c188392, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _hobbies:
+  - trolling
+  - shit coding
+  - shit coding
+  - shit coding
+  _endsOfGreetings:
+  - I love Christmas
+--- !u!114 &153632304794897795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7379420351053012620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcd3f22dcb274e108da5098369f7901f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   _deedsData:
-  - {fileID: 11400000, guid: f00c99f2b7bf2334e92d67ecab4049d5, type: 2}
-  - {fileID: 11400000, guid: d84d53e65e0fe0e43946311c7ff16da4, type: 2}
-  - {fileID: 11400000, guid: a04e9e55acf13a149b50d4e477b23071, type: 2}
-  - {fileID: 11400000, guid: d4e47cb4ea4cb5b44b30d874cc71ab4e, type: 2}
-  - {fileID: 11400000, guid: 6ddcc29fa2bfe7c4cb38645bcb1516ca, type: 2}
-  - {fileID: 11400000, guid: 5829d7b9cc688d145ac9930e9fd167bb, type: 2}
-  - {fileID: 11400000, guid: c17a009935f890842a30f98f71e5a4e4, type: 2}
-  - {fileID: 11400000, guid: 622deab6f84696e41ad7234a943af8a3, type: 2}
-  - {fileID: 11400000, guid: 193285c7016d0864b9623553a0725612, type: 2}
-  - {fileID: 11400000, guid: a95696a3e6425ff49850fa2e35ba626e, type: 2}
-  - {fileID: 11400000, guid: 42ade68b60f2c23499aa318241444309, type: 2}
-  - {fileID: 11400000, guid: cc38c3b9de516d94ab2d366794138d37, type: 2}
-  - {fileID: 11400000, guid: 9bbf5efcf25ece44aac8d4b99f28299a, type: 2}
-  - {fileID: 11400000, guid: ad3f8594dd85dec4c848ac75bce992e1, type: 2}
-  - {fileID: 11400000, guid: 5a037932f503a6f46881994c15c8cf9e, type: 2}
-  - {fileID: 11400000, guid: 90befe98ef62a3646a590870cc0394d8, type: 2}
-  - {fileID: 11400000, guid: 9206091daeddf1543a033d377ef93659, type: 2}
-  - {fileID: 11400000, guid: da8a05d7366360e4e823b514ffe05782, type: 2}
-  - {fileID: 11400000, guid: 4db9c8cc59532be4fa8417533d0683be, type: 2}
-  - {fileID: 11400000, guid: a7e014a05f723d34b9c1a79fd68aba89, type: 2}
-  - {fileID: 11400000, guid: 933488a6b977bd743a169f6dc70d4ee6, type: 2}
-  - {fileID: 11400000, guid: e6fee77ccec78054dac2fddc93c5e84e, type: 2}
-  - {fileID: 11400000, guid: b9a8bc6dcf115e54db3777687bdc19ae, type: 2}
-  - {fileID: 11400000, guid: a35b66d13b7b3d94fb841b8975ddef01, type: 2}
-  - {fileID: 11400000, guid: f2e5ec2b6b69b7d4e909ac4b74e986f5, type: 2}
-  - {fileID: 11400000, guid: 35a553945b5255c45a0369a2c8375df3, type: 2}
-  - {fileID: 11400000, guid: 86eb62cb4b5d0d446911d04a9e694a74, type: 2}
-  - {fileID: 11400000, guid: faffb410a2fc5d5459671a5ffd734b32, type: 2}
-  - {fileID: 11400000, guid: 402450086ec774d4fa591c2ebf28cbfb, type: 2}
-  - {fileID: 11400000, guid: 684642b7baf59884f9381770f8c947a8, type: 2}
-  - {fileID: 11400000, guid: 93aa5ffd939fde1499347445e72b20b0, type: 2}
-  - {fileID: 11400000, guid: 7e13b9541d74b3142969f9131d967127, type: 2}
-  - {fileID: 11400000, guid: f589945f43c1add498dff519ff14dcb7, type: 2}
   - {fileID: 11400000, guid: 08a4942caa903ca4981c089ba26f30d5, type: 2}
   - {fileID: 11400000, guid: 21c9ebe6adf8cc8448fb8db9d25387cb, type: 2}
   - {fileID: 11400000, guid: 183d97c7d72745249ba1983749873fb2, type: 2}
@@ -246,50 +275,36 @@ MonoBehaviour:
   - {fileID: 11400000, guid: cd74c805151e95a489bf136df863417e, type: 2}
   - {fileID: 11400000, guid: 4db0fa3466a98a845b797b477ad7e149, type: 2}
   - {fileID: 11400000, guid: 5d099715d0a6be847965389a435d1616, type: 2}
-  _names:
-  - Fikrat
-  - Farid
-  - Idiot
-  - Sam
-  - Idiot
-  - Idiot
-  _sprites:
-  - {fileID: 21300000, guid: 2d4a12f00fe29bd4cb8100dffa578eb9, type: 3}
-  - {fileID: 21300000, guid: fdd02b2efd701de42b7d818888966707, type: 3}
-  - {fileID: 21300000, guid: 0326ea40b113dc2408529a14524838ab, type: 3}
-  - {fileID: 21300000, guid: b0d4902683e3ebc4e968be7bbad74da9, type: 3}
-  - {fileID: 21300000, guid: 2faa986093ae5b74d99f046b1a8f76bc, type: 3}
-  - {fileID: 21300000, guid: c399d9cf71b591d458e2b07f38886ed6, type: 3}
-  - {fileID: 21300000, guid: 9cda4677ba726dd429d506c4480837ce, type: 3}
---- !u!114 &3640079372976800814
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7379420351053012620}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 22c236ddde0d4cc3b595bc2773b3dba5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _randomKidsFactory: {fileID: -3576089709513128825}
---- !u!114 &-4375914413400280607
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7379420351053012620}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77bbfd4a098c49ae862deb5e8c188392, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _hobbies:
-  - trolling
-  - shit coding
-  - shit coding
-  - shit coding
-  _endsOfGreetings:
-  - I love Christmas
+  - {fileID: 11400000, guid: f00c99f2b7bf2334e92d67ecab4049d5, type: 2}
+  - {fileID: 11400000, guid: d84d53e65e0fe0e43946311c7ff16da4, type: 2}
+  - {fileID: 11400000, guid: a04e9e55acf13a149b50d4e477b23071, type: 2}
+  - {fileID: 11400000, guid: d4e47cb4ea4cb5b44b30d874cc71ab4e, type: 2}
+  - {fileID: 11400000, guid: 6ddcc29fa2bfe7c4cb38645bcb1516ca, type: 2}
+  - {fileID: 11400000, guid: 5829d7b9cc688d145ac9930e9fd167bb, type: 2}
+  - {fileID: 11400000, guid: c17a009935f890842a30f98f71e5a4e4, type: 2}
+  - {fileID: 11400000, guid: 622deab6f84696e41ad7234a943af8a3, type: 2}
+  - {fileID: 11400000, guid: 193285c7016d0864b9623553a0725612, type: 2}
+  - {fileID: 11400000, guid: a95696a3e6425ff49850fa2e35ba626e, type: 2}
+  - {fileID: 11400000, guid: 42ade68b60f2c23499aa318241444309, type: 2}
+  - {fileID: 11400000, guid: cc38c3b9de516d94ab2d366794138d37, type: 2}
+  - {fileID: 11400000, guid: 9bbf5efcf25ece44aac8d4b99f28299a, type: 2}
+  - {fileID: 11400000, guid: ad3f8594dd85dec4c848ac75bce992e1, type: 2}
+  - {fileID: 11400000, guid: 5a037932f503a6f46881994c15c8cf9e, type: 2}
+  - {fileID: 11400000, guid: 90befe98ef62a3646a590870cc0394d8, type: 2}
+  - {fileID: 11400000, guid: 9206091daeddf1543a033d377ef93659, type: 2}
+  - {fileID: 11400000, guid: da8a05d7366360e4e823b514ffe05782, type: 2}
+  - {fileID: 11400000, guid: 4db9c8cc59532be4fa8417533d0683be, type: 2}
+  - {fileID: 11400000, guid: a7e014a05f723d34b9c1a79fd68aba89, type: 2}
+  - {fileID: 11400000, guid: 933488a6b977bd743a169f6dc70d4ee6, type: 2}
+  - {fileID: 11400000, guid: e6fee77ccec78054dac2fddc93c5e84e, type: 2}
+  - {fileID: 11400000, guid: b9a8bc6dcf115e54db3777687bdc19ae, type: 2}
+  - {fileID: 11400000, guid: a35b66d13b7b3d94fb841b8975ddef01, type: 2}
+  - {fileID: 11400000, guid: f2e5ec2b6b69b7d4e909ac4b74e986f5, type: 2}
+  - {fileID: 11400000, guid: 35a553945b5255c45a0369a2c8375df3, type: 2}
+  - {fileID: 11400000, guid: 86eb62cb4b5d0d446911d04a9e694a74, type: 2}
+  - {fileID: 11400000, guid: faffb410a2fc5d5459671a5ffd734b32, type: 2}
+  - {fileID: 11400000, guid: 402450086ec774d4fa591c2ebf28cbfb, type: 2}
+  - {fileID: 11400000, guid: 684642b7baf59884f9381770f8c947a8, type: 2}
+  - {fileID: 11400000, guid: 93aa5ffd939fde1499347445e72b20b0, type: 2}
+  - {fileID: 11400000, guid: 7e13b9541d74b3142969f9131d967127, type: 2}
+  - {fileID: 11400000, guid: f589945f43c1add498dff519ff14dcb7, type: 2}
