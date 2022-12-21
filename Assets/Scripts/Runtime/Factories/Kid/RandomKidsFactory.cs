@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using GiftOrCoal.Deeds;
 using GiftOrCoal.Dossier;
+using GiftOrCoal.KidData;
 using UnityEngine;
 
 namespace GiftOrCoal.Factories.Kid
@@ -17,7 +18,13 @@ namespace GiftOrCoal.Factories.Kid
         private List<DeedData> _badDeeds;
         private List<DeedData> _goodDeeds;
 
-        public KidData.Kid Create()
+        private void Awake()
+        {
+            _badDeeds = _deedsData.FindAll(deed => !deed.IsGood);
+            _goodDeeds = _deedsData.FindAll(deed => deed.IsGood);
+        }
+
+        public IKid Create()
         {
             var kidName = _names[Random.Range(0, _names.Count)];
             var generatedDeeds = GenerateDeeds();
@@ -28,13 +35,7 @@ namespace GiftOrCoal.Factories.Kid
             var result = new KidData.Kid(kidData, generatedDeeds);
             return result;
         }
-
-        private void Awake()
-        {
-            _badDeeds = _deedsData.FindAll(deed => !deed.IsGood);
-            _goodDeeds = _deedsData.FindAll(deed => deed.IsGood);
-        }
-
+        
         private List<Deed> GenerateDeeds()
         {
             var result = new List<Deed>();

@@ -4,11 +4,11 @@ using UnityEngine;
 
 namespace GiftOrCoal.Factories.Kid
 {
-    public class KidsFactory : MonoBehaviour, IKidsFactory<KidData.Kid>
+    public class KidsFactory : MonoBehaviour, IKidsFactory<IKid>
     {
         [SerializeField] private RandomKidsFactory _randomKidsFactory;
         
-        public KidData.Kid Create(KidType kidType)
+        public IKid Create(KidType kidType)
         {
             return kidType switch
             {

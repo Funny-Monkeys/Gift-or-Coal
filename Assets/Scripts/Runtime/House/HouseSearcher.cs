@@ -9,8 +9,6 @@ namespace GiftOrCoal.Houses
     public sealed class HouseSearcher : MonoBehaviour
     {
         [SerializeField] private HousesFactory _housesFactory;
-        [SerializeField] private KidsFactory _kidsFactory;
-        [SerializeField] private Score.Score _score;
         [SerializeField] private Dossier.Dossier _dossier;
         private House.House _lastSearchedHouse;
 
@@ -27,9 +25,8 @@ namespace GiftOrCoal.Houses
                 _housesFactory.StopSpawn();
                 _housesFactory.SpawnedHoused.ToList().ForEach(Stop);
                 _dossier.View.Enable();
-                _dossier.View.Display(_kidsFactory.Create(_lastSearchedHouse.KidType));
-                _dossier.GiftButton.Init(_score, _housesFactory);
-                _dossier.CoalButton.Init(_score, _housesFactory);
+                var kid = _lastSearchedHouse.CreateKid();
+                _dossier.View.Display(kid);
             }
         }
 
