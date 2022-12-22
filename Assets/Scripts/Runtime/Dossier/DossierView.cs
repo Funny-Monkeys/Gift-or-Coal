@@ -8,7 +8,6 @@ namespace GiftOrCoal.Dossier
 {
     public sealed class DossierView : MonoBehaviour
     {
-        [SerializeField] private TextMeshProUGUI _nameText;
         [SerializeField] private TextMeshProUGUI _dossierText;
         [SerializeField] private Image _kidPhoto;
         [SerializeField] private TMP_Text _deedTextPrefab;
@@ -18,10 +17,8 @@ namespace GiftOrCoal.Dossier
 
         public void Display(IKid kid)
         {
-            ClearContext();
-            
+            ClearContent();
             CurrentKid = kid;
-            _nameText.text = kid.Data.Name;
             _dossierText.text = kid.Data.Dossier;
 
             for (var i = 0; i < kid.Deeds.Count(); i++)
@@ -37,7 +34,7 @@ namespace GiftOrCoal.Dossier
 
         public void Disable() => gameObject.SetActive(false);
 
-        private void ClearContext()
+        private void ClearContent()
         {
             for (var i = 0; i < _content.childCount; i++)
                  Destroy(_content.GetChild(0).gameObject);
