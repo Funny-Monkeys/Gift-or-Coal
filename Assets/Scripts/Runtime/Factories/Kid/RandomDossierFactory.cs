@@ -18,9 +18,11 @@ namespace GiftOrCoal.Factories.Kid
             _notUsedHobbies = new List<string>(_hobbies);
             var stringBuilder = new StringBuilder();
             stringBuilder.Append($"Hello, Santa Claus, my name is {kidName}. ");
+            
             var hobbies = BuildHobbies();
             stringBuilder.Append($"I love {hobbies}. ");
-          //  stringBuilder.Append($"{_endsOfGreetings[Random.Range(0, _endsOfGreetings.Count)]}. This year I have done these things:\n");
+            stringBuilder.Append($"{_endsOfGreetings[Random.Range(0, _endsOfGreetings.Count)]}. This year I have done these things:\n");
+            
             return stringBuilder.ToString();
         }
         

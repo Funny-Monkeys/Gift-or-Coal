@@ -1,25 +1,57 @@
 ﻿using System.Collections.Generic;
+using Cysharp.Threading.Tasks;
 using UnityEngine;
 
 namespace GiftOrCoal.Background
 {
-    public class BackgroundView : MonoBehaviour, IBackgroundView
+    public class BackgroundView : MonoBehaviour
     {
-        [SerializeField] private SpriteRenderer _backgroundSpriteRenderer;
-        [SerializeField] private List<Sprite> _backgrounds;
-        private Sprite _currentBackground;
+        [SerializeField] private SpriteRenderer _tempSpriteRenderer;
+        [SerializeField] private SpriteRenderer _activeSpriteRenderer;
+         
+        [Space] [SerializeField] private List<Sprite> _backgrounds;
+        [Space] [SerializeField] private int _timeForOneBackground;
+        [SerializeField] private float _changingTimeInMilliseconds;
+        
+        private int _currentBackgroundIndex;
+        private const int MILLISECONDS_IN_SECONDS = 1000;
 
-        public void Display()
+        private async void Awake() => await StartDisplaying();
+
+        private async UniTask StartDisplaying()
         {
-            var generatedBackground = _backgrounds[Random.Range(0, _backgrounds.Count)];
-            
-            while (generatedBackground == _currentBackground)
-                generatedBackground = _backgrounds[Random.Range(0, _backgrounds.Count)];
+            while (true)
+            {
+                await UniTask.Delay(_timeForOneBackground * MILLISECONDS_IN_SECONDS);
+                
+                if (_currentBackgroundIndex == _backgrounds.Count)
+                    break;
+                
+                var newSprite = _backgrounds[_currentBackgroundIndex];
+                _tempSpriteRenderer.sprite = newSprite;
+                _currentBackgroundIndex++;
 
-            _currentBackground = generatedBackground;
-            _backgroundSpriteRenderer.sprite = _currentBackground;
+                float timer = 0;
+                var changingTimeInSeconds = _changingTimeInMilliseconds / MILLISECONDS_IN_SECONDS;
+                
+                while (timer < changingTimeInSeconds)
+                {
+                    _activeSpriteRenderer.color = new Color(_activeSpriteRenderer.color.r, 
+                        _activeSpriteRenderer.color.g, 
+                        _activeSpriteRenderer.color.b, 
+                        Mathf.Lerp(1, 0, timer / changingTimeInSeconds));
+
+                    _tempSpriteRenderer.color = new Color(_tempSpriteRenderer.color.r, 
+                        _tempSpriteRenderer.color.g, 
+                        _tempSpriteRenderer.color.b, 
+                        Mathf.Lerp(0, 1, timer / changingTimeInSeconds));
+
+                    timer += Time.fixedDeltaTime;
+                    await UniTask.WaitForFixedUpdate();
+                }
+
+                _activeSpriteRenderer.sprite = newSprite;
+            }
         }
-
-        private void Awake() => Display();
     }
 }

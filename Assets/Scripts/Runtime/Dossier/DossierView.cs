@@ -37,7 +37,7 @@ namespace GiftOrCoal.Dossier
         private void ClearContent()
         {
             for (var i = 0; i < _content.childCount; i++)
-                 Destroy(_content.GetChild(0).gameObject);
+                 Destroy(_content.GetChild(i).gameObject);
         }
     }
 }
