@@ -10,7 +10,9 @@ namespace GiftOrCoal.Houses
     {
         [SerializeField] private HousesFactory _housesFactory;
         [SerializeField] private DossierView _dossierView;
+        
         private House.House _lastSearchedHouse;
+        private GameLoop.GameLoop _gameLoop = new();
 
         private void Update()
         {
@@ -22,6 +24,8 @@ namespace GiftOrCoal.Houses
                     return;
                 
                 _lastSearchedHouse = house;
+                _gameLoop.Pause();
+                
                 _housesFactory.StopSpawn();
                 _housesFactory.SpawnedHoused.ToList().ForEach(Stop);
                 _dossierView.Enable();

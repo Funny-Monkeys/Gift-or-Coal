@@ -11,6 +11,8 @@ namespace GiftOrCoal.Dossier
         [SerializeField] private Score.Score _score;
         [SerializeField] private HousesFactory _housesFactory;
         [SerializeField] private Accuracy _accuracy;
+        
+        private readonly GameLoop.GameLoop _gameLoop = new();
 
         protected override void OnClick()
         {
@@ -29,6 +31,8 @@ namespace GiftOrCoal.Dossier
             }
 
             _dossierView.Disable();
+            _gameLoop.Continue();
+            
             _housesFactory.SpawnedHoused.ToList().ForEach(house => house.Movement.ContinueMovement());
             _housesFactory.ContinueSpawn();
         }

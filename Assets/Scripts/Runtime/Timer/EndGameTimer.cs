@@ -13,7 +13,7 @@ namespace GiftOrCoal.Timer
         
         private void Update()
         {
-            _time += Time.deltaTime;
+            _time += Time.unscaledDeltaTime;
 
             if (_time >= _sessionTime)
             {
