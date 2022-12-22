@@ -37,8 +37,6 @@ namespace GiftOrCoal.Factories
         {
             while (_canSpawn)
             {
-                yield return new WaitForSeconds(_spawnDelay);
-
                 if (!_canSpawn) 
                     continue;
                 
@@ -50,7 +48,6 @@ namespace GiftOrCoal.Factories
                 {
                     randomHousePrefab = _specialHouse;
                     kidType = KidType.Pinokio /*_notUsedKidTypes[Random.Range(0, _notUsedKidTypes.Count)]*/;
-
                     _notUsedKidTypes.Remove(kidType);
                     _averageHousesCounter = 0;
                 }
@@ -61,9 +58,9 @@ namespace GiftOrCoal.Factories
                 
                 var house = Instantiate(randomHousePrefab, _spawnPosition.position, randomHousePrefab.transform.rotation, transform);
                 house.Init(kidType);
-                
                 house.TurnOnAttributes();
                 _spawnedHouses.Add(house);
+                yield return new WaitForSeconds(_spawnDelay);
             }
         }
 
