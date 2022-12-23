@@ -10,9 +10,10 @@ namespace GiftOrCoal.Houses
     {
         [SerializeField] private HousesFactory _housesFactory;
         [SerializeField] private DossierView _dossierView;
+        [SerializeField] private Telephone _telephone;
         
+        private readonly GameLoop.GameLoop _gameLoop = new();
         private House.House _lastSearchedHouse;
-        private GameLoop.GameLoop _gameLoop = new();
 
         private void Update()
         {
@@ -23,13 +24,11 @@ namespace GiftOrCoal.Houses
                 if(_lastSearchedHouse != null && _lastSearchedHouse.transform == house.transform)
                     return;
                 
+                _telephone.ToStandard();
                 _lastSearchedHouse = house;
-                _gameLoop.Pause();
-                
                 _housesFactory.StopSpawn();
+                _gameLoop.Pause();
                 _housesFactory.SpawnedHoused.ToList().ForEach(Stop);
-                _dossierView.Enable();
-                
                 var kid = _lastSearchedHouse.CreateKid();
                 _dossierView.Display(kid);
             }
