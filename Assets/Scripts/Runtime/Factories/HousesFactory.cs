@@ -47,6 +47,7 @@ namespace GiftOrCoal.Factories
                 {
                     randomHousePrefab = _specialHouse;
                     kidType = _notUsedKidTypes[Random.Range(0, _notUsedKidTypes.Count)];
+                    
                     _notUsedKidTypes.Remove(kidType);
                     _averageHousesCounter = 0;
                 }
