@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Collections.Generic;
 using GiftOrCoal.KidData;
 using GiftOrCoal.Tools;
 using UnityEngine;
@@ -23,14 +21,6 @@ namespace GiftOrCoal.Factories.Kid
 
         private void Awake()
         {
-            var kidTypes = Enum.GetValues(typeof(KidType)).Cast<KidType>().ToList();
-
-            foreach (var type in kidTypes)
-            {
-                if (!_specialKidsDictionaryComponent.ContainsKey(type))
-                    throw new ArgumentOutOfRangeException("", "This type doesn't exist");
-            }
-
             for (var i = 0; i < _specialKidsDictionaryComponent.Keys.Count; i++)
             {
                 var key = _specialKidsDictionaryComponent.Keys[i];
