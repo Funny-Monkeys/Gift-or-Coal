@@ -670,12 +670,20 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5224284090109905203, guid: 5af87894d01aeba419c052bf7cd9ac3e, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.11492875
+      objectReference: {fileID: 0}
+    - target: {fileID: 5224284090109905203, guid: 5af87894d01aeba419c052bf7cd9ac3e, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.122558594
+      objectReference: {fileID: 0}
+    - target: {fileID: 5224284090109905203, guid: 5af87894d01aeba419c052bf7cd9ac3e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.95
       objectReference: {fileID: 0}
     - target: {fileID: 5224284090109905203, guid: 5af87894d01aeba419c052bf7cd9ac3e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.14
+      value: 1.88
       objectReference: {fileID: 0}
     - target: {fileID: 5224284090109905203, guid: 5af87894d01aeba419c052bf7cd9ac3e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1155,6 +1163,7 @@ MonoBehaviour:
   - Blink
   - Great
   _secondsToPlayRandomAnimation: 5
+  _sledAnimator: {fileID: 1268091607}
 --- !u!1 &614256585
 GameObject:
   m_ObjectHideFlags: 0
@@ -2048,6 +2057,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1268091605}
   - component: {fileID: 1268091606}
+  - component: {fileID: 1268091607}
   m_Layer: 0
   m_Name: Sani
   m_TagString: Untagged
@@ -2122,6 +2132,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1268091607
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1268091604}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c9d970a2a89386a4a97ab98789889e98, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1286133621
 GameObject:
   m_ObjectHideFlags: 0
@@ -2502,7 +2532,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1496097276}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.63, y: -1.96, z: -0.11317961}
+  m_LocalPosition: {x: 10.63, y: -2.02, z: -0.11317961}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

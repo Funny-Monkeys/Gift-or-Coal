@@ -180,7 +180,7 @@ GameObject:
   - component: {fileID: 6795593476223374255}
   - component: {fileID: 3100682810831498151}
   m_Layer: 0
-  m_Name: Pinokio
+  m_Name: Batman
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -216,8 +216,8 @@ MonoBehaviour:
   <IsGood>k__BackingField: 1
   <Data>k__BackingField:
     <Photo>k__BackingField: {fileID: 21300000, guid: c8899c3e921f69941a174cda26b0ce48, type: 3}
-    <Name>k__BackingField: Pinokio
-    <Dossier>k__BackingField: 
+    <Name>k__BackingField: Pinocchio
+    <Dossier>k__BackingField: I love wood!
 --- !u!114 &3100682810831498151
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -231,6 +231,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _kidData: {fileID: 6795593476223374255}
+  _deedsData:
+  - {fileID: 11400000, guid: 44d167bd6c4cac742bc0b70e4ed114ca, type: 2}
+  - {fileID: 11400000, guid: c2ab3c31319ce3c4496dfa261a7b5036, type: 2}
+  - {fileID: 11400000, guid: 7e8bf4d8bdc33cd4c8ae841a8cc2e52f, type: 2}
+  - {fileID: 11400000, guid: a29ec6c251c9c0443b9acf2dd987ac0a, type: 2}
+  - {fileID: 11400000, guid: c3e5cad2f5e8f2d4ea83fa50f5b2e8c5, type: 2}
 --- !u!1 &6889256522988598193
 GameObject:
   m_ObjectHideFlags: 0
@@ -526,10 +532,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22c236ddde0d4cc3b595bc2773b3dba5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _randomKidsFactory: {fileID: -3576089709513128825, guid: 249702c9ac4627342982ece35851e0ce, type: 3}
+  _randomKidsFactory: {fileID: 1635482674487249223}
   _specialKidsDictionaryComponent:
-    _keys: 03000000
+    _keys: 0300000001000000
     _values:
+    - {fileID: 3363823951365648664}
     - {fileID: 3100682810831498151}
 --- !u!114 &3622133783927466482
 MonoBehaviour:
@@ -673,6 +680,81 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2184328032350777374}
+  - {fileID: 1749058149606366695}
   m_Father: {fileID: 7381675320565782137}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &8541585265648161916
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1749058149606366695}
+  - component: {fileID: 8831399041089985850}
+  - component: {fileID: 3363823951365648664}
+  m_Layer: 0
+  m_Name: Pinokio (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1749058149606366695
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8541585265648161916}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4190027159353053774}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8831399041089985850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8541585265648161916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56e2ca1211164c2eb0ccf81ffa34435c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <IsGood>k__BackingField: 1
+  <Data>k__BackingField:
+    <Photo>k__BackingField: {fileID: 21300000, guid: c8899c3e921f69941a174cda26b0ce48, type: 3}
+    <Name>k__BackingField: Pinocchio
+    <Dossier>k__BackingField: I Love wood!
+--- !u!114 &3363823951365648664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8541585265648161916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 451061ce92014c12ab3d22ac105ef1d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _kidData: {fileID: 8831399041089985850}
+  _deedsData:
+  - {fileID: 11400000, guid: 44d167bd6c4cac742bc0b70e4ed114ca, type: 2}
+  - {fileID: 11400000, guid: c2ab3c31319ce3c4496dfa261a7b5036, type: 2}
+  - {fileID: 11400000, guid: 7e8bf4d8bdc33cd4c8ae841a8cc2e52f, type: 2}
+  - {fileID: 11400000, guid: a29ec6c251c9c0443b9acf2dd987ac0a, type: 2}
+  - {fileID: 11400000, guid: c3e5cad2f5e8f2d4ea83fa50f5b2e8c5, type: 2}
+  - {fileID: 11400000, guid: 21505a24eed6c1541a39eb1f00432a61, type: 2}
+  - {fileID: 11400000, guid: 0f7d4f230e4b5b742905477181d69700, type: 2}
+  - {fileID: 11400000, guid: 860b3260484355549b0cf8cf466f5cda, type: 2}
+  - {fileID: 11400000, guid: 49db68c4b6d61c64abdcdaab113cdbef, type: 2}
+  - {fileID: 11400000, guid: 937f95abf9b30474e82f2a9b4e5d2e11, type: 2}

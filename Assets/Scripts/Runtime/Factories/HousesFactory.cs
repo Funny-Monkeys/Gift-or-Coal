@@ -37,6 +37,7 @@ namespace GiftOrCoal.Factories
         {
             while (_canSpawn)
             {
+                yield return new WaitForSeconds(_spawnDelay);
                 if (!_canSpawn) 
                     continue;
                 
@@ -60,7 +61,6 @@ namespace GiftOrCoal.Factories
                 house.Init(kidType);
                 house.TurnOnAttributes();
                 _spawnedHouses.Add(house);
-                yield return new WaitForSeconds(_spawnDelay);
             }
         }
 
