@@ -1,8 +1,6 @@
-﻿using System;
-using GiftOrCoal.View;
-using UnityEngine;
+﻿using UnityEngine;
 
-namespace GiftOrCoal
+namespace GiftOrCoal.Other
 {
     public sealed class Accuracy : MonoBehaviour
     {

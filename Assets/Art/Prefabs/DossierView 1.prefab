@@ -142,7 +142,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Padding:
-    m_Left: 3
+    m_Left: -4
     m_Right: 0
     m_Top: 10
     m_Bottom: 0
@@ -415,6 +415,8 @@ MonoBehaviour:
   _housesFactory: {fileID: 0}
   _score: {fileID: 0}
   _accuracy: {fileID: 0}
+  _santaAnimator: {fileID: 0}
+  _santaMovementEffect: {fileID: 0}
 --- !u!1 &7055357307247188908
 GameObject:
   m_ObjectHideFlags: 0
@@ -764,6 +766,8 @@ MonoBehaviour:
   _score: {fileID: 0}
   _housesFactory: {fileID: 0}
   _accuracy: {fileID: 0}
+  _santaAnimator: {fileID: 0}
+  _santaMovementEffect: {fileID: 0}
 --- !u!1 &7055357308737394951
 GameObject:
   m_ObjectHideFlags: 0

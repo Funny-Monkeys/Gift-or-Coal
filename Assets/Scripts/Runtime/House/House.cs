@@ -17,12 +17,7 @@ namespace GiftOrCoal.House
 
         private KidType _kidType;
 
-        public IKid CreateKid()
-        {
-            Debug.Log(_kidType);
-            Debug.Log(_houseType);
-            return _kidsFactory.Create(_houseType == HouseType.Standard ? KidType.Standard : _kidType);
-        }
+        public IKid CreateKid() => _kidsFactory.Create(_houseType == HouseType.Standard ? KidType.Standard : _kidType);
 
         public void TurnOnAttributes()
         {

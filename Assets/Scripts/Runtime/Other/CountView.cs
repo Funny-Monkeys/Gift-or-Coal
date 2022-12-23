@@ -1,8 +1,7 @@
-﻿using System.Globalization;
-using TMPro;
+﻿using TMPro;
 using UnityEngine;
 
-namespace GiftOrCoal.View
+namespace GiftOrCoal.Other
 {
     public sealed class CountView : MonoBehaviour
     {
