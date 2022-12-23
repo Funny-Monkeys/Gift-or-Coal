@@ -17,9 +17,11 @@ namespace GiftOrCoal.Dossier
                 var randomSoundPrefab = _dropSoundPrefabs[Random.Range(0, _dropSoundPrefabs.Length)];
                 CreateSound(randomSoundPrefab);
                 var gender = house.Kid.Data.Gender;
+                
                 CreateSound(gender == Gender.Male
                     ? _maleSoundPrefabs[Random.Range(0, _maleSoundPrefabs.Length)]
                     : _femaleSoundPrefabs[Random.Range(0, _femaleSoundPrefabs.Length)]);
+                
                 gameObject.SetActive(false);
             }
         }

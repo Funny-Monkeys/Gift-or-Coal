@@ -119,8 +119,8 @@ GameObject:
   - component: {fileID: 6113958959183694394}
   - component: {fileID: 6113958959183694391}
   - component: {fileID: 5416899038423327216}
-  - component: {fileID: 6113958959183694384}
   - component: {fileID: 3653531512542000236}
+  - component: {fileID: 6113958959183694384}
   m_Layer: 0
   m_Name: Santa
   m_TagString: Untagged
@@ -242,6 +242,21 @@ MonoBehaviour:
   - Blink
   - Great
   _secondsToPlayRandomAnimation: 5
+--- !u!114 &3653531512542000236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6113958959183694393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07f10588fd9b43e0b541e6be85ce57ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _coalPrefab: {fileID: 2676743453576618050, guid: 79332874a53fea044b35f14ecaf0e308, type: 3}
+  _giftPrefab: {fileID: 7933227310629258803, guid: b5a55028a76b0314197658d7fa3cde81, type: 3}
+  _spawnPosition: {fileID: 0}
 --- !u!95 &6113958959183694384
 Animator:
   serializedVersion: 4
@@ -262,18 +277,3 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &3653531512542000236
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6113958959183694393}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07f10588fd9b43e0b541e6be85ce57ea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _coalPrefab: {fileID: 2676743453576618050, guid: 79332874a53fea044b35f14ecaf0e308, type: 3}
-  _giftPrefab: {fileID: 7933227310629258803, guid: b5a55028a76b0314197658d7fa3cde81, type: 3}
-  _spawnPosition: {fileID: 0}

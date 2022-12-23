@@ -47,7 +47,7 @@ namespace GiftOrCoal.Factories
                 if (_averageHousesCounter == 10)
                 {
                     randomHousePrefab = _specialHouse;
-                    kidType = KidType.Pinokio /*_notUsedKidTypes[Random.Range(0, _notUsedKidTypes.Count)]*/;
+                    kidType = KidType.Pinocchio /*_notUsedKidTypes[Random.Range(0, _notUsedKidTypes.Count)]*/;
                     
                     _notUsedKidTypes.Remove(kidType);
                     _averageHousesCounter = 0;

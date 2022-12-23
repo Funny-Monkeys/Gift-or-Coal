@@ -5,10 +5,13 @@
         Standard,
         Batman,
         Rick,
-        Pinokio,
+        Pinocchio,
         Grinch,
         HarryPotter,
         Naruto,
-        Jake
+        Jake,
+        Star,
+        Morty,
+        Finn
     }
 }

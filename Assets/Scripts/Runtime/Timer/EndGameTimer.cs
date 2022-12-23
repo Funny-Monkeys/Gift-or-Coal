@@ -14,9 +14,9 @@ namespace GiftOrCoal.Timer
         
         private void Update()
         {
+            _timerView.Display(_sessionTime - _time);
             _time += Time.unscaledDeltaTime;
-            _timerView.Display(_time);
-            
+
             if (_time >= _sessionTime)
             {
                 _time = 0;

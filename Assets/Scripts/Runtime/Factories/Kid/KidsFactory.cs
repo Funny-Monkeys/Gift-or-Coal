@@ -27,8 +27,8 @@ namespace GiftOrCoal.Factories.Kid
 
             foreach (var type in kidTypes)
             {
-                //if (!_specialKidsDictionaryComponent.ContainsKey(type))
-                //    throw new ArgumentOutOfRangeException("", "This type doesn't exist");
+                if (!_specialKidsDictionaryComponent.ContainsKey(type))
+                    throw new ArgumentOutOfRangeException("", "This type doesn't exist");
             }
 
             for (var i = 0; i < _specialKidsDictionaryComponent.Keys.Count; i++)

@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using GiftOrCoal.Deeds;
 using GiftOrCoal.Difficult;
 using GiftOrCoal.Save;
