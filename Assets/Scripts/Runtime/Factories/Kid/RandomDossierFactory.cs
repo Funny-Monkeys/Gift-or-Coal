@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using UnityEngine;
 using Random = UnityEngine.Random;
@@ -28,9 +29,17 @@ namespace GiftOrCoal.Factories.Kid
         
         private string BuildHobbies()
         {
-            var hobbiesCount = Random.Range(1, _hobbies.Count);
+            var hobbiesCount = 3;
+            var hobbies = new List<string>(hobbiesCount);
 
-            return hobbiesCount switch
+            for (var i = 0; i < hobbiesCount; i++)
+            {
+                hobbies.Add(_hobbies[Random.Range(0, _hobbies.Count)]);
+            }
+
+            hobbies = hobbies.Distinct().ToList();
+            
+            return hobbies.Count switch
             {
                 1 => BuildHobby(),
                 2 => $"{BuildHobby()} and {BuildHobby()}",

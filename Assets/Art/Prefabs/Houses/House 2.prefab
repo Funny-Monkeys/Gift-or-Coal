@@ -271,7 +271,7 @@ GameObject:
   - component: {fileID: 3050019183416115209}
   - component: {fileID: -8913384126346726058}
   m_Layer: 0
-  m_Name: House
+  m_Name: House 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -285,8 +285,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7379420351053012620}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3.0993748, y: 3.66884, z: 1}
+  m_LocalPosition: {x: 0, y: -1.64, z: 0}
+  m_LocalScale: {x: 0.25472358, y: 0.288095, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8649891460702434153}
@@ -336,8 +336,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 8
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.6886792, g: 0.4240079, b: 0.20400496, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 8f774ce3d78652442874a14e87f5b30f, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -364,7 +364,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 16.18, y: 18.87}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -420,7 +420,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _kidsFactory: {fileID: 9080640580512254492}
-  _kidType: 0
+  _houseType: 0
   _attributes:
   - {fileID: 6056206051664333478}
   - {fileID: 3837342562168482428}
@@ -439,6 +439,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _randomKidsFactory: {fileID: 6857219449230940159}
+  _specialKidsDictionaryComponent:
+    _keys: 
+    _values: []
 --- !u!114 &6857219449230940159
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -482,10 +485,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hobbies:
-  - trolling
-  - shit coding
-  - shit coding
-  - shit coding
+  - Hockey
+  - Chess
+  - Botany
+  - Baseball
+  - Skate
+  - Boxing
+  - Computer games
+  - Table games
+  - Cinema
+  - Playing a musical instrument
+  - Painting
+  - Ride a bike
+  - Chemistry
+  - Grow crystals
+  - Watch serials
+  - Programming
+  - Read comics
+  - Take care of animals
+  - Collect items
   _endsOfGreetings:
   - I love Christmas
 --- !u!114 &-8913384126346726058

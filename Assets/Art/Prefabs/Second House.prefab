@@ -336,7 +336,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _kidsFactory: {fileID: 3640079372976800814}
-  _kidType: 0
+  _houseType: 0
   _attributes:
   - {fileID: 2753274311450675577}
   - {fileID: 1796694518468939681}
@@ -385,6 +385,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _randomKidsFactory: {fileID: -3576089709513128825}
+  _specialKidsDictionaryComponent:
+    _keys: 
+    _values: []
 --- !u!114 &-4375914413400280607
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -398,10 +401,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hobbies:
-  - trolling
-  - shit coding
-  - shit coding
-  - shit coding
+  - Hockey
+  - Chess
+  - Botany
+  - Baseball
+  - Skate
+  - Boxing
+  - Computer games
+  - Table games
+  - Cinema
+  - Playing a musical instrument
+  - Painting
+  - Ride a bike
+  - Chemistry
+  - Grow crystals
+  - Watch serials
+  - Programming
+  - Read comics
+  - Take care of animals
+  - Collect items
   _endsOfGreetings:
   - I love Christmas
 --- !u!114 &153632304794897795
