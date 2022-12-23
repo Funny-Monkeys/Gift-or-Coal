@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -127,7 +127,154 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: FourthHouseAttributes_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 554
+        width: 1358
+        height: 952
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5dd92d4896db6c4bacdd89781294b61
+      internalID: 974046225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FourthHouseAttributes_1
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 506
+        width: 76
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b5fcece6e75da6488f1622fd0fe1a87
+      internalID: 1989197706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FourthHouseAttributes_2
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 160
+        width: 381
+        height: 231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3aaa02fc0fc50cd4a981b4d6c80033b7
+      internalID: -1336963183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FourthHouseAttributes_3
+      rect:
+        serializedVersion: 2
+        x: 1314
+        y: 384
+        width: 77
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d87bdec5d94b7794baf73748e2cfa23d
+      internalID: 1413102957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FourthHouseAttributes_4
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 161
+        width: 377
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e89d4764dd792e0488ab125448dde1c0
+      internalID: 716942271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FourthHouseAttributes_5
+      rect:
+        serializedVersion: 2
+        x: 1323
+        y: 0
+        width: 756
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa701eaa25a1e1641a31ebcfc87edf38
+      internalID: -814730976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FourthHouseAttributes_6
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 0
+        width: 86
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57ec618d02c1caf4680ed40ad0eafc21
+      internalID: 908566482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -138,7 +285,14 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      FourthHouseAttributes_0: 974046225
+      FourthHouseAttributes_1: 1989197706
+      FourthHouseAttributes_2: -1336963183
+      FourthHouseAttributes_4: 716942271
+      FourthHouseAttributes_3: 1413102957
+      FourthHouseAttributes_5: -814730976
+      FourthHouseAttributes_6: 908566482
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
