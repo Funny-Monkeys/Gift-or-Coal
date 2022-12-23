@@ -2,7 +2,6 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using GiftOrCoal.Factories.Kid;
 using GiftOrCoal.KidData;
 using UnityEngine;
 using Random = UnityEngine.Random;
@@ -49,6 +48,7 @@ namespace GiftOrCoal.Factories
                 {
                     randomHousePrefab = _specialHouse;
                     kidType = KidType.Pinokio /*_notUsedKidTypes[Random.Range(0, _notUsedKidTypes.Count)]*/;
+                    
                     _notUsedKidTypes.Remove(kidType);
                     _averageHousesCounter = 0;
                 }

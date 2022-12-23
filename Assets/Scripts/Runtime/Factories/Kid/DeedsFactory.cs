@@ -1,9 +1,11 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using GiftOrCoal.Deeds;
 using GiftOrCoal.Difficult;
 using GiftOrCoal.Save;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 namespace GiftOrCoal.Factories.Kid
 {
@@ -31,14 +33,16 @@ namespace GiftOrCoal.Factories.Kid
             {
                 for (var i = 0; i < deedsCount; i++)
                 {
-                    deeds.Add(CreateDeedFromElementIn(Random.Range(1, 4) == 1 ? _badDeeds : _goodDeeds));
+                    try { deeds.Add(CreateDeedFromElementIn(Random.Range(1, 5) == 1 ? _badDeeds : _goodDeeds)); }
+                    catch (InvalidOperationException) { break; }
                 }
             }
             else
             {
                 for (var i = 0; i < deedsCount; i++)
                 {
-                    deeds.Add(CreateDeedFromElementIn(_goodDeeds));
+                    try { deeds.Add(CreateDeedFromElementIn(_goodDeeds)); }
+                    catch (InvalidOperationException) { break; }
                 }
             }
 
@@ -47,6 +51,9 @@ namespace GiftOrCoal.Factories.Kid
 
         private Deed CreateDeedFromElementIn(List<DeedData> deedDataList)
         {
+            if (deedDataList.Count == 0)
+                throw new InvalidOperationException("Not enough deeds in list");
+            
             var randomIndex = Random.Range(0, deedDataList.Count);
             var generatedDeed = deedDataList[randomIndex];
             

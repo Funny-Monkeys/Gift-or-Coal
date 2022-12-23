@@ -1,7 +1,10 @@
 using System.Linq;
+using Cysharp.Threading.Tasks;
 using GiftOrCoal.Dossier;
 using GiftOrCoal.Factories;
 using GiftOrCoal.Factories.Kid;
+using GiftOrCoal.Santa;
+using GiftOrCoal.Trigger;
 using UnityEngine;
 
 namespace GiftOrCoal.Houses
@@ -10,28 +13,33 @@ namespace GiftOrCoal.Houses
     {
         [SerializeField] private HousesFactory _housesFactory;
         [SerializeField] private DossierView _dossierView;
-        [SerializeField] private Telephone _telephone;
-        
-        private readonly GameLoop.GameLoop _gameLoop = new();
-        private House.House _lastSearchedHouse;
+        [SerializeField] private SantaMovementEffect _santaMovementEffect;
+
+        private HouseTrigger _lastSearchedHouseTrigger;
+        private GameLoop.GameLoop _gameLoop = new();
 
         private void Update()
         {
             var hit = Physics2D.Raycast(transform.position, Vector2.down);
+
+            if (hit.collider != null && hit.collider.TryGetComponent(out MoveDownTrigger _))
+                _santaMovementEffect.MoveDown().Forget();
+
+            if (hit.collider == null || !hit.collider.TryGetComponent(out HouseTrigger house)) 
+                return;
             
-            if (hit.collider != null && hit.collider.TryGetComponent(out House.House house))
-            {
-                if(_lastSearchedHouse != null && _lastSearchedHouse.transform == house.transform)
-                    return;
+            if (_lastSearchedHouseTrigger != null && _lastSearchedHouseTrigger.transform == house.transform)
+                return;
                 
-                _telephone.ToStandard();
-                _lastSearchedHouse = house;
-                _housesFactory.StopSpawn();
-                _gameLoop.Pause();
-                _housesFactory.SpawnedHoused.ToList().ForEach(Stop);
-                var kid = _lastSearchedHouse.CreateKid();
-                _dossierView.Display(kid);
-            }
+            _lastSearchedHouseTrigger = house;
+            _gameLoop.Pause();
+
+            _housesFactory.StopSpawn();
+            _housesFactory.SpawnedHoused.ToList().ForEach(Stop);
+            _dossierView.Enable();
+                
+            var kid = _lastSearchedHouseTrigger.House.CreateKid();
+            _dossierView.Display(kid);
         }
 
         private void Stop(House.House house)

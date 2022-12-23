@@ -17,19 +17,7 @@ namespace GiftOrCoal.House
 
         private KidType _kidType;
 
-        public IKid Kid { get; private set; }
-        
-        public void Init(KidType randomKidType)
-        {
-            _kidType = randomKidType;
-        }
-        
-        public IKid CreateKid()
-        {
-            var kid = _kidsFactory.Create(_houseType == HouseType.Standard ? KidType.Standard : _kidType);
-            Kid = kid;
-            return kid;
-        }
+        public IKid CreateKid() => _kidsFactory.Create(_houseType == HouseType.Standard ? KidType.Standard : _kidType);
 
         public void TurnOnAttributes()
         {
@@ -38,5 +26,9 @@ namespace GiftOrCoal.House
                 attribute.SetActive(Random.Range(1, 3) == 1);
         }
 
+        public void Init(KidType randomKidType)
+        {
+            _kidType = randomKidType;
+        }
     }
 }

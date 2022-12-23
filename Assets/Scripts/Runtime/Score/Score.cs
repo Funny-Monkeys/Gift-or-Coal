@@ -1,5 +1,5 @@
 ﻿using System;
-using GiftOrCoal.View;
+using GiftOrCoal.Other;
 using UnityEngine;
 
 namespace GiftOrCoal.Score

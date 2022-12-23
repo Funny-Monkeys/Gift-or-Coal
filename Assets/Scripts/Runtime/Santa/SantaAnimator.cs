@@ -10,8 +10,7 @@ namespace GiftOrCoal.Santa
     {
         [SerializeField] private string[] _triggers;
         [SerializeField, Min(1f)] private float _secondsToPlayRandomAnimation = 30f;
-        [SerializeField] private Animator _sledAnimator;
-        
+
         private Animator _animator;
 
         private void OnEnable()
@@ -33,7 +32,6 @@ namespace GiftOrCoal.Santa
         public void PlayClickAnimation()
         {
             _animator.Play("Click");
-            _sledAnimator.Play("Flight");
         }
     }
 }
