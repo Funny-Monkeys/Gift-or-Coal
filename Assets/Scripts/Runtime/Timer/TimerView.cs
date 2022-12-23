@@ -7,6 +7,9 @@ namespace GiftOrCoal.Timer
     {
         [SerializeField] private TextMeshProUGUI _timerText;
 
-        public void Display(int timeInSeconds) => _timerText.text = $"{timeInSeconds / 60}:{(timeInSeconds % 60).ToString().PadLeft(2, '0')}";
+        public void Display(float timeInSeconds)
+        {
+            _timerText.text = $"{(int)timeInSeconds / 60}:{((int)timeInSeconds % 60).ToString().PadLeft(2, '0')}";
+        }
     }
 }
