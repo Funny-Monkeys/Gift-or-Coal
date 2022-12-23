@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace GiftOrCoal
+namespace GiftOrCoal.Santa
 {
     public sealed class Santa : MonoBehaviour
     {

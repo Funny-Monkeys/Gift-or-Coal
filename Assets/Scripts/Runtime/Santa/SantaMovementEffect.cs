@@ -1,14 +1,14 @@
 using Cysharp.Threading.Tasks;
 using UnityEngine;
 
-namespace GiftOrCoal
+namespace GiftOrCoal.Santa
 {
     public sealed class SantaMovementEffect : MonoBehaviour
     {
         [SerializeField] private Santa _santa;
         [SerializeField, Min(1f)] private float _maxHeight = 5f;
         
-        private const float TimeToNextHouse = 5f;
+        private const float TimeToNextHouse = 3f;
         private const float HalfTimeToNextHouse = TimeToNextHouse / 2f;
         private float _minHeight;
         

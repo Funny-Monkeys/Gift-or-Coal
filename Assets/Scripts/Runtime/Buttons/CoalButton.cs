@@ -1,5 +1,6 @@
 ﻿using System.Linq;
 using GiftOrCoal.Factories;
+using GiftOrCoal.Santa;
 using UnityEngine;
 
 namespace GiftOrCoal.Dossier
@@ -10,6 +11,7 @@ namespace GiftOrCoal.Dossier
         [SerializeField] private HousesFactory _housesFactory;
         [SerializeField] private Score.Score _score;
         [SerializeField] private Accuracy _accuracy;
+        [SerializeField] private SantaAnimator _santaAnimator;
 
         private readonly GameLoop.GameLoop _gameLoop = new();
 
@@ -31,7 +33,7 @@ namespace GiftOrCoal.Dossier
 
             _gameLoop.Continue();
             _dossierView.Disable();
-            
+            _santaAnimator.PlayClickAnimation();
             _housesFactory.SpawnedHoused.ToList().ForEach(house => house.Movement.ContinueMovement());
             _housesFactory.ContinueSpawn();
         }
