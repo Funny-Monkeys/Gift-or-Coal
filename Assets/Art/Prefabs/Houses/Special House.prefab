@@ -218,6 +218,7 @@ MonoBehaviour:
     <Photo>k__BackingField: {fileID: 21300000, guid: c8899c3e921f69941a174cda26b0ce48, type: 3}
     <Name>k__BackingField: Pinocchio
     <Dossier>k__BackingField: I love wood!
+    <Gender>k__BackingField: 0
 --- !u!114 &3100682810831498151
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -510,16 +511,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _dossierFactory: {fileID: 3622133783927466482}
   _deedsFactory: {fileID: -8686616533410364076}
-  _names:
-  - Fikrat
-  - Farid
-  - Idiot
-  - Sam
-  - Idiot
-  - Idiot
-  _sprites:
-  - {fileID: 21300000, guid: edaba175f5254074c92ddb48b4f1f6b6, type: 3}
-  - {fileID: 21300000, guid: 1e619147623053442834d242a80365a5, type: 3}
+  _maleNames: []
+  _maleSprites: []
+  _femaleNames: []
+  _femaleSprites: []
 --- !u!114 &-7031874911126072784
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -734,6 +729,7 @@ MonoBehaviour:
     <Photo>k__BackingField: {fileID: 21300000, guid: c8899c3e921f69941a174cda26b0ce48, type: 3}
     <Name>k__BackingField: Pinocchio
     <Dossier>k__BackingField: I Love wood!
+    <Gender>k__BackingField: 0
 --- !u!114 &3363823951365648664
 MonoBehaviour:
   m_ObjectHideFlags: 0

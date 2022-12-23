@@ -10,11 +10,14 @@ namespace GiftOrCoal.KidData
         [field: SerializeField] public string Name { get; private set; }
         [field: SerializeField, TextArea] public string Dossier { get; private set; }
 
-        public KidData(string name, string dossier, Sprite photo)
+        [field: SerializeField] public Gender Gender { get; private set; }
+        
+        public KidData(string name, string dossier, Sprite photo, Gender gender)
         {
             Dossier = dossier;
             Name = name;
             Photo = photo;
+            Gender = gender;
         }
     }
 }
