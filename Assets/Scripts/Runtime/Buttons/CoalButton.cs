@@ -12,7 +12,9 @@ namespace GiftOrCoal.Dossier
         [SerializeField] private Score.Score _score;
         [SerializeField] private Accuracy _accuracy;
         [SerializeField] private SantaAnimator _santaAnimator;
-
+        [SerializeField] private SantaItemsFactory _santaItemsFactory;
+        [SerializeField] private Telephone _telephone;
+        
         private readonly GameLoop.GameLoop _gameLoop = new();
 
         protected override void OnClick()
@@ -31,8 +33,9 @@ namespace GiftOrCoal.Dossier
                 _accuracy.AddMistake();
             }
 
+            _santaItemsFactory.CreateCoal(1);
             _gameLoop.Continue();
-            _dossierView.Disable();
+            _telephone.ToLoading();
             _santaAnimator.PlayClickAnimation();
             _housesFactory.SpawnedHoused.ToList().ForEach(house => house.Movement.ContinueMovement());
             _housesFactory.ContinueSpawn();

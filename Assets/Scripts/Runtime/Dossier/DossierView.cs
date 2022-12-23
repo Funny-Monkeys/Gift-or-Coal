@@ -30,10 +30,6 @@ namespace GiftOrCoal.Dossier
             _kidPhoto.sprite = kid.Data.Photo;
         }
 
-        public void Enable() => gameObject.SetActive(true);
-
-        public void Disable() => gameObject.SetActive(false);
-
         private void ClearContent()
         {
             for (var i = 0; i < _content.childCount; i++)
