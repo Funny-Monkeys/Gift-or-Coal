@@ -1,9 +1,11 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using GiftOrCoal.Deeds;
 using GiftOrCoal.Difficult;
 using GiftOrCoal.Save;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 namespace GiftOrCoal.Factories.Kid
 {
@@ -18,28 +20,19 @@ namespace GiftOrCoal.Factories.Kid
             _badDeeds = _deedsData.FindAll(deed => !deed.IsGood);
             _goodDeeds = _deedsData.FindAll(deed => deed.IsGood);
         }
-        
+
         public IEnumerable<Deed> CreateDeeds()
         {
             var difficultDataStorage = new StorageWithNameSaveObject<DifficultData, DifficultData>();
             var difficultData = difficultDataStorage.Load();
-            
+
             var deedsCount = Random.Range(difficultData.MinDeedsCount, difficultData.MaxDeedsCount);
             var deeds = new List<Deed>();
 
-            if (Random.Range(1, 4) <= 3)
+            for (var i = 0; i < deedsCount; i++)
             {
-                for (var i = 0; i < deedsCount; i++)
-                {
-                    deeds.Add(CreateDeedFromElementIn(Random.Range(1, 4) == 1 ? _badDeeds : _goodDeeds));
-                }
-            }
-            else
-            {
-                for (var i = 0; i < deedsCount; i++)
-                {
-                    deeds.Add(CreateDeedFromElementIn(_goodDeeds));
-                }
+                try { deeds.Add(CreateDeedFromElementIn(Random.Range(1, 6) == 1 ? _badDeeds : _goodDeeds)); }
+                catch (InvalidOperationException) { break; }
             }
 
             return deeds;
@@ -47,6 +40,9 @@ namespace GiftOrCoal.Factories.Kid
 
         private Deed CreateDeedFromElementIn(List<DeedData> deedDataList)
         {
+            if (deedDataList.Count == 0)
+                throw new InvalidOperationException("Not enough deeds in list");
+            
             var randomIndex = Random.Range(0, deedDataList.Count);
             var generatedDeed = deedDataList[randomIndex];
             
