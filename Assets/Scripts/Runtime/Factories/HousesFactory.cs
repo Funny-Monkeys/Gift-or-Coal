@@ -12,8 +12,6 @@ namespace GiftOrCoal.Factories
     {
         [SerializeField] private Transform _spawnPosition;
         [SerializeField, Min(0.1f)] private float _spawnDelay = 1.5f;
-
-        [Space]
         [SerializeField] private List<House.House> _averageHouses;
         [SerializeField] private House.House _specialHouse;
 
@@ -37,8 +35,9 @@ namespace GiftOrCoal.Factories
             while (_canSpawn)
             {
                 yield return new WaitForSeconds(_spawnDelay);
+                Debug.Log("Spawn");
                 if (!_canSpawn) 
-                    continue;
+                    StartCoroutine(Spawn());
                 
                 _averageHousesCounter++;
                 House.House randomHousePrefab;
@@ -47,8 +46,7 @@ namespace GiftOrCoal.Factories
                 if (_averageHousesCounter == 10)
                 {
                     randomHousePrefab = _specialHouse;
-                    kidType = KidType.Pinocchio /*_notUsedKidTypes[Random.Range(0, _notUsedKidTypes.Count)]*/;
-                    
+                    kidType = _notUsedKidTypes[Random.Range(0, _notUsedKidTypes.Count)];
                     _notUsedKidTypes.Remove(kidType);
                     _averageHousesCounter = 0;
                 }
@@ -66,10 +64,7 @@ namespace GiftOrCoal.Factories
 
         public void StopSpawn() => _canSpawn = false;
 
-        public void ContinueSpawn()
-        {
-            _canSpawn = true;
-            StartCoroutine(Spawn());
-        }
+        public void ContinueSpawn() => _canSpawn = true;
+        
     }
 }
