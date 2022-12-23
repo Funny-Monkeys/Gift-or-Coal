@@ -2,7 +2,6 @@ using System.Linq;
 using Cysharp.Threading.Tasks;
 using GiftOrCoal.Dossier;
 using GiftOrCoal.Factories;
-using GiftOrCoal.Factories.Kid;
 using GiftOrCoal.Santa;
 using GiftOrCoal.Trigger;
 using UnityEngine;
@@ -14,9 +13,10 @@ namespace GiftOrCoal.Houses
         [SerializeField] private HousesFactory _housesFactory;
         [SerializeField] private DossierView _dossierView;
         [SerializeField] private SantaMovementEffect _santaMovementEffect;
-
+        [SerializeField] private Telephone _telephone;
+        
         private HouseTrigger _lastSearchedHouseTrigger;
-        private GameLoop.GameLoop _gameLoop = new();
+        private readonly GameLoop.GameLoop _gameLoop = new();
 
         private void Update()
         {
@@ -31,13 +31,11 @@ namespace GiftOrCoal.Houses
             if (_lastSearchedHouseTrigger != null && _lastSearchedHouseTrigger.transform == house.transform)
                 return;
                 
+            _telephone.ToStandard();
             _lastSearchedHouseTrigger = house;
             _gameLoop.Pause();
-
             _housesFactory.StopSpawn();
             _housesFactory.SpawnedHoused.ToList().ForEach(Stop);
-            _dossierView.Enable();
-                
             var kid = _lastSearchedHouseTrigger.House.CreateKid();
             _dossierView.Display(kid);
         }

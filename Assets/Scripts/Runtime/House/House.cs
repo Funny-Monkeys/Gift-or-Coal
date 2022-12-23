@@ -15,9 +15,16 @@ namespace GiftOrCoal.House
         
         [field: SerializeField] public HouseMovement Movement { get; private set; }
 
+        public IKid Kid { get; private set; }
+        
         private KidType _kidType;
 
-        public IKid CreateKid() => _kidsFactory.Create(_houseType == HouseType.Standard ? KidType.Standard : _kidType);
+        public IKid CreateKid()
+        {
+            var kid = _kidsFactory.Create(_houseType == HouseType.Standard ? KidType.Standard : _kidType);
+            Kid = kid;
+            return kid;
+        }
 
         public void TurnOnAttributes()
         {
