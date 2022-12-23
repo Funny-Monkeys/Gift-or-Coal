@@ -5,41 +5,43 @@ namespace GiftOrCoal.Santa
 {
     public sealed class SantaMovementEffect : MonoBehaviour
     {
-        [SerializeField] private Santa _santa;
+        [SerializeField] private Transform _santa;
         [SerializeField, Min(1f)] private float _maxHeight = 5f;
-        
-        private const float TimeToNextHouse = 3f;
-        private const float HalfTimeToNextHouse = TimeToNextHouse / 2f;
+        [SerializeField] private float _changingTime;
         private float _minHeight;
-        
-        private void Start()
+
+        private void Awake()
         {
-            _minHeight = _santa.Position.y;
-            PlayEffect().Forget();
+            _minHeight = _santa.position.y;
+            MoveUp().Forget();
         }
 
-        private async UniTaskVoid PlayEffect()
+        public async UniTask MoveUp()
         {
-            var time = 0f;
+            var timer = 0f;
+            var startPosition = _santa.position;
             
-            while (true)
+            while (timer < _changingTime)
             {
-                if (time < HalfTimeToNextHouse)
-                {
-                    var nextPosition = Vector2.Lerp(_santa.Position, new Vector2(_santa.Position.x, _maxHeight), time / TimeToNextHouse);
-                    _santa.TranslateToPosition(nextPosition);
-                }
+                timer += Time.deltaTime;
+                var nextPosition = Vector2.Lerp(startPosition, new Vector2(_santa.position.x, _maxHeight), timer / _changingTime);
                 
-                else
-                {
-                    var nextPosition = Vector2.Lerp(_santa.Position, new Vector2(_santa.Position.x, _minHeight), time / TimeToNextHouse);
-                    _santa.TranslateToPosition(nextPosition);
+                _santa.transform.position = nextPosition;
+                await UniTask.Yield();
+            }
+        }
 
-                    if (time > TimeToNextHouse)
-                        time = 0f;
-                }
+        public async UniTask MoveDown()
+        {
+            var timer = 0f;
+            var startPosition = _santa.position;
 
-                time += Time.deltaTime;
+            while (timer < _changingTime)
+            {
+                timer += Time.deltaTime;
+                var nextPosition = Vector2.Lerp(startPosition, new Vector2(_santa.position.x, _minHeight), timer / _changingTime);
+                
+                _santa.transform.position = nextPosition;
                 await UniTask.Yield();
             }
         }

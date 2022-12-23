@@ -1,10 +1,9 @@
 using GiftOrCoal.Save;
-using GiftOrCoal.View;
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.UI;
 
-namespace GiftOrCoal.Audio
+namespace GiftOrCoal.Other
 {
     public class AudioVolume : MonoBehaviour
     {

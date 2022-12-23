@@ -15,15 +15,10 @@ namespace GiftOrCoal.House
         
         [field: SerializeField] public HouseMovement Movement { get; private set; }
 
-        private KidType _kidType;
-
         public IKid Kid { get; private set; }
         
-        public void Init(KidType randomKidType)
-        {
-            _kidType = randomKidType;
-        }
-        
+        private KidType _kidType;
+
         public IKid CreateKid()
         {
             var kid = _kidsFactory.Create(_houseType == HouseType.Standard ? KidType.Standard : _kidType);
@@ -38,5 +33,9 @@ namespace GiftOrCoal.House
                 attribute.SetActive(Random.Range(1, 3) == 1);
         }
 
+        public void Init(KidType randomKidType)
+        {
+            _kidType = randomKidType;
+        }
     }
 }

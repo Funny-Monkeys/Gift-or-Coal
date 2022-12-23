@@ -1,5 +1,7 @@
 ﻿using System.Linq;
+using Cysharp.Threading.Tasks;
 using GiftOrCoal.Factories;
+using GiftOrCoal.Other;
 using GiftOrCoal.Santa;
 using UnityEngine;
 
@@ -14,6 +16,7 @@ namespace GiftOrCoal.Dossier
         [SerializeField] private SantaAnimator _santaAnimator;
         [SerializeField] private SantaItemsFactory _santaItemsFactory;
         [SerializeField] private Telephone _telephone;
+        [SerializeField] private SantaMovementEffect _santaMovementEffect;
         
         private readonly GameLoop.GameLoop _gameLoop = new();
 
@@ -35,6 +38,7 @@ namespace GiftOrCoal.Dossier
 
             _santaItemsFactory.CreateCoal(1);
             _gameLoop.Continue();
+            _santaMovementEffect.MoveUp().Forget();
             _telephone.ToLoading();
             _santaAnimator.PlayClickAnimation();
             _housesFactory.SpawnedHoused.ToList().ForEach(house => house.Movement.ContinueMovement());
