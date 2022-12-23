@@ -125,6 +125,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 974300dc4ac84645b7ea0ca8d574f78f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _dropSoundPrefabs:
+  - {fileID: 5297045265679522549, guid: ed23e37d7d0a54e4895c9bf9967f6f42, type: 3}
+  - {fileID: 5297045265679522549, guid: 4e381bb42e08bdb4ba74f5f3926f1a08, type: 3}
+  _maleSoundPrefabs:
+  - {fileID: 5297045265679522549, guid: da17d32da23be534296ae9f8b78d7bd1, type: 3}
+  _femaleSoundPrefabs:
+  - {fileID: 5297045265679522549, guid: 815168962b6849740a65f6f8d1bcc5e4, type: 3}
+  - {fileID: 5297045265679522549, guid: 858cda1dcf077024989b209f661545a6, type: 3}
 --- !u!50 &9154113265338919962
 Rigidbody2D:
   serializedVersion: 4
