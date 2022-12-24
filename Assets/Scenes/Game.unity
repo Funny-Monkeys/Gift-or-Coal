@@ -628,11 +628,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 352724497}
   m_CullTransparentMesh: 1
---- !u!4 &375371896 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3663125240411671430, guid: 258f1aa49182d244f8d42ac4da5cc69f, type: 3}
-  m_PrefabInstance: {fileID: 3663125240656654574}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &400381480
 GameObject:
   m_ObjectHideFlags: 0
@@ -941,11 +936,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7138996169515392236, guid: 631373b960c2e1d45a277c1a932ebb53, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7138996169515392236, guid: 631373b960c2e1d45a277c1a932ebb53, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0.5
+      value: 0.68412435
       objectReference: {fileID: 0}
     - target: {fileID: 7138996169515392236, guid: 631373b960c2e1d45a277c1a932ebb53, type: 3}
       propertyPath: m_AnchorMax.y
@@ -953,7 +948,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7138996169515392236, guid: 631373b960c2e1d45a277c1a932ebb53, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0.5
+      value: 0.68412435
       objectReference: {fileID: 0}
     - target: {fileID: 7138996169515392236, guid: 631373b960c2e1d45a277c1a932ebb53, type: 3}
       propertyPath: m_AnchorMin.y
@@ -1009,7 +1004,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7138996169515392236, guid: 631373b960c2e1d45a277c1a932ebb53, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -13
+      value: -31
       objectReference: {fileID: 0}
     - target: {fileID: 7138996169515392236, guid: 631373b960c2e1d45a277c1a932ebb53, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -2993,12 +2988,12 @@ RectTransform:
   m_LocalScale: {x: 1.7533475, y: 4.9003344, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 375371896}
-  m_RootOrder: 5
+  m_Father: {fileID: 1911143947}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1233.1201, y: 428.18005}
+  m_AnchoredPosition: {x: 1282.0001, y: 378}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1930950189
@@ -3739,6 +3734,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 400381484}
     m_Modifications:
+    - target: {fileID: 3663125240799870902, guid: 258f1aa49182d244f8d42ac4da5cc69f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 154
+      objectReference: {fileID: 0}
     - target: {fileID: 3663125240799870903, guid: 258f1aa49182d244f8d42ac4da5cc69f, type: 3}
       propertyPath: _score
       value: 
@@ -3895,6 +3894,10 @@ PrefabInstance:
       propertyPath: m_Color.g
       value: 0.8666667
       objectReference: {fileID: 0}
+    - target: {fileID: 3663125242139462207, guid: 258f1aa49182d244f8d42ac4da5cc69f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 651
+      objectReference: {fileID: 0}
     - target: {fileID: 3663125242393815186, guid: 258f1aa49182d244f8d42ac4da5cc69f, type: 3}
       propertyPath: _score
       value: 
@@ -3927,6 +3930,18 @@ PrefabInstance:
       propertyPath: _santaMovementEffect
       value: 
       objectReference: {fileID: 1042654494}
+    - target: {fileID: 3663125242393815189, guid: 258f1aa49182d244f8d42ac4da5cc69f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 142
+      objectReference: {fileID: 0}
+    - target: {fileID: 3663125242479032053, guid: 258f1aa49182d244f8d42ac4da5cc69f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1002.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3663125242479032053, guid: 258f1aa49182d244f8d42ac4da5cc69f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 722.3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 258f1aa49182d244f8d42ac4da5cc69f, type: 3}
 --- !u!1001 &6676512618218279823
@@ -3982,7 +3997,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6676512617577929130, guid: 58c1d1c3247f240478e9ea4af0ebf9e4, type: 3}
       propertyPath: _timeForOneBackground
-      value: 60
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 6676512617577929131, guid: 58c1d1c3247f240478e9ea4af0ebf9e4, type: 3}
       propertyPath: m_Name
