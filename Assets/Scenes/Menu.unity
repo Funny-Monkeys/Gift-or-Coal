@@ -2432,11 +2432,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _defaultDifficultData:
     <Name>k__BackingField: Easy
-    <MinDeedsCount>k__BackingField: 1
+    <MinDeedsCount>k__BackingField: 2
     <MaxDeedsCount>k__BackingField: 5
   _difficultData:
   - <Name>k__BackingField: Easy
-    <MinDeedsCount>k__BackingField: 1
+    <MinDeedsCount>k__BackingField: 2
     <MaxDeedsCount>k__BackingField: 5
   - <Name>k__BackingField: Normal
     <MinDeedsCount>k__BackingField: 6

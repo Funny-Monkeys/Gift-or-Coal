@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using GiftOrCoal.Background;
 using GiftOrCoal.Factories.Kid;
 using GiftOrCoal.KidData;
 using UnityEngine;
@@ -12,8 +13,10 @@ namespace GiftOrCoal.House
         
         [Space]
         [SerializeField] private List<GameObject> _attributes;
-        
-        [field: SerializeField] public HouseMovement Movement { get; private set; }
+        [SerializeField] private List<Sprite> _timesOfDaySprites;
+
+        [field: SerializeField, Space] public HouseMovement Movement { get; private set; }
+        [SerializeField] private SpriteRenderer _houseSpriteRenderer;
 
         public IKid Kid { get; private set; }
         
@@ -25,6 +28,8 @@ namespace GiftOrCoal.House
             Kid = kid;
             return kid;
         }
+
+        public void InitTimeOfDay(TimeOfDay time) => _houseSpriteRenderer.sprite = _timesOfDaySprites[(int)time];
 
         public void TurnOnAttributes()
         {

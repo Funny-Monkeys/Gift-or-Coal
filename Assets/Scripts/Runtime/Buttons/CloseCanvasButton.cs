@@ -11,7 +11,8 @@ namespace GiftOrCoal.Buttons
         protected override void OnClick()
         {
             _settingsCanvas.gameObject.SetActive(false);
-            _gameLoop.Continue();
+            if (Time.deltaTime != 0)
+                _gameLoop.Continue();
         }
     }
 }

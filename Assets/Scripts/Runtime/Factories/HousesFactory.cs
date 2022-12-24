@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using GiftOrCoal.Background;
 using GiftOrCoal.KidData;
 using UnityEngine;
 using Random = UnityEngine.Random;
@@ -11,6 +12,7 @@ namespace GiftOrCoal.Factories
     public sealed class HousesFactory : MonoBehaviour
     {
         [SerializeField] private Transform _spawnPosition;
+        [SerializeField] private BackgroundView _backgroundView;
         [SerializeField, Min(0.1f)] private float _spawnDelay = 1.5f;
         [SerializeField] private List<House.House> _averageHouses;
         [SerializeField] private House.House _specialHouse;
@@ -35,7 +37,6 @@ namespace GiftOrCoal.Factories
             while (_canSpawn)
             {
                 yield return new WaitForSeconds(_spawnDelay);
-                Debug.Log("Spawn");
                 if (!_canSpawn) 
                     StartCoroutine(Spawn());
                 
@@ -59,6 +60,7 @@ namespace GiftOrCoal.Factories
                 var house = Instantiate(randomHousePrefab, _spawnPosition.position, randomHousePrefab.transform.rotation, transform);
                 house.Init(kidType);
                 house.TurnOnAttributes();
+                house.InitTimeOfDay(_backgroundView.CurrentTimeOfDay);
                 _spawnedHouses.Add(house);
             }
         }

@@ -16,6 +16,8 @@ namespace GiftOrCoal.Background
         private int _currentBackgroundIndex;
         private const int MILLISECONDS_IN_SECONDS = 1000;
 
+        public TimeOfDay CurrentTimeOfDay => (TimeOfDay)_currentBackgroundIndex;
+
         private async void Awake() => await StartDisplaying();
 
         private async UniTask StartDisplaying()
