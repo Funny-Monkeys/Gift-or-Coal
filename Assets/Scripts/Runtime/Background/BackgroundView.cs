@@ -32,7 +32,6 @@ namespace GiftOrCoal.Background
                 var newSprite = _backgrounds[_currentBackgroundIndex];
                 _tempSpriteRenderer.sprite = newSprite;
                 _currentBackgroundIndex++;
-
                 float timer = 0;
                 var changingTimeInSeconds = _changingTimeInMilliseconds / MILLISECONDS_IN_SECONDS;
                 

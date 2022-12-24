@@ -13,6 +13,7 @@ namespace GiftOrCoal.Houses
         [SerializeField] private DossierView _dossierView;
         [SerializeField] private SantaMovementEffect _santaMovementEffect;
         [SerializeField] private Telephone _telephone;
+        [SerializeField] private SledAnimator _sledAnimator;
         
         private HouseTrigger _lastSearchedHouseTrigger;
         private readonly GameLoop.GameLoop _gameLoop = new();
@@ -30,6 +31,7 @@ namespace GiftOrCoal.Houses
             if (_lastSearchedHouseTrigger != null && _lastSearchedHouseTrigger.transform == house.transform)
                 return;
                 
+            _sledAnimator.PlayStayingAnimation();
             _telephone.ToStandard();
             _lastSearchedHouseTrigger = house;
             _gameLoop.Pause();

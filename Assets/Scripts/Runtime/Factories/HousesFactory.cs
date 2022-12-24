@@ -58,9 +58,8 @@ namespace GiftOrCoal.Factories
                 }
                 
                 var house = Instantiate(randomHousePrefab, _spawnPosition.position, randomHousePrefab.transform.rotation, transform);
-                house.Init(kidType);
+                house.Init(kidType, _backgroundView.CurrentTimeOfDay);
                 house.TurnOnAttributes();
-                house.InitTimeOfDay(_backgroundView.CurrentTimeOfDay);
                 _spawnedHouses.Add(house);
             }
         }

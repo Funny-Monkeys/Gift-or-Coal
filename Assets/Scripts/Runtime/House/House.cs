@@ -29,8 +29,6 @@ namespace GiftOrCoal.House
             return kid;
         }
 
-        public void InitTimeOfDay(TimeOfDay time) => _houseSpriteRenderer.sprite = _timesOfDaySprites[(int)time];
-
         public void TurnOnAttributes()
         {
             _attributes.ForEach(attribute => attribute.SetActive(false));
@@ -38,9 +36,10 @@ namespace GiftOrCoal.House
                 attribute.SetActive(Random.Range(1, 3) == 1);
         }
 
-        public void Init(KidType randomKidType)
+        public void Init(KidType randomKidType, TimeOfDay time)
         {
             _kidType = randomKidType;
+            _houseSpriteRenderer.sprite = _timesOfDaySprites[(int)time];
         }
     }
 }
