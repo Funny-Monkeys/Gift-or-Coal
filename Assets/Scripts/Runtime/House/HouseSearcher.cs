@@ -31,7 +31,6 @@ namespace GiftOrCoal.Houses
             if (_lastSearchedHouseTrigger != null && _lastSearchedHouseTrigger.transform == house.transform)
                 return;
                 
-            _sledAnimator.PlayStayingAnimation();
             _telephone.ToStandard();
             _lastSearchedHouseTrigger = house;
             _gameLoop.Pause();

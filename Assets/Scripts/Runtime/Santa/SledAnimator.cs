@@ -5,7 +5,7 @@ namespace GiftOrCoal.Santa
     [RequireComponent(typeof(Animator))]
     public sealed class SledAnimator : MonoBehaviour
     {
-        private readonly int _staying = Animator.StringToHash("Staying");
+        private readonly int _flying = Animator.StringToHash("Flying");
         private Animator _animator;
 
         private void Start()
@@ -14,15 +14,9 @@ namespace GiftOrCoal.Santa
             PlayFlightAnimation();
         }
 
-        public void PlayStayingAnimation()
+        private void PlayFlightAnimation()
         {
-            _animator.SetBool(_staying, true);
-        }
-        
-        public void PlayFlightAnimation()
-        {
-            _animator.SetBool(_staying, false);
-            _animator.Play("Flight");
+            _animator.SetBool(_flying, true);
         }
     }
 }

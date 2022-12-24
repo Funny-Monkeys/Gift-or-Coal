@@ -6,7 +6,7 @@ namespace GiftOrCoal.Score
 {
     public sealed class Score : MonoBehaviour
     {
-        [SerializeField] private CountView _countView;
+        [SerializeField] private CountViews _countView;
         
         public int Count { get; private set; }
 

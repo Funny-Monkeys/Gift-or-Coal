@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace GiftOrCoal.Other
 {
-    public sealed class CountView : MonoBehaviour
+    public sealed class CountViews : MonoBehaviour
     {
         [SerializeField] private List<TMP_Text> _texts;
         [SerializeField] private string _additionSymbols;

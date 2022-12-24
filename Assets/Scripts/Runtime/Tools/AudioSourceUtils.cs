@@ -7,7 +7,7 @@ namespace GiftOrCoal.Tools
     {
         public static async UniTaskVoid DestroyOnPlayed(this AudioSource audioSource)
         {
-            while (audioSource.isPlaying)
+            while (audioSource != null && audioSource.isPlaying)
             {
                 await UniTask.Yield();
             }

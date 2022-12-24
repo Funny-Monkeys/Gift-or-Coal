@@ -7,7 +7,7 @@ namespace GiftOrCoal.Score
     public sealed class BestScore : MonoBehaviour
     {
         [SerializeField] private Score _score;
-        [SerializeField] private CountView _countView;
+        [SerializeField] private CountViews _countView;
         
         private readonly StorageWithNameSaveObject<BestScore, int> _storage = new();
         private int _count;

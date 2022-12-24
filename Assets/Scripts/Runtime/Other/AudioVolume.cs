@@ -8,7 +8,7 @@ namespace GiftOrCoal.Other
     public class AudioVolume : MonoBehaviour
     {
         [SerializeField] private AudioMixer _soundMixer;
-        [SerializeField, Tooltip("Can be null")] private CountView _countView;
+        [SerializeField, Tooltip("Can be null")] private CountViews _countView;
 
         private readonly StorageWithNameSaveObject<AudioVolume, float> _storage = new();
         private const string GroupName = "Master";

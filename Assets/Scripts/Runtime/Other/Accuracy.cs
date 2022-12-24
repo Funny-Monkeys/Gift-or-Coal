@@ -4,7 +4,7 @@ namespace GiftOrCoal.Other
 {
     public sealed class Accuracy : MonoBehaviour
     {
-        [SerializeField] private CountView _countView;
+        [SerializeField] private CountViews _countView;
         private int _mistakesCount;
         private int _successAnswersCount;
 
