@@ -1,8 +1,9 @@
 ﻿using System.Linq;
-using Cysharp.Threading.Tasks;
+using GiftOrCoal.Difficult;
 using GiftOrCoal.Factories;
 using GiftOrCoal.Other;
 using GiftOrCoal.Santa;
+using GiftOrCoal.Save;
 using UnityEngine;
 
 namespace GiftOrCoal.Dossier
@@ -23,23 +24,35 @@ namespace GiftOrCoal.Dossier
         protected override void OnClick()
         {
             var currentKid = _dossierView.CurrentKid;
-
+            var storage = new StorageWithNameSaveObject<DifficultData, DifficultData>();
+            var difficultData = storage.Load();
+            
             if (currentKid.Deeds.Any(deed => !deed.IsGood))
             {
-                _score.Add(100);
+                _score.Add(difficultData.ScoreAddCount);
                 _accuracy.AddSuccessAnswer();
             }
 
-            else if (_score.CanRemove(100))
+            else
             {
-                _score.Remove(100);
+                var removeCount = difficultData.ScoreRemoveCount;
+
+                if (_score.CanRemove(removeCount))
+                {
+                    _score.Remove(removeCount);
+                }
+                
+                else
+                {
+                    _score.Remove(_score.Count);
+                }
+                
                 _accuracy.AddMistake();
             }
 
             _santaItemsFactory.CreateCoal(1);
             _gameLoop.Continue();
-            _santaMovementEffect.MoveUp().Forget();
-            
+            _santaMovementEffect.MoveUp();
             _telephone.ToLoading();
             _santaAnimator.PlayClickAnimation();
             _housesFactory.SpawnedHoused.ToList().ForEach(house => house.Movement.ContinueMovement());

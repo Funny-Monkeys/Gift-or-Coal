@@ -12,6 +12,9 @@ namespace GiftOrCoal.Buttons
 
         protected override void OnClick()
         {
+            if(Time.timeScale == 0)
+                return;
+            
             _christmasTree.Blink();
             _closingCanvas.gameObject.SetActive(true);
             _gameLoop.Pause();

@@ -1,5 +1,4 @@
 using System.Linq;
-using Cysharp.Threading.Tasks;
 using GiftOrCoal.Dossier;
 using GiftOrCoal.Factories;
 using GiftOrCoal.Santa;
@@ -23,7 +22,7 @@ namespace GiftOrCoal.Houses
             var hit = Physics2D.Raycast(transform.position, Vector2.down);
 
             if (hit.collider != null && hit.collider.TryGetComponent(out MoveDownTrigger _))
-                _santaMovementEffect.MoveDown().Forget();
+                _santaMovementEffect.MoveDown();
 
             if (hit.collider == null || !hit.collider.TryGetComponent(out HouseTrigger house)) 
                 return;

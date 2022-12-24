@@ -5,8 +5,8 @@ namespace GiftOrCoal.LoadSystem
 {
     public sealed class LoadingBar : MonoBehaviour
     {
-        [SerializeField] private Image _slider;
-        private static Image _bar;
+        [SerializeField] private Scrollbar _slider;
+        private static Scrollbar _bar;
 
         private void Start()
         {
@@ -15,8 +15,7 @@ namespace GiftOrCoal.LoadSystem
 
         public static void Visualize(float value)
         {
-            if (_bar != null)
-                _bar.fillAmount = value;
+            _bar.size = value;
         }
     }
 }

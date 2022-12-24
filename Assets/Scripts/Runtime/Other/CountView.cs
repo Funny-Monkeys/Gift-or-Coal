@@ -1,17 +1,18 @@
-﻿using TMPro;
+﻿using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 namespace GiftOrCoal.Other
 {
     public sealed class CountView : MonoBehaviour
     {
-        [SerializeField] private TMP_Text _text;
+        [SerializeField] private List<TMP_Text> _texts;
         [SerializeField] private string _additionSymbols;
 
         public void Visualize(float count)
         {
             var countText = count.ToString();
-            _text.text = _additionSymbols.Length == 0 ? countText : countText + _additionSymbols;
+            _texts.ForEach(text => text.text = _additionSymbols.Length == 0 ? countText : countText + _additionSymbols);
         }
     }
 }

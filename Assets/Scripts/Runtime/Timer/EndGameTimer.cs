@@ -25,7 +25,6 @@ namespace GiftOrCoal.Timer
             {
                 _time = 0;
                 _isGameFinished = true;
-                
                 _endGamePanel.Enable();
                 _gameLoop.Pause();
             }

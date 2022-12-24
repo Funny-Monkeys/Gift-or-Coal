@@ -12,6 +12,11 @@ namespace GiftOrCoal.Difficult
 
         [field: SerializeField, Min(1)] public int MaxDeedsCount { get; private set; }
 
+        [field: SerializeField, Min(1)] public int ScoreAddCount { get; private set; }
+        
+        [field: SerializeField, Min(1)] public int ScoreRemoveCount { get; private set; }
+
+        
         private void OnValidate()
         {
             if (string.IsNullOrWhiteSpace(Name))

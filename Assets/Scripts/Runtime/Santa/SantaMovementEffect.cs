@@ -13,25 +13,20 @@ namespace GiftOrCoal.Santa
         private void Awake()
         {
             _minHeight = _santa.position.y;
-            MoveUp().Forget();
+            MoveUp();
         }
 
-        public async UniTask MoveUp()
+        public void MoveUp()
         {
-            var timer = 0f;
-            var startPosition = _santa.position;
-            
-            while (timer < _changingTime)
-            {
-                timer += Time.deltaTime;
-                var nextPosition = Vector2.Lerp(startPosition, new Vector2(_santa.position.x, _maxHeight), timer / _changingTime);
-                
-                _santa.transform.position = nextPosition;
-                await UniTask.Yield();
-            }
+            MoveTo(_maxHeight).Forget();
         }
 
-        public async UniTask MoveDown()
+        public void MoveDown()
+        {
+            MoveTo(_minHeight).Forget();
+        }
+        
+        private async UniTaskVoid MoveTo(float positionY)
         {
             var timer = 0f;
             var startPosition = _santa.position;
@@ -39,8 +34,11 @@ namespace GiftOrCoal.Santa
             while (timer < _changingTime)
             {
                 timer += Time.deltaTime;
-                var nextPosition = Vector2.Lerp(startPosition, new Vector2(_santa.position.x, _minHeight), timer / _changingTime);
                 
+                if(_santa == null)
+                    return;
+                
+                var nextPosition = Vector2.Lerp(startPosition, new Vector2(_santa.position.x, positionY), timer / _changingTime);
                 _santa.transform.position = nextPosition;
                 await UniTask.Yield();
             }
