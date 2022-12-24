@@ -19,6 +19,7 @@ namespace GiftOrCoal.Dossier
         [SerializeField] private Telephone _telephone;
         [SerializeField] private SantaMovementEffect _santaMovementEffect;
         [SerializeField] private AudioSource _soundOnPressed;
+        [SerializeField] private SledAnimator _sledAnimator;
 
         private readonly GameLoop.GameLoop _gameLoop = new();
 
@@ -41,6 +42,7 @@ namespace GiftOrCoal.Dossier
                 _accuracy.AddMistake();
             }
 
+            _sledAnimator.PlayStayingAnimation();
             _santaItemsFactory.CreateGift(Random.Range(1, 3));
             _gameLoop.Continue();
             _santaMovementEffect.MoveUp();
