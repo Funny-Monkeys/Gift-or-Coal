@@ -17,6 +17,7 @@ namespace GiftOrCoal.Dossier
         [SerializeField] private SantaItemsFactory _santaItemsFactory;
         [SerializeField] private Telephone _telephone;
         [SerializeField] private SantaMovementEffect _santaMovementEffect;
+        [SerializeField] private AudioSource _soundOnPressed;
         
         private readonly GameLoop.GameLoop _gameLoop = new();
 
@@ -39,6 +40,7 @@ namespace GiftOrCoal.Dossier
             _santaItemsFactory.CreateGift(Random.Range(1, 3));
             _gameLoop.Continue();
             _santaMovementEffect.MoveUp().Forget();
+            _soundOnPressed.Play();
             _telephone.ToLoading();
             _santaAnimator.PlayClickAnimation();
             _housesFactory.SpawnedHoused.ToList().ForEach(house => house.Movement.ContinueMovement());

@@ -35,7 +35,7 @@ namespace GiftOrCoal.Other
             _countView.Visualize(Mathf.RoundToInt(value * 100f));
         }
 
-        private float ToVolume(float value) => Mathf.Lerp(-60, 0, value);
+        private float ToVolume(float value) => Mathf.Lerp(-100, 0, value);
     
     }
 }

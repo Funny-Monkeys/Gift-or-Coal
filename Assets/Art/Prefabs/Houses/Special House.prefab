@@ -133,7 +133,7 @@ MonoBehaviour:
     <Photo>k__BackingField: {fileID: 21300000, guid: d05fa93923ad0e242acd59d28f0472a0, type: 3}
     <Name>k__BackingField: Star
     <Gender>k__BackingField: 1
-    <Dossier>k__BackingField: null
+    <Dossier>k__BackingField: I love magic and hang out with friends
 --- !u!114 &8661465923475911980
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -375,7 +375,7 @@ MonoBehaviour:
     <Photo>k__BackingField: {fileID: 21300000, guid: 3cff75cc2c7b1404dad091cdbb53459d, type: 3}
     <Name>k__BackingField: Naruto
     <Gender>k__BackingField: 0
-    <Dossier>k__BackingField: null
+    <Dossier>k__BackingField: I love Ramen, and hanging out with friends
 --- !u!114 &5314802256459086022
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -450,7 +450,7 @@ MonoBehaviour:
     <Photo>k__BackingField: {fileID: 21300000, guid: a498d7b2eea086540aba5b44c1128e82, type: 3}
     <Name>k__BackingField: Jake
     <Gender>k__BackingField: 0
-    <Dossier>k__BackingField: null
+    <Dossier>k__BackingField: I love good food and fun
 --- !u!114 &6602699118355280866
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -524,7 +524,7 @@ MonoBehaviour:
     <Photo>k__BackingField: {fileID: 21300000, guid: cd8746e663730984aa5ab40629c8136c, type: 3}
     <Name>k__BackingField: Morty
     <Gender>k__BackingField: 0
-    <Dossier>k__BackingField: null
+    <Dossier>k__BackingField: I love to travel and participate in experiments
 --- !u!114 &1423882315450169573
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -683,7 +683,7 @@ MonoBehaviour:
     <Photo>k__BackingField: {fileID: 21300000, guid: cc9b4b7d099556e45bc5a78288479721, type: 3}
     <Name>k__BackingField: Grinch
     <Gender>k__BackingField: 0
-    <Dossier>k__BackingField: null
+    <Dossier>k__BackingField: I want to steal Christmas, and I also love cookies
 --- !u!114 &3972720419477223286
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -996,7 +996,7 @@ MonoBehaviour:
     <Photo>k__BackingField: {fileID: 21300000, guid: 1e619147623053442834d242a80365a5, type: 3}
     <Name>k__BackingField: Harry Potter
     <Gender>k__BackingField: 0
-    <Dossier>k__BackingField: null
+    <Dossier>k__BackingField: I love learning magic and spending time with friends
 --- !u!114 &5230327001706996325
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1155,7 +1155,7 @@ MonoBehaviour:
     <Photo>k__BackingField: {fileID: 21300000, guid: edaba175f5254074c92ddb48b4f1f6b6, type: 3}
     <Name>k__BackingField: Rick
     <Gender>k__BackingField: 0
-    <Dossier>k__BackingField: null
+    <Dossier>k__BackingField: I love Sci-Fi movies and inventing
 --- !u!114 &5477460594132847323
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1230,7 +1230,7 @@ MonoBehaviour:
     <Photo>k__BackingField: {fileID: 21300000, guid: 407eafd56a666654b9d56855f052e4fc, type: 3}
     <Name>k__BackingField: Batman
     <Gender>k__BackingField: 0
-    <Dossier>k__BackingField: null
+    <Dossier>k__BackingField: I save the world and beat the bad guys
 --- !u!114 &3100682810831498151
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1787,7 +1787,7 @@ MonoBehaviour:
     <Photo>k__BackingField: {fileID: 21300000, guid: a3cce908c6947e14087873f6c6fbf50a, type: 3}
     <Name>k__BackingField: Finn
     <Gender>k__BackingField: 0
-    <Dossier>k__BackingField: null
+    <Dossier>k__BackingField: I like watching movies and playing computer games
 --- !u!114 &5929117538767816821
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1861,7 +1861,7 @@ MonoBehaviour:
     <Photo>k__BackingField: {fileID: 21300000, guid: c8899c3e921f69941a174cda26b0ce48, type: 3}
     <Name>k__BackingField: Pinocchio
     <Gender>k__BackingField: 0
-    <Dossier>k__BackingField: null
+    <Dossier>k__BackingField: I love walking and dancing
 --- !u!114 &3363823951365648664
 MonoBehaviour:
   m_ObjectHideFlags: 0
