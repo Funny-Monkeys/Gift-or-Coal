@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a5cf72ebe754a81a91c9a26b1c64586, type: 3}
   m_Name: Painted wallpaper in a room
   m_EditorClassIdentifier: 
-  <Text>k__BackingField: ' Painted wallpaper in a room'
+  <Text>k__BackingField: Painted wallpaper in a room
   <IsGood>k__BackingField: 0

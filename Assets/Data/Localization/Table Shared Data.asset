@@ -1,0 +1,320 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: Table Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: Table
+  m_TableCollectionNameGuidString: 508af704c84e10146b393c7f683c409d
+  m_Entries:
+  - m_Id: 8371912704
+    m_Key: Score
+    m_Metadata:
+      m_Items: []
+  - m_Id: 437793144832
+    m_Key: Best Score
+    m_Metadata:
+      m_Items: []
+  - m_Id: 566914793472
+    m_Key: Game Over
+    m_Metadata:
+      m_Items: []
+  - m_Id: 668047851520
+    m_Key: Menu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 707033907200
+    m_Key: Restart
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1588441726976
+    m_Key: Settings
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1633807319040
+    m_Key: Behaved obediently at school
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2431656214528
+    m_Key: Brushed my teeth every day
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3781693620224
+    m_Key: Called his grandmother
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3871552389120
+    m_Key: Cleaned out the closet with clothes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3917119307776
+    m_Key: Cleaned up the room
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4037948817408
+    m_Key: Congratulated his grandmother on her birthday
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4076234424320
+    m_Key: Cooked breakfast
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4187870019584
+    m_Key: Covered a sleeping mother with a blanket
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4256623050752
+    m_Key: Did my homework
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4325107646464
+    m_Key: Flushed out the toilet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4434222465024
+    m_Key: Gave mom flowers
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4520897757184
+    m_Key: "Got an \u201Cexcellent\u201D in the lesson"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4576933658624
+    m_Key: Helped dad in the garage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4632600461312
+    m_Key: Helped dad to finish the renovation
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4703098322944
+    m_Key: Helped grandma find glasses
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4751081160704
+    m_Key: Helped mom carry bags home
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4833759281152
+    m_Key: Helped my brother with homework
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4929183891456
+    m_Key: Looked after my sister
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5092895965184
+    m_Key: Made a gift to mom
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5214966988800
+    m_Key: Moved my grandmother across the road
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5316272013312
+    m_Key: Not distracted in class at school
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5352808595456
+    m_Key: Planted a tree
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5396634877952
+    m_Key: Saved a kitten from bullies
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5484987891712
+    m_Key: Shared treats with parents
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5554034524160
+    m_Key: Took out the trash
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5595876900864
+    m_Key: Walked the dog
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5672548777984
+    m_Key: Walked with my younger brother
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5718015033344
+    m_Key: Washed my clothes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5766568296448
+    m_Key: Washed the dishes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5889545289728
+    m_Key: Washed the dog
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5946722041856
+    m_Key: Washed the floors at home
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6004037206016
+    m_Key: Well written test
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6092818038784
+    m_Key: Went to the grocery store
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16142013906944
+    m_Key: Behaved naughty in class
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16209605115904
+    m_Key: Cycling fast down the street
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16249601998848
+    m_Key: Deceived a friend
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16297085714432
+    m_Key: Did not decorate the Christmas tree
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16343424385024
+    m_Key: Did not prepare gifts for parents for Christmas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16430766571520
+    m_Key: Did not put on a hat in the cold
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16492137627648
+    m_Key: Did not remove the cat tray
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16561125539840
+    m_Key: Didn't clean the dishes for myself
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16682089267200
+    m_Key: Didn't clean the room
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16736145457152
+    m_Key: Didn't do homework
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16865426489344
+    m_Key: 
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16882371477504
+    m_Key: Didn't flush down the toilet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17017998491648
+    m_Key: Didn't make the bed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17050114277376
+    m_Key: Didn't take out the trash
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17101314146304
+    m_Key: Didn't wish grandma a happy birthday
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17199196618752
+    m_Key: Disrespectfully spoke to elders
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17260597035008
+    m_Key: Failed a test
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17319082409984
+    m_Key: Feed my brother sand
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17409410940928
+    m_Key: Forgot to feed the dog
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17444106223616
+    m_Key: Got in a fight at school
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17537454653440
+    m_Key: Griffered a friend in Minecraft
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17603925983232
+    m_Key: Painted wallpaper in a room
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17733378981888
+    m_Key: Ran across the road at a red light
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17805319684096
+    m_Key: Sitting at the computer for a long time
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17875515555840
+    m_Key: Skipped school
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17921216692224
+    m_Key: Spent all my pocket money on soda
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18039596728320
+    m_Key: Stole a chocolate bar in a store
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18079627165696
+    m_Key: Swearing
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18142642388992
+    m_Key: Teased a friend
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18197134786560
+    m_Key: Threw Eggs/Toilet Paper at Neighbor's House
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18238440292352
+    m_Key: Took away a toy from a younger brother
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18316966051840
+    m_Key: Took money from parents without asking
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18393403047936
+    m_Key: Tried smoking
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18424432508928
+    m_Key: Tripped up someone at school
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 8371295088814587937
+  references:
+    version: 2
+    RefIds:
+    - rid: 8371295088814587937
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1671991096074
