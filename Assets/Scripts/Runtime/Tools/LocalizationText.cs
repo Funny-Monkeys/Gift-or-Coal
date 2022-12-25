@@ -10,6 +10,10 @@ namespace GiftOrCoal.Dossier
         
         [field: SerializeField] public LocalizeStringEvent LocalizeStringEvent { get; private set; }
 
+        public void SetValue(string text)
+        {
+            Text.text = text;
+        }
         
     }
 }
