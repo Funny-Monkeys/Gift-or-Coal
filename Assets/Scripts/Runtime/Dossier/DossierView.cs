@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using GiftOrCoal.KidData;
 using GiftOrCoal.Tools;
@@ -31,11 +32,13 @@ namespace GiftOrCoal.Dossier
             {
                 var deedText = Instantiate(_deedTextPrefab, _content);
                 var text = kid.Deeds.ToList()[i].Text;
-
+                try
                 {
                     deedText.Text.text = new TextLocalization(_localizedStrings).Localize(deedText, text);
-                }
 
+                }
+                catch (Exception) { }
+                
                 _kidPhoto.sprite = kid.Data.Photo;
             }
         }
