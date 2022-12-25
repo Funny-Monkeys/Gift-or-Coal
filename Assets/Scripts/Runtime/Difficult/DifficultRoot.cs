@@ -25,7 +25,6 @@ namespace GiftOrCoal.Difficult
             _difficultDropDown.Init(_difficultData, dropDownStartValue);
             _difficultSelector.Init(_defaultDifficultData, _difficultData);
             _difficultDropDown.Subscribe(_difficultSelector.Select);
-            _difficultDropDown.Subscribe(_difficultSelector.Select);
         }
     }
 }
