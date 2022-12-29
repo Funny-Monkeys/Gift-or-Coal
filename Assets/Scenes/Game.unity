@@ -1148,7 +1148,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9476e6dd879557149a5457671e30121c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _sessionTime: 30
+  _sessionTime: 180
   _endGamePanel: {fileID: 286189605253090353}
   _timerView: {fileID: 516609930}
 --- !u!4 &633861593
@@ -1746,7 +1746,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3499557310907453514, guid: 69926e9ba1cbcd84b87ca78e10cf01df, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.8363655
+      value: 0.69
       objectReference: {fileID: 0}
     - target: {fileID: 3499557310907453514, guid: 69926e9ba1cbcd84b87ca78e10cf01df, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3969,7 +3969,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2900393827059420100, guid: 7e97f3896147b79479cf0a66bbd9620b, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2900393827059420101, guid: 7e97f3896147b79479cf0a66bbd9620b, type: 3}
       propertyPath: m_Pivot.x
