@@ -27,13 +27,12 @@ namespace GiftOrCoal.Buttons
         protected override void OnClick()
         {
             var currentKid = _dossierView.CurrentKid;
-            var storage = new StorageWithNameSaveObject<DifficultData, DifficultData>();
+            var storage = new StorageWithNames<DifficultData, DifficultData>();
             var difficultData = storage.Load();
             
             if (currentKid.Deeds.Count(deed => deed.IsGood) >= currentKid.Deeds.Count(deed => deed.IsGood))
             {
                 _score.Add(difficultData.ScoreAddCount);
-                _accuracy.AddSuccessAnswer();
             }
             else
             {
@@ -42,6 +41,7 @@ namespace GiftOrCoal.Buttons
                 _accuracy.AddMistake();
             }
 
+            _accuracy.AddAnswer();
             _sledAnimator.PlayStayingAnimation();
             _santaItemsFactory.CreateGift(Random.Range(1, 3));
             _gameLoop.Continue();

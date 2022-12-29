@@ -1,7 +1,10 @@
-﻿using System.Linq;
+﻿using System.Collections.Generic;
+using System.Linq;
 using GiftOrCoal.KidData;
+using GiftOrCoal.Tools.Localization;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Localization;
 using UnityEngine.UI;
 
 namespace GiftOrCoal.Dossier
@@ -12,6 +15,7 @@ namespace GiftOrCoal.Dossier
         [SerializeField] private Image _kidPhoto;
         [SerializeField] private TMP_Text _deedTextPrefab;
         [SerializeField] private Transform _content;
+        [SerializeField] private List<LocalizedString> _localizedStrings;
 
         public IKid CurrentKid { get; private set; }
 
@@ -20,20 +24,21 @@ namespace GiftOrCoal.Dossier
             ClearContent();
             CurrentKid = kid;
             _dossierText.text = kid.Data.Dossier;
-
+            var textLocalization = new TextLocalization(_localizedStrings);
+            
             for (var i = 0; i < kid.Deeds.Count(); i++)
             {
                 var deedText = Instantiate(_deedTextPrefab, _content);
-                deedText.text = $"{i + 1}) {kid.Deeds.ToList()[i].Text}";
+                var text = kid.Deeds.ToList()[i].Text;
+                deedText.text = textLocalization.Localize(text);
+                _kidPhoto.sprite = kid.Data.Photo;
             }
-
-            _kidPhoto.sprite = kid.Data.Photo;
         }
 
         private void ClearContent()
         {
             for (var i = 0; i < _content.childCount; i++)
-                 Destroy(_content.GetChild(i).gameObject);
+                Destroy(_content.GetChild(i).gameObject);
         }
     }
 }

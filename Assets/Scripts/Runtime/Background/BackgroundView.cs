@@ -47,7 +47,7 @@ namespace GiftOrCoal.Background
                         _tempSpriteRenderer.color.b, 
                         Mathf.Lerp(0, 1, timer / changingTimeInSeconds));
 
-                    timer += Time.fixedDeltaTime;
+                    timer += Time.fixedUnscaledDeltaTime;
                     await UniTask.WaitForFixedUpdate();
                 }
 

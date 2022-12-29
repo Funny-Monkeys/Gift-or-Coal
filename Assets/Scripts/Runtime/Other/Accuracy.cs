@@ -6,11 +6,11 @@ namespace GiftOrCoal.Other
     {
         [SerializeField] private CountViews _countView;
         private int _mistakesCount;
-        private int _successAnswersCount;
+        private int _answersCount;
 
-        public void AddSuccessAnswer()
+        public void AddAnswer()
         {
-            _successAnswersCount += 1;
+            _answersCount += 1;
             VisualizeInPercents();
         }
 
@@ -28,9 +28,15 @@ namespace GiftOrCoal.Other
             {
                 _countView.Visualize(100f);
             }
+            
+            else if (_mistakesCount == _answersCount)
+            {
+                _countView.Visualize(0f);
+            }
+            
             else
             {
-                var percents = _mistakesCount / (float)_successAnswersCount * toPercents;
+                var percents = (float)_mistakesCount / (float)_answersCount * toPercents;
                 _countView.Visualize(percents);
             }
         }

@@ -22,7 +22,7 @@ namespace GiftOrCoal.Factories.Kid
 
         public IEnumerable<Deed> CreateDeeds()
         {
-            var difficultDataStorage = new StorageWithNameSaveObject<DifficultData, DifficultData>();
+            var difficultDataStorage = new StorageWithNames<DifficultData, DifficultData>();
             var difficultData = difficultDataStorage.Load();
 
             var deedsCount = Random.Range(difficultData.MinDeedsCount, difficultData.MaxDeedsCount);
