@@ -27,7 +27,7 @@ namespace GiftOrCoal.Buttons
         protected override void OnClick()
         {
             var currentKid = _dossierView.CurrentKid;
-            var storage = new StorageWithNameSaveObject<DifficultData, DifficultData>();
+            var storage = new StorageWithNames<DifficultData, DifficultData>();
             var difficultData = storage.Load();
             
             if (currentKid.Deeds.Count(deed => deed.IsGood) >= currentKid.Deeds.Count(deed => deed.IsGood))

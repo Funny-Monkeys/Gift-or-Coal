@@ -14,7 +14,7 @@ namespace GiftOrCoal.Tools.Localization
         {
             _localizedStrings = localizedStrings ?? throw new ArgumentNullException(nameof(localizedStrings));
         }
-
+        
         public string Localize(string currentText)
         {
             var localizedString = _localizedStrings.ToList().Find(line => line.ToString().Contains(currentText));

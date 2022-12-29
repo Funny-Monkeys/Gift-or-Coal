@@ -8,7 +8,7 @@ namespace GiftOrCoal.Difficult
     {
         private DifficultData _defaultDifficultData;
         private DifficultData[] _difficultData;
-        private readonly StorageWithNameSaveObject<DifficultData, DifficultData> _storage = new();
+        private readonly StorageWithNames<DifficultData, DifficultData> _storage = new();
 
         public void Init(DifficultData defaultDifficultData, DifficultData[] difficultData)
         {

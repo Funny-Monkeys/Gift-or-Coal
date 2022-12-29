@@ -13,7 +13,7 @@ namespace GiftOrCoal.Difficult
         
         private void Awake()
         {
-            var storage = new StorageWithNameSaveObject<DifficultData, DifficultData>();
+            var storage = new StorageWithNames<DifficultData, DifficultData>();
             var dropDownStartValue = 0;
             
             if (storage.HasSave())

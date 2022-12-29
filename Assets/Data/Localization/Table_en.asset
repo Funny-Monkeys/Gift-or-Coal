@@ -566,6 +566,14 @@ MonoBehaviour:
     m_Localized: Ride a bike
     m_Metadata:
       m_Items: []
+  - m_Id: 1414957648396288
+    m_Localized: Play
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1414995900448768
+    m_Localized: Exit
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

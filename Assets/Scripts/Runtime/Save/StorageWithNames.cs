@@ -2,18 +2,18 @@
 
 namespace GiftOrCoal.Save
 {
-    public sealed class StorageWithNameSaveObject<TStorageUser, TStoreValue>
+    public sealed class StorageWithNames<TStorageUser, TStoreValue>
     {
         private readonly IStorage _storage;
         private readonly string _path;
 
-        public StorageWithNameSaveObject(IStorage storage)
+        public StorageWithNames(IStorage storage)
         {
             _storage = storage ?? throw new ArgumentNullException(nameof(storage));
             _path = typeof(TStoreValue).Name + typeof(TStorageUser).Name;
         }
 
-        public StorageWithNameSaveObject() : this(new BinaryStorage()) { }
+        public StorageWithNames() : this(new BinaryStorage()) { }
 
         public bool HasSave() => _storage.Exists(_path);
 

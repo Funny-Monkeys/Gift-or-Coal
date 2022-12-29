@@ -29,6 +29,11 @@ namespace GiftOrCoal.Other
                 _countView.Visualize(100f);
             }
             
+            else if (_mistakesCount == _answersCount)
+            {
+                _countView.Visualize(0f);
+            }
+            
             else
             {
                 var percents = (float)_mistakesCount / (float)_answersCount * toPercents;

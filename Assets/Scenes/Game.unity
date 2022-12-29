@@ -3969,7 +3969,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2900393827059420100, guid: 7e97f3896147b79479cf0a66bbd9620b, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2900393827059420101, guid: 7e97f3896147b79479cf0a66bbd9620b, type: 3}
       propertyPath: m_Pivot.x
@@ -4066,6 +4066,14 @@ PrefabInstance:
     - target: {fileID: 2900393828482189261, guid: 7e97f3896147b79479cf0a66bbd9620b, type: 3}
       propertyPath: m_fontSize
       value: 26.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 2900393828482189261, guid: 7e97f3896147b79479cf0a66bbd9620b, type: 3}
+      propertyPath: m_margin.x
+      value: 10.910973
+      objectReference: {fileID: 0}
+    - target: {fileID: 2900393828482189261, guid: 7e97f3896147b79479cf0a66bbd9620b, type: 3}
+      propertyPath: m_margin.z
+      value: 10.911018
       objectReference: {fileID: 0}
     - target: {fileID: 2900393828482189261, guid: 7e97f3896147b79479cf0a66bbd9620b, type: 3}
       propertyPath: m_enableAutoSizing

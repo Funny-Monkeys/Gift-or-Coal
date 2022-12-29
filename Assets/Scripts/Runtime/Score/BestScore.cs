@@ -9,7 +9,7 @@ namespace GiftOrCoal.Score
         [SerializeField] private Score _score;
         [SerializeField] private CountViews _countView;
         
-        private readonly StorageWithNameSaveObject<BestScore, int> _storage = new();
+        private readonly StorageWithNames<BestScore, int> _storage = new();
         private int _count;
         
         private void OnEnable()
