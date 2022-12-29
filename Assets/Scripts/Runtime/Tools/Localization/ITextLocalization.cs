@@ -1,9 +1,7 @@
-﻿using GiftOrCoal.Dossier;
-
-namespace GiftOrCoal.Tools
+﻿namespace GiftOrCoal.Tools.Localization
 {
     public interface ITextLocalization
     {
-        string Localize(LocalizationText text, string currentText);
+        string Localize(string currentText);
     }
 }

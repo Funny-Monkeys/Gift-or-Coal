@@ -23,6 +23,36 @@ MonoBehaviour:
     m_SerializedLabels:
     - Locale-en
     - Preload
+  - m_GUID: 7f4495f9ca596694b9c64b47eaf518df
+    m_Address: End Of Greetings_en
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    - Preload
+  - m_GUID: 2d85260453ac3c94ba412fc3609e9155
+    m_Address: Greetings_en
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    - Preload
+  - m_GUID: ed05298b55cde6f418aa4d5bc12ad2fe
+    m_Address: Special Dossier_en
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    - Preload
+  - m_GUID: 44874520fcd976a4ebf950af157b582e
+    m_Address: Special Kids Names_en
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    - Preload
+  - m_GUID: 78c3ab30c8ee91d4aa0d3976ff01d377
+    m_Address: Unions_en
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    - Preload
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: f1c2aa5173f854149b1c9d697aa743cf, type: 2}
   m_SchemaSet:

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using GiftOrCoal.Tools.Localization;
 using UnityEngine;
 using UnityEngine.Localization.Settings;
 using Random = UnityEngine.Random;
@@ -12,19 +13,22 @@ namespace GiftOrCoal.Factories.Kid
     {
         [SerializeField] private List<string> _hobbies;
         [SerializeField] private List<string> _endsOfGreetings;
-
+        [SerializeField] private UnionsLocalization _unionsLocalization;
+        [SerializeField] private DossierLocalization _dossierLocalization;
+        
         private List<string> _notUsedHobbies = new();
 
         public string Create(string kidName)
         {
+            kidName = _dossierLocalization.LocalizeName(kidName);
             _notUsedHobbies = new List<string>(_hobbies);
             var stringBuilder = new StringBuilder();
-            stringBuilder.Append(LocalizationSettings.SelectedLocale.LocaleName.Contains("English") ? $"Hello, Santa Claus, my name is  {kidName}. " : $"Привет, Санта Клаус, меня зовут{kidName}. ");
+            var greeting = _dossierLocalization.LocalizeGreeting($"Hello, Santa Claus, my name is").Replace("{}", kidName);
+            stringBuilder.Append(greeting);
             var hobbies = BuildHobbies();
-            stringBuilder.Append(LocalizationSettings.SelectedLocale.LocaleName.Contains("English") ? $"I love {hobbies}. " : $"Я люблю {hobbies}. ");
-            stringBuilder.Append(LocalizationSettings.SelectedLocale.LocaleName.Contains("English")
-                ? $"{_endsOfGreetings[Random.Range(0, _endsOfGreetings.Count)]}. This year I have done these things:\n"
-                : $"{_endsOfGreetings[Random.Range(0, _endsOfGreetings.Count)]}. В этом году я:\n");
+            stringBuilder.Append(LocalizationSettings.SelectedLocale.LocaleName.Contains("English") ? $" I love: {hobbies}. " : $" Я люблю: {hobbies}. ");
+            var localizedEndOfGreeting = _dossierLocalization.LocalizeEndOfGreeting(_endsOfGreetings[Random.Range(0, _endsOfGreetings.Count)]);
+            stringBuilder.Append($"{localizedEndOfGreeting} {_dossierLocalization.LocalizeEndOfGreeting("This year I have done these things:")} \n");
             return stringBuilder.ToString();
         }
         
@@ -39,8 +43,8 @@ namespace GiftOrCoal.Factories.Kid
             }
 
             hobbies = hobbies.Distinct().ToList();
-            var and = LocalizationSettings.SelectedLocale.LocaleName.Contains("English") ? "and" : "и";
-            
+            var and = _unionsLocalization.Localize("And");
+
             return hobbies.Count switch
             {
                 1 => BuildHobby(),
@@ -54,7 +58,7 @@ namespace GiftOrCoal.Factories.Kid
         {
             var generatedHobby = _notUsedHobbies[Random.Range(0, _notUsedHobbies.Count)];
             _notUsedHobbies.Remove(generatedHobby);
-            return generatedHobby;
+            return _dossierLocalization.LocalizeHobby(generatedHobby);
         }
     }
 }

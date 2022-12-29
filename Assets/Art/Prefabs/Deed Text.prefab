@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 1961735899730613490}
   - component: {fileID: 5005777245451742197}
   - component: {fileID: 6622698134834390998}
-  - component: {fileID: 1010373241829057589}
   - component: {fileID: 4435678723780422581}
   m_Layer: 0
   m_Name: Deed Text
@@ -137,20 +136,6 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &1010373241829057589
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6967743036181995544}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e3c572dce1c4b52ba6e3e6d9c9fc993, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  <Text>k__BackingField: {fileID: 6622698134834390998}
-  <LocalizeStringEvent>k__BackingField: {fileID: 4435678723780422581}
 --- !u!114 &4435678723780422581
 MonoBehaviour:
   m_ObjectHideFlags: 0
