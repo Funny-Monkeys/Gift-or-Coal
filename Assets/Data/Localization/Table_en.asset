@@ -383,7 +383,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1378840244994048
-    m_Localized: Hello, Santa Claus, my name is {}
+    m_Localized: Hello, Santa Claus, my name is {}.
     m_Metadata:
       m_Items: []
   - m_Id: 1381422262730752

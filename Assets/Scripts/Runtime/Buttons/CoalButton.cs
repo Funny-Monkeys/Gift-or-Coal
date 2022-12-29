@@ -32,7 +32,6 @@ namespace GiftOrCoal.Buttons
             if (currentKid.Deeds.Count(deed => !deed.IsGood) > currentKid.Deeds.Count(deed => deed.IsGood))
             {
                 _score.Add(difficultData.ScoreAddCount);
-                _accuracy.AddSuccessAnswer();
             }
             else
             {
@@ -41,6 +40,7 @@ namespace GiftOrCoal.Buttons
                 _accuracy.AddMistake();
             }
 
+            _accuracy.AddAnswer();
             _sledAnimator.PlayStayingAnimation();
             _santaItemsFactory.CreateCoal(1);
             _gameLoop.Continue();
