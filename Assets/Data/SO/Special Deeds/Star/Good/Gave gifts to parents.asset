@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a5cf72ebe754a81a91c9a26b1c64586, type: 3}
   m_Name: Gave gifts to parents
   m_EditorClassIdentifier: 
-  <Text>k__BackingField: Freed Eclipsa
+  <Text>k__BackingField: Gave gifts to parents
   <IsGood>k__BackingField: 1

@@ -1,12 +1,13 @@
 ﻿using System.Linq;
 using GiftOrCoal.Difficult;
+using GiftOrCoal.Dossier;
 using GiftOrCoal.Factories;
 using GiftOrCoal.Other;
 using GiftOrCoal.Santa;
 using GiftOrCoal.Save;
 using UnityEngine;
 
-namespace GiftOrCoal.Dossier
+namespace GiftOrCoal.Buttons
 {
     public sealed class CoalButton : Buttons.Button
     {
@@ -28,26 +29,15 @@ namespace GiftOrCoal.Dossier
             var storage = new StorageWithNameSaveObject<DifficultData, DifficultData>();
             var difficultData = storage.Load();
             
-            if (currentKid.Deeds.Any(deed => !deed.IsGood))
+            if (currentKid.Deeds.Count(deed => !deed.IsGood) > currentKid.Deeds.Count(deed => deed.IsGood))
             {
                 _score.Add(difficultData.ScoreAddCount);
                 _accuracy.AddSuccessAnswer();
             }
-
             else
             {
                 var removeCount = difficultData.ScoreRemoveCount;
-
-                if (_score.CanRemove(removeCount))
-                {
-                    _score.Remove(removeCount);
-                }
-                
-                else
-                {
-                    _score.Remove(_score.Count);
-                }
-                
+                _score.Remove(_score.CanRemove(removeCount) ? removeCount : _score.Count);
                 _accuracy.AddMistake();
             }
 
