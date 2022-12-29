@@ -577,7 +577,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2134125663875006292, guid: c1cbd9f915aa8d848817802f2ee4c238, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2134125663875006292, guid: c1cbd9f915aa8d848817802f2ee4c238, type: 3}
       propertyPath: m_AnchorMin.x
@@ -585,7 +585,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2134125663875006292, guid: c1cbd9f915aa8d848817802f2ee4c238, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2134125663875006292, guid: c1cbd9f915aa8d848817802f2ee4c238, type: 3}
       propertyPath: m_SizeDelta.x
@@ -625,11 +625,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2134125663875006292, guid: c1cbd9f915aa8d848817802f2ee4c238, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 99
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2134125663875006292, guid: c1cbd9f915aa8d848817802f2ee4c238, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -89.45
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2134125663875006292, guid: c1cbd9f915aa8d848817802f2ee4c238, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2796,23 +2796,23 @@ MonoBehaviour:
     <MinDeedsCount>k__BackingField: 2
     <MaxDeedsCount>k__BackingField: 5
     <ScoreAddCount>k__BackingField: 100
-    <ScoreRemoveCount>k__BackingField: 100
+    <ScoreRemoveCount>k__BackingField: 200
   _difficultData:
   - <Name>k__BackingField: Easy
     <MinDeedsCount>k__BackingField: 2
     <MaxDeedsCount>k__BackingField: 5
     <ScoreAddCount>k__BackingField: 100
-    <ScoreRemoveCount>k__BackingField: 100
+    <ScoreRemoveCount>k__BackingField: 200
   - <Name>k__BackingField: Normal
     <MinDeedsCount>k__BackingField: 6
     <MaxDeedsCount>k__BackingField: 10
     <ScoreAddCount>k__BackingField: 250
-    <ScoreRemoveCount>k__BackingField: 350
+    <ScoreRemoveCount>k__BackingField: 500
   - <Name>k__BackingField: Hard
     <MinDeedsCount>k__BackingField: 11
     <MaxDeedsCount>k__BackingField: 15
     <ScoreAddCount>k__BackingField: 500
-    <ScoreRemoveCount>k__BackingField: 750
+    <ScoreRemoveCount>k__BackingField: 1000
   _difficultDropDown: {fileID: 39425785}
   _difficultSelector: {fileID: 1606931403}
 --- !u!4 &1606931405
@@ -3362,7 +3362,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2134125663875006292, guid: c1cbd9f915aa8d848817802f2ee4c238, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2134125663875006292, guid: c1cbd9f915aa8d848817802f2ee4c238, type: 3}
       propertyPath: m_AnchorMin.x
@@ -3370,7 +3370,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2134125663875006292, guid: c1cbd9f915aa8d848817802f2ee4c238, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2134125663875006292, guid: c1cbd9f915aa8d848817802f2ee4c238, type: 3}
       propertyPath: m_SizeDelta.x
@@ -3410,11 +3410,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2134125663875006292, guid: c1cbd9f915aa8d848817802f2ee4c238, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 99
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2134125663875006292, guid: c1cbd9f915aa8d848817802f2ee4c238, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -58
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2134125663875006292, guid: c1cbd9f915aa8d848817802f2ee4c238, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
