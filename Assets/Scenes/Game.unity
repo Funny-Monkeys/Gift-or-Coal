@@ -4942,7 +4942,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3663125242139462177, guid: 258f1aa49182d244f8d42ac4da5cc69f, type: 3}
       propertyPath: m_fontSizeMin
-      value: 18
+      value: 14.5
       objectReference: {fileID: 0}
     - target: {fileID: 3663125242139462177, guid: 258f1aa49182d244f8d42ac4da5cc69f, type: 3}
       propertyPath: m_sharedMaterial
@@ -5022,11 +5022,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3663125242393815189, guid: 258f1aa49182d244f8d42ac4da5cc69f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 149.6
+      value: 149.59999
       objectReference: {fileID: 0}
     - target: {fileID: 3663125242479032053, guid: 258f1aa49182d244f8d42ac4da5cc69f, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 1002.3
+      value: 1002.2999
       objectReference: {fileID: 0}
     - target: {fileID: 3663125242479032053, guid: 258f1aa49182d244f8d42ac4da5cc69f, type: 3}
       propertyPath: m_AnchoredPosition.y

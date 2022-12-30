@@ -147,7 +147,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 5672548777984
-    m_Localized: Walked with younger brother
+    m_Localized: Walked with his younger brother
     m_Metadata:
       m_Items: []
   - m_Id: 5718015033344
@@ -315,35 +315,35 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1347251591004160
-    m_Localized: Chess
+    m_Localized: chess
     m_Metadata:
       m_Items: []
   - m_Id: 1347299032776704
-    m_Localized: Botany
+    m_Localized: botany
     m_Metadata:
       m_Items: []
   - m_Id: 1347367148273664
-    m_Localized: Baseball
+    m_Localized: baseball
     m_Metadata:
       m_Items: []
   - m_Id: 1347411574341632
-    m_Localized: Skate
+    m_Localized: skate
     m_Metadata:
       m_Items: []
   - m_Id: 1347475461980160
-    m_Localized: Boxing
+    m_Localized: boxing
     m_Metadata:
       m_Items: []
   - m_Id: 1347510492807168
-    m_Localized: Computer games
+    m_Localized: computer games
     m_Metadata:
       m_Items: []
   - m_Id: 1378228375732224
-    m_Localized: Table games
+    m_Localized: table games
     m_Metadata:
       m_Items: []
   - m_Id: 1378295551705088
-    m_Localized: Cinema
+    m_Localized: cinema
     m_Metadata:
       m_Items: []
   - m_Id: 1378346457972736
@@ -351,35 +351,35 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1378422051913728
-    m_Localized: Painting
+    m_Localized: painting
     m_Metadata:
       m_Items: []
   - m_Id: 1378482584109056
-    m_Localized: Chemistry
+    m_Localized: chemistry
     m_Metadata:
       m_Items: []
   - m_Id: 1378519359766528
-    m_Localized: Grow crystals
+    m_Localized: grow crystals
     m_Metadata:
       m_Items: []
   - m_Id: 1378561873231872
-    m_Localized: Watch serials
+    m_Localized: watch serials
     m_Metadata:
       m_Items: []
   - m_Id: 1378597709365248
-    m_Localized: Programming
+    m_Localized: programming
     m_Metadata:
       m_Items: []
   - m_Id: 1378634988339200
-    m_Localized: Read comics
+    m_Localized: read comics
     m_Metadata:
       m_Items: []
   - m_Id: 1378670593785856
-    m_Localized: Take care of animals
+    m_Localized: take care of animals
     m_Metadata:
       m_Items: []
   - m_Id: 1378712431968256
-    m_Localized: Collect items
+    m_Localized: collect items
     m_Metadata:
       m_Items: []
   - m_Id: 1378840244994048
