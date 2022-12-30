@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a5cf72ebe754a81a91c9a26b1c64586, type: 3}
   m_Name: With the help of Batman's gadgets, he decorated the city's Christmas tree
   m_EditorClassIdentifier: 
-  <Text>k__BackingField: Defeated the Joker
+  <Text>k__BackingField: With the help of Batman's gadgets, he decorated the city's
+    Christmas tree
   <IsGood>k__BackingField: 1

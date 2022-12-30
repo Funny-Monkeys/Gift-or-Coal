@@ -45,6 +45,10 @@ MonoBehaviour:
     m_Address: Assets/Data/Localization/Difficulties Shared Data.asset
     m_ReadOnly: 1
     m_SerializedLabels: []
+  - m_GUID: f1853192dc84d7a4eb211224579c8ee2
+    m_Address: Assets/Data/Localization/Special Kids's Deeds Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: f1c2aa5173f854149b1c9d697aa743cf, type: 2}
   m_SchemaSet:

@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a5cf72ebe754a81a91c9a26b1c64586, type: 3}
   m_Name: I am Batman
   m_EditorClassIdentifier: 
-  <Text>k__BackingField: Defeated the Joker
+  <Text>k__BackingField: I am Batman
   <IsGood>k__BackingField: 1

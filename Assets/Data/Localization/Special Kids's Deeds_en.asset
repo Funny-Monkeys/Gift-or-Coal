@@ -1,0 +1,421 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Special Kids's Deeds_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: f1853192dc84d7a4eb211224579c8ee2, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 8107671552
+    m_Localized: Confused Santa for the Joker, beat him
+    m_Metadata:
+      m_Items: []
+  - m_Id: 115553157120
+    m_Localized: Could not stop his Batmobile and crashed into a store
+    m_Metadata:
+      m_Items: []
+  - m_Id: 157865295872
+    m_Localized: Destroyed a warehouse with toys for the New Year
+    m_Metadata:
+      m_Items: []
+  - m_Id: 254132961280
+    m_Localized: Failed to protect the city from crime
+    m_Metadata:
+      m_Items: []
+  - m_Id: 351944130560
+    m_Localized: In the battle, accidentally burned the main Christmas tree of the
+      city
+    m_Metadata:
+      m_Items: []
+  - m_Id: 497234821120
+    m_Localized: Closely followed the city
+    m_Metadata:
+      m_Items: []
+  - m_Id: 588066668544
+    m_Localized: Defeated the Joker
+    m_Metadata:
+      m_Items: []
+  - m_Id: 621889536000
+    m_Localized: I am Batman
+    m_Metadata:
+      m_Items: []
+  - m_Id: 845395607552
+    m_Localized: Saved Robin
+    m_Metadata:
+      m_Items: []
+  - m_Id: 978472484864
+    m_Localized: With the help of the gadgets, he decorated the city's Christmas
+      tree
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1096579891200
+    m_Localized: Worked well with the police commissioner
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1191207583744
+    m_Localized: Ate the Snow King's Christmas cookies
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1272107319296
+    m_Localized: Dressed up as Santa and stole gifts
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1708042305536
+    m_Localized: He set fire to the Christmas tree in the city
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1749754658816
+    m_Localized: Stole BMO batteries
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1884840607744
+    m_Localized: Stole Jake's gifts
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1954302476288
+    m_Localized: Cooked delicious pizza
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1997650608128
+    m_Localized: Decorated the house for Christmas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2039593648128
+    m_Localized: Gave a gift to Marceline
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2104622137344
+    m_Localized: Hug Gunther
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2169059229696
+    m_Localized: Saved the world
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2275313532928
+    m_Localized: Burned the Christmas tree
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2518247620608
+    m_Localized: Dressed up as Santa and tried to steal Christmas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2572811321344
+    m_Localized: Cooked a festive dinner
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2682865664000
+    m_Localized: Helped decorate the Christmas tree for the residents
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2742558998528
+    m_Localized: Helped send letters to Santa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3250271109120
+    m_Localized: Made a free ice rink
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3321473613824
+    m_Localized: Prepared gifts for children
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3603129516032
+    m_Localized: Accidentally transformed Ron into a rat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3651246571520
+    m_Localized: Flew on a broom in the city
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3720171569152
+    m_Localized: Set fire to the Christmas tree with the help of magic
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3844553654272
+    m_Localized: Kicked Draco in the Invisibility Cloak
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3907099115520
+    m_Localized: Passed the exam with a luck potion
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3976254799872
+    m_Localized: Decorated the Christmas tree with a magic wand
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4354144813056
+    m_Localized: ' Decorated the Gryffindor room with garlands'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4402429640704
+    m_Localized: Gave gifts to Ron and Hermione
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4419005530112
+    m_Localized: Passed alchemy "excellent"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4582851821568
+    m_Localized: Won the Quidditch Championship
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5401949061120
+    m_Localized: Ate all the food in the fridge
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5467912880128
+    m_Localized: Dropped the tree
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5552608460800
+    m_Localized: Insulted Gunther
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5621357297664
+    m_Localized: Offended Marceline
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5712625352704
+    m_Localized: Stole Finn's gifts
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5873384636416
+    m_Localized: Gave the Snow King a gift
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5926371278848
+    m_Localized: Helped with decorating the Christmas tree
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5999859679232
+    m_Localized: Made delicious cupcakes and shared them with Finn
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6088502099968
+    m_Localized: Played a game with BMO
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6184702656512
+    m_Localized: Saved Christmas with Santa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6298959691776
+    m_Localized: Accidentally broke Rick's invention
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6383378448384
+    m_Localized: Created his own clones that took over the world
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6479176351744
+    m_Localized: Destroyed his own house
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6531588374528
+    m_Localized: Traveled back in time and broke the time loop
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6603898175488
+    m_Localized: Turned Rick into a pickle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6697246605312
+    m_Localized: Decorated the house with luminous bottles of Rick
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6752577863680
+    m_Localized: Got along with his evil clone
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6824619229184
+    m_Localized: Helped his sister get closer to Rick
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6882035056640
+    m_Localized: Helped Rick with a new invention
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6931758530560
+    m_Localized: Passed the test with "good"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7065007374336
+    m_Localized: Prepared gifts for parents
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7286831529984
+    m_Localized: Called Tsunade granny
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7326329290752
+    m_Localized: Decorated the wall with the Hokage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7540435927040
+    m_Localized: Ruined a date with the Perverted Hermit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7581070344192
+    m_Localized: Stole gifts from Sasuke
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7629455835136
+    m_Localized: Cooked a new Ramen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7687035240448
+    m_Localized: Decorated a Christmas tree in the village
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7804140208128
+    m_Localized: Gave gifts to residents
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7863535747072
+    m_Localized: Helped Gaara realize his place in the clan
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7944397733888
+    m_Localized: Saved Kanoha from destruction
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8154381369344
+    m_Localized: Gave all the money to the fox
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8208873766912
+    m_Localized: He lied a lot
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8275512868864
+    m_Localized: Lured dad to the sperm whale
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8424968503296
+    m_Localized: Set fire to Santa's sleigh
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8509123018752
+    m_Localized: Skipped school
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8556132777984
+    m_Localized: Began to lie less
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8764300279808
+    m_Localized: Bought a gift for dad
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8829601398784
+    m_Localized: Helped Santa deliver presents
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8923050491904
+    m_Localized: Saved Shrek
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8964284694528
+    m_Localized: With the help of his nose I put a star on the tree
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9028977639424
+    m_Localized: Accidentally created his evil clone
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9074146099200
+    m_Localized: Burned down the house because of a failed experiment
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9111085334528
+    m_Localized: Created a spatial gap in the universe
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9158803931136
+    m_Localized: Created acid, which burned the floor in the house
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9246175477760
+    m_Localized: Destroyed the planet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9322415341568
+    m_Localized: Ried to clone Santa, failed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9370091995136
+    m_Localized: Cloned himself to solve the problem
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9406267867136
+    m_Localized: Created a device for moving in space
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9496260853760
+    m_Localized: Invented the recipe for Szechuan sauce
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9550916829184
+    m_Localized: Repaired his invention
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9593468043264
+    m_Localized: Saved the universe
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9790227038208
+    m_Localized: Ate all of Marco's nachos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9847974215680
+    m_Localized: Flipped the Christmas tree with magic
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9891326541824
+    m_Localized: I learned all the gifts ahead of time
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9976051482624
+    m_Localized: Offended Tom
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10058729603072
+    m_Localized: Quarreled with Jackie
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10116476780544
+    m_Localized: Decorated the palace with the help of magic
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10155806769152
+    m_Localized: Freed Eclipsa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10235628568576
+    m_Localized: Gave gifts to parents
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10311998455808
+    m_Localized: Made a lot of puppies with the help of magic
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10367665258496
+    m_Localized: Weaned Pony's Head from swearing
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []
