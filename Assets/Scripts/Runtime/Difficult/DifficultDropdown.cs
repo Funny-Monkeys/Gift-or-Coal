@@ -1,18 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using GiftOrCoal.Tools.Localization;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
-using UnityEngine.Localization;
 
 namespace GiftOrCoal.Difficult
 {
     public sealed class DifficultDropdown : MonoBehaviour
     {
         [SerializeField] private TMP_Dropdown _dropdown;
-        [SerializeField] private List<LocalizedString> _localizedStrings;
         
         private DifficultData[] _difficultData;
         private readonly List<UnityAction<int>> _actions = new();
@@ -26,8 +23,7 @@ namespace GiftOrCoal.Difficult
 
         private List<TMP_Dropdown.OptionData> CreateOptions()
         {
-            ITextLocalization textLocalization = new TextLocalization(_localizedStrings);
-            return _difficultData.Select(difficultData => new TMP_Dropdown.OptionData(textLocalization.Localize(difficultData.Name))).ToList();
+            return _difficultData.Select(difficultData => new TMP_Dropdown.OptionData(difficultData.Name)).ToList();
         }
 
         public void Subscribe(UnityAction<int> action)
