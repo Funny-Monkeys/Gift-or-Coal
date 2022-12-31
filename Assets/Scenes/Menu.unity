@@ -967,6 +967,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6676512617336082996, guid: 58c1d1c3247f240478e9ea4af0ebf9e4, type: 3}
+      propertyPath: m_Color.a
+      value: 0.75732464
+      objectReference: {fileID: 0}
+    - target: {fileID: 6676512617356666373, guid: 58c1d1c3247f240478e9ea4af0ebf9e4, type: 3}
+      propertyPath: m_Color.a
+      value: 0.24267538
+      objectReference: {fileID: 0}
     - target: {fileID: 6676512617577929129, guid: 58c1d1c3247f240478e9ea4af0ebf9e4, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -4397,7 +4405,7 @@ MonoBehaviour:
     <MaxDeedsCount>k__BackingField: 15
     <ScoreAddCount>k__BackingField: 500
     <ScoreRemoveCount>k__BackingField: 1000
-  _difficultDropDown: {fileID: 39425785}
+  _difficultDropdown: {fileID: 39425785}
   _difficultSelector: {fileID: 1606931403}
 --- !u!4 &1606931405
 Transform:
