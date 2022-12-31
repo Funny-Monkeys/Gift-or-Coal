@@ -18,9 +18,9 @@ namespace GiftOrCoal.Tools.Localization
         public string Localize(string currentText)
         {
             var localizedString = _localizedStrings.ToList().Find(line => line.ToString().Contains(currentText));
-            
+
             if (localizedString == null)
-                throw new InvalidOperationException($"Hasn't found localization to {currentText}");
+                return string.Empty;
             
             Debug.Log(currentText);
             return localizedString.GetLocalizedString();
