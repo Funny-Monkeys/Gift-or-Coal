@@ -2204,6 +2204,14 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
+  - m_TableReference:
+      m_TableCollectionName: GUID:508af704c84e10146b393c7f683c409d
+    m_TableEntryReference:
+      m_KeyId: 2060885753413632
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   references:
     version: 2
     RefIds: []
@@ -6848,6 +6856,14 @@ MonoBehaviour:
       m_TableCollectionName: GUID:f1853192dc84d7a4eb211224579c8ee2
     m_TableEntryReference:
       m_KeyId: 5926371278848
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  - m_TableReference:
+      m_TableCollectionName: GUID:508af704c84e10146b393c7f683c409d
+    m_TableEntryReference:
+      m_KeyId: 2060885753413632
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0

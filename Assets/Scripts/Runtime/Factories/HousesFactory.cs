@@ -44,7 +44,7 @@ namespace GiftOrCoal.Factories
                 House.House randomHousePrefab;
                 var kidType = KidType.Standard;
                     
-                if (_averageHousesCounter == 3)
+                if (_averageHousesCounter == 5)
                 {
                     randomHousePrefab = _specialHouse;
                     kidType = _notUsedKidTypes[Random.Range(0, _notUsedKidTypes.Count)];

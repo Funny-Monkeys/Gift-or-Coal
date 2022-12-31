@@ -578,6 +578,10 @@ MonoBehaviour:
     m_Localized: Quarreled with adults
     m_Metadata:
       m_Items: []
+  - m_Id: 2060885753413632
+    m_Localized: Insulted Gunther
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
