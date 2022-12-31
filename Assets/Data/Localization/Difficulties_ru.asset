@@ -19,15 +19,15 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 145508876288
-    m_Localized: "\u041B\u0435\u0433\u043A\u0430\u044F"
+    m_Localized: "\u043B\u0435\u0433\u043A\u0430\u044F"
     m_Metadata:
       m_Items: []
   - m_Id: 163934453760
-    m_Localized: "\u041D\u043E\u0440\u043C\u0430\u043B\u044C\u043D\u0430\u044F"
+    m_Localized: "\u043D\u043E\u0440\u043C\u0430\u043B\u044C\u043D\u0430\u044F"
     m_Metadata:
       m_Items: []
   - m_Id: 212454162432
-    m_Localized: "\u0421\u043B\u043E\u0436\u043D\u0430\u044F"
+    m_Localized: "\u0441\u043B\u043E\u0436\u043D\u0430\u044F"
     m_Metadata:
       m_Items: []
   - m_Id: 1485840662528
