@@ -574,6 +574,10 @@ MonoBehaviour:
     m_Localized: Exit
     m_Metadata:
       m_Items: []
+  - m_Id: 2046714043252736
+    m_Localized: Quarreled with adults
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

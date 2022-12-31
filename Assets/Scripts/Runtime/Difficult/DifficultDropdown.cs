@@ -9,7 +9,7 @@ using UnityEngine.Localization;
 
 namespace GiftOrCoal.Difficult
 {
-    public sealed class DifficultDropDown : MonoBehaviour
+    public sealed class DifficultDropdown : MonoBehaviour
     {
         [SerializeField] private TMP_Dropdown _dropdown;
         [SerializeField] private List<LocalizedString> _localizedStrings;

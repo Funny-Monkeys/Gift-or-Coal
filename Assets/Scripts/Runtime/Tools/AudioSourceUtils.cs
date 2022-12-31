@@ -12,6 +12,9 @@ namespace GiftOrCoal.Tools
                 await UniTask.Yield();
             }
             
+            if(audioSource == null)
+                return;
+            
             Object.Destroy(audioSource.gameObject);
         }
     }

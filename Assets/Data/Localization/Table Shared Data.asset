@@ -575,6 +575,10 @@ MonoBehaviour:
     m_Key: Exit
     m_Metadata:
       m_Items: []
+  - m_Id: 2046714043252736
+    m_Key: Quarreled with adults
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

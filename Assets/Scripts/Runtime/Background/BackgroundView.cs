@@ -14,7 +14,7 @@ namespace GiftOrCoal.Background
         [SerializeField] private float _changingTimeInMilliseconds;
         
         private int _currentBackgroundIndex;
-        private const int MILLISECONDS_IN_SECONDS = 1000;
+        private const int MillisecondsInSeconds = 1000;
 
         public TimeOfDay CurrentTimeOfDay => (TimeOfDay)_currentBackgroundIndex;
 
@@ -24,7 +24,10 @@ namespace GiftOrCoal.Background
         {
             while (true)
             {
-                await UniTask.Delay(_timeForOneBackground * MILLISECONDS_IN_SECONDS);
+                await UniTask.Delay(_timeForOneBackground * MillisecondsInSeconds);
+                
+                if(_activeSpriteRenderer == null)
+                    return;
                 
                 if (_currentBackgroundIndex == _backgrounds.Count)
                     break;
@@ -33,7 +36,7 @@ namespace GiftOrCoal.Background
                 _tempSpriteRenderer.sprite = newSprite;
                 _currentBackgroundIndex++;
                 float timer = 0;
-                var changingTimeInSeconds = _changingTimeInMilliseconds / MILLISECONDS_IN_SECONDS;
+                var changingTimeInSeconds = _changingTimeInMilliseconds / MillisecondsInSeconds;
                 
                 while (timer < changingTimeInSeconds)
                 {

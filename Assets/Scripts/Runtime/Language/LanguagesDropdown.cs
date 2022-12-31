@@ -25,6 +25,7 @@ namespace GiftOrCoal.Tools.Localization
         private void SwitchLanguage(int index)
         {
             _dropdown.value = index;
+            _dropdown.captionText.text = LocalizationSettings.AvailableLocales.Locales[index].LocaleName;
             LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[index];
             _lastSelectedIndexStorage.Save(index);
         }

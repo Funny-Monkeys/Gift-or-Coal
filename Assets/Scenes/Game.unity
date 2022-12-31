@@ -4278,7 +4278,7 @@ PrefabInstance:
       objectReference: {fileID: 1730562877}
     - target: {fileID: 3663125241996168930, guid: 258f1aa49182d244f8d42ac4da5cc69f, type: 3}
       propertyPath: _localizedStrings.Array.size
-      value: 66
+      value: 67
       objectReference: {fileID: 0}
     - target: {fileID: 3663125241996168930, guid: 258f1aa49182d244f8d42ac4da5cc69f, type: 3}
       propertyPath: _localizedStrings.Array.data[0].m_TableEntryReference.m_KeyId
@@ -4545,6 +4545,10 @@ PrefabInstance:
       value: 18142642388992
       objectReference: {fileID: 0}
     - target: {fileID: 3663125241996168930, guid: 258f1aa49182d244f8d42ac4da5cc69f, type: 3}
+      propertyPath: _localizedStrings.Array.data[66].m_TableEntryReference.m_KeyId
+      value: 2046714043252736
+      objectReference: {fileID: 0}
+    - target: {fileID: 3663125241996168930, guid: 258f1aa49182d244f8d42ac4da5cc69f, type: 3}
       propertyPath: _localizedStrings.Array.data[0].m_TableReference.m_TableCollectionName
       value: GUID:508af704c84e10146b393c7f683c409d
       objectReference: {fileID: 0}
@@ -4808,6 +4812,10 @@ PrefabInstance:
       propertyPath: _localizedStrings.Array.data[65].m_TableReference.m_TableCollectionName
       value: GUID:508af704c84e10146b393c7f683c409d
       objectReference: {fileID: 0}
+    - target: {fileID: 3663125241996168930, guid: 258f1aa49182d244f8d42ac4da5cc69f, type: 3}
+      propertyPath: _localizedStrings.Array.data[66].m_TableReference.m_TableCollectionName
+      value: GUID:508af704c84e10146b393c7f683c409d
+      objectReference: {fileID: 0}
     - target: {fileID: 3663125241996168932, guid: 258f1aa49182d244f8d42ac4da5cc69f, type: 3}
       propertyPath: m_Name
       value: DossierView 1
@@ -4935,7 +4943,7 @@ PrefabInstance:
     - target: {fileID: 3663125242139462177, guid: 258f1aa49182d244f8d42ac4da5cc69f, type: 3}
       propertyPath: m_fontAsset
       value: 
-      objectReference: {fileID: 11400000, guid: 4fda188504aac3446b201c40abe6daba, type: 2}
+      objectReference: {fileID: 11400000, guid: 9a3621ecda6926d418025ab2f89811af, type: 2}
     - target: {fileID: 3663125242139462177, guid: 258f1aa49182d244f8d42ac4da5cc69f, type: 3}
       propertyPath: m_fontSizeMax
       value: 36
@@ -4947,7 +4955,7 @@ PrefabInstance:
     - target: {fileID: 3663125242139462177, guid: 258f1aa49182d244f8d42ac4da5cc69f, type: 3}
       propertyPath: m_sharedMaterial
       value: 
-      objectReference: {fileID: -5289202457411419149, guid: 4fda188504aac3446b201c40abe6daba, type: 2}
+      objectReference: {fileID: -7583666486595283111, guid: 9a3621ecda6926d418025ab2f89811af, type: 2}
     - target: {fileID: 3663125242139462207, guid: 258f1aa49182d244f8d42ac4da5cc69f, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 632

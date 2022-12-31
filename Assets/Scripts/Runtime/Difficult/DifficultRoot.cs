@@ -8,7 +8,7 @@ namespace GiftOrCoal.Difficult
     {
         [SerializeField] private DifficultData _defaultDifficultData;
         [SerializeField] private DifficultData[] _difficultData;
-        [SerializeField] private DifficultDropDown _difficultDropDown;
+        [SerializeField] private DifficultDropdown _difficultDropdown;
         [SerializeField] private DifficultSelector _difficultSelector;
         
         private void Awake()
@@ -22,9 +22,9 @@ namespace GiftOrCoal.Difficult
                 dropDownStartValue = lastSavedDifficultIndex;
             }
             
-            _difficultDropDown.Init(_difficultData, dropDownStartValue);
+            _difficultDropdown.Init(_difficultData, dropDownStartValue);
             _difficultSelector.Init(_defaultDifficultData, _difficultData);
-            _difficultDropDown.Subscribe(_difficultSelector.Select);
+            _difficultDropdown.Subscribe(_difficultSelector.Select);
         }
     }
 }
