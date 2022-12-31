@@ -20,7 +20,7 @@ namespace GiftOrCoal.Tools.Localization
             var localizedString = _localizedStrings.ToList().Find(line => line.ToString().Contains(currentText));
 
             if (localizedString == null)
-                return string.Empty;
+                return currentText;
             
             Debug.Log(currentText);
             return localizedString.GetLocalizedString();

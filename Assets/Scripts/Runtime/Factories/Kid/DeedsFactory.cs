@@ -31,7 +31,7 @@ namespace GiftOrCoal.Factories.Kid
             for (var i = 0; i < deedsCount; i++)
             {
                 try { deeds.Add(CreateDeedFromElementIn(Random.Range(1, 6) == 1 ? _badDeeds : _goodDeeds)); }
-                catch (InvalidOperationException) { break; }
+                catch (InvalidOperationException) { }
             }
 
             return deeds;
