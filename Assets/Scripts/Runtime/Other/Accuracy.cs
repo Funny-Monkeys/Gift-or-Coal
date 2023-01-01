@@ -5,7 +5,7 @@ namespace GiftOrCoal.Other
     public sealed class Accuracy : MonoBehaviour
     {
         [SerializeField] private CountViews _countView;
-        private int _mistakesCount;
+        private int _successfulAnswers;
         private int _answersCount;
 
         public void AddAnswer()
@@ -14,9 +14,9 @@ namespace GiftOrCoal.Other
             VisualizeInPercents();
         }
 
-        public void AddMistake()
+        public void AddSuccessfulAnswer()
         {
-            _mistakesCount += 1;
+            _successfulAnswers += 1;
             VisualizeInPercents();
         }
 
@@ -24,19 +24,19 @@ namespace GiftOrCoal.Other
         {
             const float toPercents = 100f;
 
-            if (_mistakesCount == 0)
+            if (_successfulAnswers == 0)
             {
                 _countView.Visualize(100f);
             }
             
-            else if (_mistakesCount == _answersCount)
+            else if (_successfulAnswers == _answersCount)
             {
                 _countView.Visualize(0f);
             }
             
             else
             {
-                var percents = (float)_mistakesCount / (float)_answersCount * toPercents;
+                var percents = (float)_successfulAnswers / (float)_answersCount * toPercents;
                 _countView.Visualize(percents);
             }
         }

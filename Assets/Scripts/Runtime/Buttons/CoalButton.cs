@@ -29,16 +29,16 @@ namespace GiftOrCoal.Buttons
             var storage = new StorageWithNames<DifficultData, DifficultData>();
             var difficultData = storage.Load();
             _accuracy.AddAnswer();
-            
+
             if (currentKid.Deeds.Count(deed => !deed.IsGood) > currentKid.Deeds.Count(deed => deed.IsGood))
             {
                 _score.Add(difficultData.ScoreAddCount);
+                _accuracy.AddSuccessfulAnswer();
             }
             else
             {
                 var removeCount = difficultData.ScoreRemoveCount;
                 _score.Remove(_score.CanRemove(removeCount) ? removeCount : _score.Count);
-                _accuracy.AddMistake();
             }
 
             _sledAnimator.PlayStayingAnimation();
