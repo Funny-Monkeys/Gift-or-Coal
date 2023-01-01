@@ -30,7 +30,7 @@ namespace GiftOrCoal.Factories.Kid
 
             for (var i = 0; i < deedsCount; i++)
             {
-                try { deeds.Add(CreateDeedFromElementIn(Random.Range(1, 6) == 1 ? _badDeeds : _goodDeeds)); }
+                try { deeds.Add(CreateDeedFromElementIn(Random.Range(0, 6) <= 2 ? _badDeeds : _goodDeeds)); }
                 catch (InvalidOperationException) { }
             }
 
@@ -44,7 +44,6 @@ namespace GiftOrCoal.Factories.Kid
             
             var randomIndex = Random.Range(0, deedDataList.Count);
             var generatedDeed = deedDataList[randomIndex];
-            
             deedDataList.Remove(generatedDeed);
             return new Deed(generatedDeed.Text, generatedDeed.IsGood);
         }
