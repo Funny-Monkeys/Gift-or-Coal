@@ -23,22 +23,8 @@ namespace GiftOrCoal.Other
         private void VisualizeInPercents()
         {
             const float toPercents = 100f;
-
-            if (_successfulAnswers == 0)
-            {
-                _countView.Visualize(100f);
-            }
-            
-            else if (_successfulAnswers == _answersCount)
-            {
-                _countView.Visualize(0f);
-            }
-            
-            else
-            {
-                var percents = (float)_successfulAnswers / (float)_answersCount * toPercents;
-                _countView.Visualize(percents);
-            }
+            var percents = (float)_successfulAnswers / (float)_answersCount * toPercents;
+            _countView.Visualize(percents);
         }
     }
 }

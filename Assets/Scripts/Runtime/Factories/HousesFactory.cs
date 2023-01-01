@@ -18,11 +18,12 @@ namespace GiftOrCoal.Factories
         [SerializeField] private House.House _specialHouse;
 
         private readonly List<House.House> _spawnedHouses = new();
-        private bool _canSpawn = true;
-        
+
         private int _averageHousesCounter;
         private List<KidType> _notUsedKidTypes;
 
+        public bool CanSpawn { get; private set; } = true;
+        
         public IReadOnlyList<House.House> SpawnedHoused => _spawnedHouses;
         
         private void Awake()
@@ -34,10 +35,10 @@ namespace GiftOrCoal.Factories
 
         private IEnumerator Spawn()
         {
-            while (_canSpawn)
+            while (CanSpawn)
             {
                 yield return new WaitForSeconds(_spawnDelay);
-                if (!_canSpawn) 
+                if (!CanSpawn) 
                     StartCoroutine(Spawn());
                 
                 _averageHousesCounter++;
@@ -64,9 +65,9 @@ namespace GiftOrCoal.Factories
             }
         }
 
-        public void StopSpawn() => _canSpawn = false;
+        public void StopSpawn() => CanSpawn = false;
 
-        public void ContinueSpawn() => _canSpawn = true;
+        public void ContinueSpawn() => CanSpawn = true;
         
     }
 }

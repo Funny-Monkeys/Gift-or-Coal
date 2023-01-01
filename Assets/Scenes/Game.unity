@@ -789,6 +789,7 @@ MonoBehaviour:
   _texts:
   - {fileID: 500917036}
   _additionSymbols: '%'
+  _needTrim: 0
 --- !u!114 &500917036
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1148,7 +1149,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9476e6dd879557149a5457671e30121c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _sessionTime: 180
+  _sessionTime: 25
   _endGamePanel: {fileID: 286189605253090353}
   _timerView: {fileID: 516609930}
 --- !u!4 &633861593
@@ -1601,6 +1602,7 @@ MonoBehaviour:
   - {fileID: 1518030950}
   - {fileID: 963640070}
   _additionSymbols: 
+  _needTrim: 0
 --- !u!114 &963640070
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2268,6 +2270,7 @@ MonoBehaviour:
   - {fileID: 1124543307}
   - {fileID: 658533396}
   _additionSymbols: 
+  _needTrim: 0
 --- !u!114 &1124543307
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3388,6 +3391,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _canvas: {fileID: 74547111}
   _endGameTimer: {fileID: 633861592}
+  _housesFactory: {fileID: 633861587}
 --- !u!114 &1961766616
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4090,6 +4094,10 @@ PrefabInstance:
     - target: {fileID: 4804857791424923413, guid: 7e97f3896147b79479cf0a66bbd9620b, type: 3}
       propertyPath: m_UpdateMode
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8542280163560331618, guid: 7e97f3896147b79479cf0a66bbd9620b, type: 3}
+      propertyPath: _needTrim
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8542280163560331618, guid: 7e97f3896147b79479cf0a66bbd9620b, type: 3}
       propertyPath: _texts.Array.size

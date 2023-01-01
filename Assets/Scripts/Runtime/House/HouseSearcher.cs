@@ -1,6 +1,7 @@
 using System.Linq;
 using GiftOrCoal.Dossier;
 using GiftOrCoal.Factories;
+using GiftOrCoal.GameLoop;
 using GiftOrCoal.Santa;
 using GiftOrCoal.Trigger;
 using UnityEngine;
@@ -16,7 +17,7 @@ namespace GiftOrCoal.Houses
         [SerializeField] private SledAnimator _sledAnimator;
 
         private HouseTrigger _lastSearchedHouseTrigger;
-        private readonly GameLoop.GameLoop _gameLoop = new();
+        private readonly IGameLoop _gameLoop = new GameLoop.GameLoop();
 
         private void Update()
         {
@@ -31,7 +32,7 @@ namespace GiftOrCoal.Houses
             if (_lastSearchedHouseTrigger != null && _lastSearchedHouseTrigger.transform == house.transform)
                 return;
                 
-            _sledAnimator.PlayFlightAnimation();
+            _sledAnimator.PlayStayingAnimation();
             _telephone.ToStandard();
             _lastSearchedHouseTrigger = house;
             _gameLoop.Pause();

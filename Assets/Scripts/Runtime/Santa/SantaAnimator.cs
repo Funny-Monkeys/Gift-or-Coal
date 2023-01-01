@@ -24,6 +24,13 @@ namespace GiftOrCoal.Santa
             while (true)
             {
                 var trigger = _triggers[Random.Range(0, _triggers.Length)];
+
+                if (_animator == null)
+                {
+                    await UniTask.Yield();
+                    continue;
+                }
+
                 _animator.SetTrigger(trigger);
                 await UniTask.Delay(TimeSpan.FromSeconds(_secondsToPlayRandomAnimation));
             }

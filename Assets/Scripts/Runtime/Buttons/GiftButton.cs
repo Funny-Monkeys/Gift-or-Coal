@@ -43,7 +43,7 @@ namespace GiftOrCoal.Buttons
                 _score.Remove(_score.CanRemove(removeCount) ? removeCount : _score.Count);
             }
 
-            _sledAnimator.PlayStayingAnimation();
+            _sledAnimator.PlayFlightAnimation();
             _santaItemsFactory.CreateGift(Random.Range(1, 3));
             _gameLoop.Continue();
             _santaMovementEffect.MoveUp();
