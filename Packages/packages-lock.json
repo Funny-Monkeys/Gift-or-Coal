@@ -1,5 +1,11 @@
 {
   "dependencies": {
+    "com.k0fe.yandexgamessdk": {
+      "version": "file:D:/Farid/Загрузки/yandex-games-plugin-unity-master/yandex-games-plugin-unity-master",
+      "depth": 0,
+      "source": "local",
+      "dependencies": {}
+    },
     "com.unity.2d.animation": {
       "version": "7.0.8",
       "depth": 1,

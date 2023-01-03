@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "com.k0fe.yandexgamessdk": "file:D:/Farid/Загрузки/yandex-games-plugin-unity-master/yandex-games-plugin-unity-master",
     "com.unity.collab-proxy": "1.17.6",
     "com.unity.feature.2d": "1.0.0",
     "com.unity.ide.rider": "3.0.16",
